@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKE Log Analyzer</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2; /* Light gray background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #d32f2f; /* Fortinet red */
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 480px;
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        .info-text {
+            font-size: 1.2rem;
+            color: #333333;
+            margin-bottom: 20px;
+            animation: fadeInText 2s ease-out;
+        }
+
+        .info-text span {
+            color: #d32f2f; /* Fortinet red */
+            font-weight: bold;
+        }
+
+        .file-input-container {
+            margin-bottom: 20px;
+            animation: fadeInText 2s ease-out;
+        }
+
+        label {
+            font-size: 1.1rem;
+            color: #333333;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            font-size: 1rem;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="file"]:focus {
+            border-color: #d32f2f; /* Fortinet red */
+            outline: none;
+        }
+
+        button {
+            font-size: 1.2rem;
+            padding: 12px 24px;
+            background-color: #d32f2f; /* Fortinet red */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #b71c1c; /* Darker red on hover */
+        }
+
+        button:active {
+            background-color: #9a0000; /* Even darker red on click */
+        }
+
+        /* Keyframes Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(-30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .accordion {
+            background-color: #f2f2f2;
+            color: #333333;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion:hover {
+            background-color: #d32f2f;
+            color: white;
+        }
+
+        .panel {
+            padding: 10px;
+            background-color: #e0e0e0;
+            display: none;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .scenarios-section {
+            margin-top: 40px;
+            width: 100%;
+            max-width: 480px;
+            text-align: left;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>IKE Log Analyzer</h1>
+    <div class="container">
+        <p class="info-text">Only for use by <span>Fortigate TAC</span></p>
+        <p class="info-text">Only for log parsing and assistance</p>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="file-input-container">
+                <label for="logfile">Upload Log File:</label>
+                <input type="file" name="logfile" id="logfile" required>
+            </div>
+            <button type="submit">Analyze</button>
+        </form>
+    </div>
+
+    <!-- Separate Section for Supported Scenarios -->
+    <div class="scenarios-section">
+        <center><h2>Supported Scenarios</h2></center>
+        <button class="accordion">IKEv1 - Main Mode</button>
+        <div class="panel">
+            <p><strong>PSK/AUTH Mismatch:</strong> Detect pre-shared key or authentication type mismatches.</p>
+            <p><strong>Proposal Mismatch:</strong> Verify encryption algorithms, authentication algorithms, and Diffie-Hellman (DH) group.</p>
+            <p><strong>Peer ID Mismatch:</strong> Check for discrepancies in peer IDs or peer ID types.</p>
+            <p><strong>Port 500 Mismatch:</strong> Identify issues with port 500 or local-in policies and port-forwarding configurations.</p>
+            <p><strong>NAT-T Debugs:</strong> Analyze NAT Traversal behavior (500/4500) for FortiClient (Windows/Mac).</p>
+            <p><strong>Client Diffie-Hellman Group Errors:</strong> Support added for specific client group errors (details to be finalized).</p>
+            <p><strong>Retransmission Analysis:</strong> Evaluate retransmissions during tunnel setup or disconnection.</p>
+            <p><strong>Policy Not Found:</strong> Flag cases where the required policy is missing.</p>
+        </div>
+
+        <button class="accordion">IKEv1 - Aggressive Mode</button>
+        <div class="panel">
+            <p>Similar to Main Mode with additional support for Aggressive Mode-specific scenarios.</p>
+            <ul>
+                <li>PSK/AUTH Mismatch</li>
+                <li>Proposal Mismatch</li>
+                <li>Peer ID Mismatch</li>
+                <li>Port 500 Issues</li>
+                <li>NAT-T Debugs</li>
+                <li>Client DH Group Errors</li>
+                <li>Retransmission Analysis</li>
+                <li>Policy Not Found</li>
+            </ul>
+        </div>
+
+        <button class="accordion">IKEv2 Scenarios</button>
+        <div class="panel">
+            <ul>
+                <li><strong>PSK/AUTH Mismatch:</strong> Detect authentication mismatches.</li>
+                <li><strong>Proposal Mismatch:</strong> Validate encryption/authentication algorithms and DH groups.</li>
+                <li><strong>Peer ID Mismatch:</strong> Identify issues with peer ID or peer ID type mismatches.</li>
+                <li><strong>Network Overlay Issues:</strong> Debug connectivity for overlay networks.</li>
+                <li><strong>Port 500/4500 Issues:</strong> Analyze NAT-T and port-forwarding-related errors.</li>
+                <li><strong>Client DH Group Errors:</strong> Debug errors specific to the client's DH group.</li>
+                <li><strong>Retransmission Analysis:</strong> Monitor retransmission behavior during setup and teardown.</li>
+                <li><strong>Policy Not Found:</strong> Highlight missing policies.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">ADVPN Scenarios</button>
+        <div class="panel">
+            <ul>
+                <li><strong>Shortcut Not Forming:</strong> Debug issues with shortcut formation.</li>
+                <li><strong>Peer IP Mismatch:</strong> Check for incorrect peer IP in shortcut proposals.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Phase-2 Scenarios (IKEv1)</button>
+        <div class="panel">
+            <ul>
+                <li><strong>Proposal Mismatch:</strong> Validate encryption/authentication algorithms and DH groups.</li>
+                <li><strong>PFS Errors:</strong> Detect Perfect Forward Secrecy (PFS) enablement or mismatch.</li>
+                <li><strong>Phase-2 Selector Mismatch:</strong> Identify inconsistencies in selectors.</li>
+                <li><strong>Subset Mismatch:</strong> Highlight mismatches in configurations across multi-vendor setups.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Phase-2 Scenarios (IKEv2)</button>
+        <div class="panel">
+            <ul>
+                <li>Proposal Mismatch</li>
+                <li>PFS Errors</li>
+                <li>Phase-2 Selector Mismatch</li>
+                <li>Subset Mismatch</li>
+                <li><strong>Child SA Issues:</strong> Debug scenarios related to Child Security Associations when PFS mismatches occur.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for accordion functionality
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
