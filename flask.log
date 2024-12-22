@@ -1,0 +1,103 @@
+nohup: ignoring input
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.68:8080
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 199-203-125
+192.168.1.66 - - [19/Dec/2024 17:23:57] "GET / HTTP/1.1" 200 -
+192.168.1.66 - - [19/Dec/2024 17:24:03] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:25:54] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:25:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.1.76 - - [19/Dec/2024 17:31:17] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:31:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.1.76 - - [19/Dec/2024 17:31:37] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:31:41] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:31:50] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:34:24] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:34:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.1.76 - - [19/Dec/2024 17:34:24] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:34:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.1.76 - - [19/Dec/2024 17:35:19] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:35:19] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:35:26] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:35:31] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:35:43] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:36:56] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:37:01] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:37:18] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:39:38] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:39:53] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:39:55] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:39:56] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:39:57] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:39:59] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:41:17] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 17:41:20] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 18:20:16] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 19:34:23] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [19/Dec/2024 19:34:23] "[33mGET /fonts/ftnt-icons.woff HTTP/1.1[0m" 404 -
+192.168.1.76 - - [19/Dec/2024 19:34:23] "[33mGET /lato-regular.woff2 HTTP/1.1[0m" 404 -
+192.168.1.76 - - [20/Dec/2024 09:40:57] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 10:36:18] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 13:57:50] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 14:00:16] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 14:00:57] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 14:01:19] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 14:17:49] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 14:47:31] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 14:54:37] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 14:55:39] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 14:55:43] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 16:37:53] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 16:37:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.1.76 - - [20/Dec/2024 16:39:58] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 16:40:01] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 16:42:22] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Dec/2024 16:46:15] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 13:04:42] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 13:07:36] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 13:08:04] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 13:08:30] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 13:10:31] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 13:22:53] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 13:24:09] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 13:29:17] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 13:35:17] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 14:18:45] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 14:18:47] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 14:20:53] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 14:24:11] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 14:30:30] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 14:30:46] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 14:31:31] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Dec/2024 14:38:01] "GET / HTTP/1.1" 200 -
+192.168.1.75 - - [22/Dec/2024 12:23:23] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 199-203-125
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 199-203-125
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 199-203-125
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 199-203-125
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 199-203-125
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 199-203-125

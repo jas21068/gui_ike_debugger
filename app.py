@@ -31,7 +31,6 @@ def read_file(filepath):
 # '========================================================================================================================================'
 # '========================================================================================================================================'
 # '========================================================================================================================================'
-
 def ike_parser(text):
     """
     Finds and prints lines containing the phrase 'SA proposal chosen' in the given text.
@@ -115,6 +114,15 @@ def ike_parser(text):
                 comes_line = None
                 fail_line = None
         
+        if "gw validation failed" in line:
+            if comes_line_phase_1:
+                _gw_validation_fail(i,line,comes_line_phase_1,ike_phase_1_type)
+                comes_line_phase_1 = None
+                ike_phase_1_type = None
+                comes_line = None
+                fail_line = None
+
+        
         # Grabs the connection details for the phase-1 mismatch
         if "comes" in line:
             comes_line_phase_1 = line
@@ -152,11 +160,17 @@ def ike_parser(text):
                 ike_phase_1_type = None
                 comes_line = None
                 fail_line = None
-                
+
+        if "connection expiring due to phase1 down" in line and timeout_index == -1:
+            print('hit the con exp')
+            _phase_1_retrans_check_1(line,lines,i)
+
         if "negotiation timeout, deleting" in line:
+            print('hit the old con exp')
             timeout_index = i
         
         if timeout_index != -1 and abs(i - timeout_index) <= 5:
+            print('hit the old con exp')
             if "connection expiring due to phase1 down" in line:
                 # Search for the connection info pattern in the log
                 _phase_1_retrans_check_1(line,lines,i)
@@ -283,6 +297,18 @@ def _phase_1_psk_fail(i,line,comes_line_phase_1,ike_phase_1_type):
         Ike_type = "IKE-V2"
         analysis_output.append(f'[{str(i+1)}]::'+' PSK Mismatch for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please check PSK ')
 
+
+def _gw_validation_fail(i,line,comes_line_phase_1,ike_phase_1_type):
+    Ike_type = ''
+    start_index_failure = comes_line_phase_1.index("comes")
+    failure_message = comes_line_phase_1[start_index_failure:]
+    if "IKEv1" in ike_phase_1_type:
+        Ike_type = "IKE-V1"
+        analysis_output.append(f'[{str(i+1)}]::'+' Gateway validation fail for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please Check: \n->peer ID \n->certificate settings \n->network ID')
+    if "IKEv2" in ike_phase_1_type:
+        Ike_type = "IKE-V2"
+        analysis_output.append(f'[{str(i+1)}]::'' Gateway validation fail for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please Check: \n->peer ID \n->certificate settings \n->network ID')
+
 def _phase_2_subset(i,line,lines,selectors):
     accepted_proposals = ''
     if i + 1 < len(lines):
@@ -323,10 +349,10 @@ def _phase_1_retrans_check_1(line,lines,i):
     connection_info_pattern = r"(\d+\.\d+\.\d+\.\d+:\d+->\d+\.\d+\.\d+\.\d+:\d+)"
     retransmit_pattern = r"(\w+)\):\s*(\d+\.\d+\.\d+\.\d+:\d+->\d+\.\d+\.\d+\.\d+:\d+)"
 
-    for j in range(max(0, i - 5), min(len(lines), i + 6)):
+    for j in range(max(0, i - 15), min(len(lines), i + 15)):
         if re.search(phase1_down_pattern, lines[j]):
             # Search for connection info in the vicinity
-            for k in range(max(0, i - 5), min(len(lines), i + 6)):
+            for k in range(max(0, i - 15), min(len(lines), i + 15)):
                 connection_match = re.search(connection_info_pattern, lines[k])
                 retransmit_match = re.search(retransmit_pattern, lines[k])
                 if connection_match:
@@ -334,7 +360,7 @@ def _phase_1_retrans_check_1(line,lines,i):
                 if retransmit_match:
                     retransmit_type = retransmit_match.group(1)
                     retransmit_info = retransmit_match.group(2)
-                    analysis_output.append(f'[{str(i+1)}]:: VPN with IP Connection as: '+retransmit_info+' for retransmission is for: '+retransmit_type )
+                    analysis_output.append(f'[{str(k+1)}]::Reason for VPN with IP Connection as: '+retransmit_info+' for retransmission is for: '+retransmit_type )
 
 def parse_to_table(data_string):
     # Split the string into individual comparisons
@@ -367,8 +393,7 @@ def parse_to_table(data_string):
 
     # Pretty-print the table
     return tabulate(combined_df, headers="keys", tablefmt="grid")
-
-
+ 
 # ENDS the business logic
 # '========================================================================================================================================'
 # '========================================================================================================================================'
@@ -402,9 +427,15 @@ def index():
         global analysis_output
         analysis_output = []
         ike_parser(ike_log)
+        def deduplicate_array(arr):
+            unique_elements = []
+            for item in arr:
+                if item not in unique_elements:
+                    unique_elements.append(item)
+            return unique_elements
 
         # Render the analysis output
-        return render_template("result.html", results=analysis_output)
+        return render_template("result.html", results=deduplicate_array(analysis_output))
     
     return render_template("index.html")
 
