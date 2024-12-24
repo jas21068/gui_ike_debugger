@@ -76,7 +76,11 @@ def ike_parser(text):
             dst = re.search(dst_pattern, line).group(1)
         if re.search(dst_pattern_mis, line):
             dst_mis = re.search(dst_pattern_mis, line).group(0)
-            
+
+        if 'processing notify type NO_PROPOSAL_CHOSEN' in line:
+            _notify_no_proposal_chosen(i,line,comes_line_phase_1)
+            comes_line_phase_1 = None 
+
         # phase-2 check    
         if "added IPsec SA" in line:
             selectors = ''
@@ -88,7 +92,14 @@ def ike_parser(text):
             dst_selectors = None
         
         #Flagging for no policy configured
-        if 'no policy configured' in line:
+
+        if 'no policy configured' in line and 'ignoring request to establish IPsec SA' in line:
+            ipsec_lines = lines[-10:]
+            ipsec_sa_pattern = re.compile(r"IPsec SA connect .* (\d+\.\d+\.\d+\.\d+->\d+\.\d+\.\d+\.\d+:\d+)")
+            ipsec_connections = [match.group(1) for line in ipsec_lines if (match := ipsec_sa_pattern.search(line))]
+            analysis_output.append(f'[{str(i+1)}]:: No Policy found for connection as: {list(set(ipsec_connections))[0]}')
+
+        if 'no policy configured' in line and 'ignoring request to establish IPsec SA' not in line:
             _no_policy_configured(i,comes_line_phase_1)
             policy_error = True
             comes_line_phase_1 = None
@@ -221,6 +232,15 @@ def ike_parser(text):
                 if "->" in part and ":" in part:
                     analysis_output.append(f'[{str(i+1)}]:: Rekey connection found: {part}')
                     break
+        # Rekey failures catch
+        if 'rekey in progress' in line:
+            retransmit_count = 0
+            for j in range(i + 1, min(i + 150, len(lines))):
+                if 'RETRANSMIT_CREATE_CHILD' in lines[j]:
+                    retransmit_count += 1
+                if retransmit_count >= 3:
+                    analysis_output.append(f'[{str(i+1)}]:: rekey in progress followed by 3 RETRANSMIT_CREATE_CHILD. Possible re-key failures')
+
         
         # Check for keepalives
         if 'keepalive' in line:
@@ -358,6 +378,8 @@ def _phase_1_psk_fail(i,line,comes_line_phase_1,ike_phase_1_type):
         Ike_type = "IKE-V2"
         analysis_output.append(f'[{str(i+1)}]::'+' PSK Mismatch for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please check PSK ')
 
+def _notify_no_proposal_chosen(i,line,comes_line_phase_1):
+    analysis_output.append(f'[{str(i+1)}]::'+' Peer connection: '+comes_line_phase_1+ ' is notifying a no proposal chosen or negotiation mismatch')
 
 def _gw_validation_fail(i,line,comes_line_phase_1,ike_phase_1_type):
     Ike_type = ''
@@ -429,11 +451,19 @@ def _phase_1_retrans_check_1(line,lines,i):
                 connection_match = re.search(connection_info_pattern, lines[k])
                 retransmit_match = re.search(retransmit_pattern, lines[k])
                 if connection_match:
-                    analysis_output.append(f'[{str(i+1)}]:: VPN with IP Connection as: '+connection_match.group(1)+' is down for Phase-1 due to retransmission failures \n  Possible issues could be: \n -> NAT-T blocked \n -> ISP blocking IKE \n -> port forward misconfig\n -> Network Overlay ID mismatch')
+                    if retransmit_match:
+                        retransmit_type = retransmit_match.group(1)
+                        if 'response' in retransmit_type or 'RESPONSE' in retransmit_type:
+                            analysis_output.append(f'[{str(k+1)}]::VPN with IP Connection as:: '+connection_match.group(1)+' is down due to negotiation or timeout')
+                        else:
+                            analysis_output.append(f'[{str(i+1)}]:: VPN with IP Connection as: '+connection_match.group(1)+' is down for Phase-1 due to retransmission failures \n  Possible issues could be: \n -> NAT-T blocked \n -> ISP blocking IKE \n -> port forward misconfig\n -> Network Overlay ID mismatch')
                 if retransmit_match:
                     retransmit_type = retransmit_match.group(1)
                     retransmit_info = retransmit_match.group(2)
-                    analysis_output.append(f'[{str(k+1)}]::Reason for VPN with IP Connection as: '+retransmit_info+' for retransmission is for: '+retransmit_type )
+                    if 'response' in retransmit_type or 'RESPONSE' in retransmit_type:
+                        analysis_output.append(f'[{str(k+1)}]::Reason for VPN with IP Connection as: '+retransmit_info+' could be for the follwing reasons for error: '+retransmit_type +' \nCheck \n->NAT-4500 blocked \n->authentication failures on the peer ' )
+                    else:
+                        analysis_output.append(f'[{str(k+1)}]::Reason for VPN with IP Connection as: '+retransmit_info+' for retransmission is for: '+retransmit_type )
 
 def parse_to_table(data_string):
     # Split the string into individual comparisons
