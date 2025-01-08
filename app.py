@@ -201,11 +201,9 @@ def ike_parser(text):
                 fail_line = None
 
         if "connection expiring due to phase1 down" in line and timeout_index == -1:
-            print('hit the con exp')
             _phase_1_retrans_check_1(line,lines,i)
 
         if "negotiation timeout, deleting" in line:
-            print('hit the old con exp')
             timeout_index = i
         
         if timeout_index != -1 and abs(i - timeout_index) <= 5:
@@ -266,6 +264,33 @@ def ike_parser(text):
             match = re.search(r"(\d+\.\d+\.\d+\.\d+:\d+->\d+\.\d+\.\d+\.\d+:\d+)", line)
             if match:
                 analysis_output.append(f'[{str(i+1)}]:: Network Unreachable for connection: {match.group(1)} Check: \n->Next hop IP \n->Route to the peer \n->Arp of next hop')
+
+        if 'ike' in line and 'send EAP message to FNBAM' in line:
+            context = lines[i:i + 15]
+            user, group, eap_id = None, None, None
+            for entry in context:
+                if 'EAP user' in entry:
+                    user = entry.split('"')[1]  # Extract "vpnuser"
+                if 'auth group' in entry:
+                    group = entry.split()[-1]  # Extract "local-users"
+                if 'EAP' in entry and 'pending' in entry:
+                    match = re.search(r"EAP (\d+)", entry)
+                    if match:
+                        eap_id = match.group(1)
+            if user and group  and eap_id:
+                analysis_output.append(f'   The auth log anlysis for the above connection \n    user: {user} group: {group}   Fnbamd-ID: {eap_id}')
+            if eap_id:
+                rest_lines = lines[i:]
+                for k,remaining_line in enumerate(rest_lines):
+                    
+                    if eap_id in remaining_line:
+                        analysis_output.append(f'   [{str(i+k+1)}]{remaining_line.strip()}')
+                    if eap_id in remaining_line and 'result' in remaining_line:
+                        context = rest_lines[k:k + 7]
+                        for info in context:
+                            if 'EAP' in info and 'result' not in info:
+                                analysis_output.append(f'       [{str(i+k+1)}]{info.strip()}')
+
 
 def _extract_lines(lines, start_line, end_line):
     input_string = "\n".join(lines[start_line-1:end_line])
@@ -496,7 +521,7 @@ def parse_to_table(data_string):
 
     # Pretty-print the table
     return tabulate(combined_df, headers="keys", tablefmt="grid")
- 
+
 # ENDS the business logic
 # '========================================================================================================================================'
 # '========================================================================================================================================'
