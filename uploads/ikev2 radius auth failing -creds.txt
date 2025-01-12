@@ -1,0 +1,272 @@
+FortiWiFi-61E # ike V=root:0: comes 10.21.4.174:1012->10.128.202.142:500,ifindex=6,vrf=0,len=409....
+ike V=root:0: IKEv2 exchange=SA_INIT id=970b8bb45d3f14b3/0000000000000000 len=409
+ike 0: in 970B8BB45D3F14B300000000000000002120220800000000000001992200005C0200002C010100040300000C0100000C800E00800300000802
+000002030000080300000200000008040000050000002C020100040300000C0100000C800E01000300000802000005030000080300000C00000008040000
+05280000C8000500008774D4701AF3CA5568CCDCEBFEC80D06F2B0D053023E88390A2DA69FDEB5C56CBB699DEBDC6F2B4EA7391572AE5E96BF8EA6D9A458
+D7EE8A451551A0CC07DED485C4832669DEC7C84DF445D13CFFD6EAC0612C7A7B39568DD4CD8E06DE2A52EA224FF4515BD5E2D0054DED8BC99ED94B10AAFA
+E3806193A25B9D8A50CFA610E4D19EF5D03E630B2E093109A9F3EAFE42AA8215AA689B8C49A1E6F231EFE78F8121EE5028DB27E62321D401345C9724262C
+9CD9A90344543687424636197CB7112B0000149FC4299AD84FFA5A361D76906189A2BB2B0000144C53427B6D465D1B337BB755A37A7FEF2B000014B4F01C
+A951E9DA8D0BAFBBD34AD3044E29000014C1DC4350476B98A429B91781914CA43E000000090000F05000
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: responder received SA_INIT msg
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: VID forticlient connect license 4C53427B6D465D1B337BB755A37A7FEF
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: VID Fortinet Endpoint Control B4F01CA951E9DA8D0BAFBBD34AD3044E
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: VID Forticlient EAP Extension C1DC4350476B98A429B91781914CA43E
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: received notify type VPN_NETWORK_ID
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: NETWORK ID : 0
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: incoming proposal:
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: proposal id = 1:
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:   protocol = IKEv2:
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:      encapsulation = IKEv2/none
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:         type=ENCR, val=AES_CBC (key_len = 128)
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:         type=INTEGR, val=AUTH_HMAC_SHA_96
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:         type=PRF, val=PRF_HMAC_SHA
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:         type=DH_GROUP, val=MODP1536.
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: proposal id = 2:
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:   protocol = IKEv2:
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:      encapsulation = IKEv2/none
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:         type=ENCR, val=AES_CBC (key_len = 256)
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:         type=INTEGR, val=AUTH_HMAC_SHA2_256_128
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:         type=PRF, val=PRF_HMAC_SHA2_256
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:         type=DH_GROUP, val=MODP1536.
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: matched proposal id 2
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: proposal id = 2:
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:   protocol = IKEv2:
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:      encapsulation = IKEv2/none
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:         type=ENCR, val=AES_CBC (key_len = 256)
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:         type=INTEGR, val=AUTH_HMAC_SHA2_256_128
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:         type=PRF, val=PRF_HMAC_SHA2_256
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544:         type=DH_GROUP, val=MODP1536.
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: lifetime=86400
+ike V=root:0:970b8bb45d3f14b3/0000000000000000:1544: SA proposal chosen, matched gateway ra-ipsec
+ike V=root:0:ra-ipsec:ra-ipsec: created connection: 0x7421138 6 10.128.202.142->10.21.4.174:1012.
+ike V=root:0:ra-ipsec:1544: FEC vendor ID received FEC but IP not set
+ike 0:ra-ipsec:1544: FCT EAP 2FA extension vendor ID received
+ike V=root:0:ra-ipsec:1544: responder preparing SA_INIT msg
+ike V=root:0:ra-ipsec:1544: generate DH public value request queued
+ike V=root:0:ra-ipsec:1544: responder preparing SA_INIT msg
+ike V=root:0:ra-ipsec:1544: compute DH shared secret request queued
+ike V=root:0:ra-ipsec:1544: responder preparing SA_INIT msg
+ike V=root:0:ra-ipsec:1544: create NAT-D hash local 10.128.202.142/500 remote 10.21.4.174/0
+ike 0:ra-ipsec:1544: out 970B8BB45D3F14B337FAFD7754815545212022200000000000000160220000300000002C020100040300000C0100000C800
+E01000300000802000005030000080300000C0000000804000005280000C800050000D4E7E6AEAB0591893759352C39CAA9534469D9D6A3807CC37D74D1D
+B42D3A322EE1E6877732FE00221EF28793C9465788A22C333A73514E82894005DCE8ED1FE5F910106FD796E9C538B04B90EDD1EE0CC0E094F5310D40632C
+28146C5EB6BCB37EFF023B6A435597466CEBF6BF9D4D9F6B25652E469BD46B14AB9816FB47CB341CEDC9A67999E7C06ACCAA6EB43F737A03A4E0B053F5C9
+303BFF5EAA1A69BC63C46D3FC3A6119791DBC25EDE2269D0F6671546194840B674E2F8EAD2FAA7F1829000014968C05A7D132E1BE1746BCD7AA3036E6290
+0001C00004004E9B9B4A5E967F25C5B91B920326F13720C1815C70000001C00004005230C0560F94A9E1FF320B583B82931807AB24DF9
+ike V=root:0:ra-ipsec:1544: sent IKE msg (SA_INIT_RESPONSE): 10.128.202.142:500->10.21.4.174:1012, len=352, vrf=0, id=970b8b
+b45d3f14b3/37fafd7754815545, oif=6
+ike 0:ra-ipsec:1544: IKE SA 970b8bb45d3f14b3/37fafd7754815545 SK_ei 32:59135B57B6C751AC6243CA9976133D17254897170405DF3D0645E
+1D388CEE92A
+ike 0:ra-ipsec:1544: IKE SA 970b8bb45d3f14b3/37fafd7754815545 SK_er 32:EA699CF985F4C31658CF6928BBD704585B5D894EC1140CCA93A29
+B79921B0CF5
+ike 0:ra-ipsec:1544: IKE SA 970b8bb45d3f14b3/37fafd7754815545 SK_ai 32:13E952499317CE1FFD175F2C8008A13D5C1153C7A111221219A90
+840BAB2B4A8
+ike 0:ra-ipsec:1544: IKE SA 970b8bb45d3f14b3/37fafd7754815545 SK_ar 32:04A6E8E069A77CD88C364858BDB1443BF524A2BD7B599869DBD8C
+4C3311AC339
+ike V=root:0: comes 10.21.4.174:1012->10.128.202.142:500,ifindex=6,vrf=0,len=544....
+ike V=root:0: IKEv2 exchange=AUTH id=970b8bb45d3f14b3/37fafd7754815545:00000001 len=544
+ike 0: in 970B8BB45D3F14B337FAFD77548155452E2023080000000100000220230002048E3D6B4433F28011919DE3586774365115A871CF3EB9B802B3
+F1E27D8A55E697CB9F08C487198ECE11760F4164B1CF8DE8C34C4C323C5E2F4C24D64B5127E642158B1E54B8CCC0E6FB4FBBC8168C62AE4847B499C8B4EB
+E2555DB747CB534565F6E9B26AC8416401C559C575956842C41F92A15CDE967D5D0CA3596CC544BBFE6DCFBC30B79862392DBB8938B0FF32F6B24AF411E3
+6A3979F3E7626CFD3772C04DC2AEDD1B5F59B81328FBFB341F8A600CB90F731F11FD11CD24BCCD4CDE75C9629EE6E609F5DFD8271DFF04E20EA51262E8BB
+6A5550C41FC5F81BE07D5952CCDD69789A01943DE702F027BE6307A3964B49FB0FA81B328526C08D9C55D79FD65432836E826D56FB1B4E860C204028C36D
+7C44500CCDE7BBCBD29AB7DC51AF7D2C01EC5807B913DE9EB1C3C7A35BBBFB3A9B6AD9EC6A2FCA8BE29D31233E0AC5B384616E31618249E5DA0417C3D6EC
+A5365A72AF186854AEB95C41048F1959F95F82C1428A048BDF82D337D439F9F9B71DA50B99C877D8AD37C0861C430D590377EE9DFE557E99E26A046A7329
+B66A95EF3987087189FFB3ACC7B32443BE60261BDD5AD3124C64B3463D488F6FB10E6701662A46D7329827919545284D4B7E716443A7B976CC2183404550
+E3FEB8F037A8C6854449D34927EA9C3284F544FA55A72AFE9845CF8F530555A22EFAADE6D7AA2B1751B2BCA32A828D37DA477BE01A
+ike 0:ra-ipsec:1544: dec 970B8BB45D3F14B337FAFD77548155452E20230800000001000001F12300000429000014020000006469616C75707261646
+9757329000008000040002F0000D50000F1005645523D310A4643545645523D372E342E312E313733360A5549443D3434383830343138363634303432384
+2393431423145303734383536373732330A49503D31302E32312E382E3138310A4D41433D30302D36322D36632D36312D35662D30323B0A484F53543D766
+9746F2D310A555345523D7669746F0A4F535645523D4D6963726F736F66742057696E646F77732031312050726F66657373696F6E616C2045646974696F6
+E2C2036342D62697420286275696C64203232363231290A5245475F5354415455533D300A002100005C01000000000700104643543830303232313037373
+333303800010000000200000003000000040000000D00000019000000080000000F0000000A0000000B000070010000540A0000540B00007000000070060
+000001900002C00005402000028010304035F8C487D0300000C0100000C800E00800300000803000002000000080500000000000028020304035F8C487D0
+300000C0100000C800E0100030000080300000C00000008050000002D00001801000000070000100000FFFF00000000FFFFFFFF000000180100000007000
+0100000FFFF00000000FFFFFFFF
+ike V=root:0:ra-ipsec:1544: responder received AUTH msg
+ike V=root:0:ra-ipsec:1544: processing notify type INITIAL_CONTACT
+ike V=root:0:ra-ipsec:1544: processing notify type FORTICLIENT_CONNECT
+ike V=root:0:ra-ipsec:1544: received FCT data len = 205, data = 'VER=1
+FCTVER=7.4.1.1736
+UID=448804186640428B941B1E0748567723
+IP=10.21.8.181
+MAC=00-62-6c-61-5f-02;
+HOST=vito-1
+USER=vito
+OSVER=Microsoft Windows 11 Professional Edition, 64-bit (build 22621)
+REG_STATUS=0
+'
+ike V=root:0:ra-ipsec:1544: received FCT-UID : 448804186640428B941B1E0748567723
+ike V=root:0:ra-ipsec:1544: received EMS SN :
+ike V=root:0:ra-ipsec:1544: received EMS tenant ID :
+ike V=root:0:ra-ipsec:1544: received peer identifier FQDN 'dialupradius'
+ike V=root:0:ra-ipsec:1544: re-validate gw ID
+ike V=root:0:ra-ipsec: change phase1 profile to ra-ipsec-radius
+ike V=root:0:ra-ipsec-radius:1544: gw validation OK
+ike V=root:0:ra-ipsec-radius:1544: responder preparing EAP identity request
+ike 0:ra-ipsec-radius:1544: enc 2700000C010000000A80CA8E3000002802000000DE4C20821D7D20E8D6514FA6B7230256E9607AFADAAABDD44D22
+7240C8B1E00A0000000901EC000501020102
+ike 0:ra-ipsec-radius:1544: out 970B8BB45D3F14B337FAFD77548155452E2023200000000100000080240000642D6188FC36666795363FECCF7733
+F35A357CFF27E0DE0564D0C874FEF93C47658EDD33E53630759E57D41AECEAB271331048C2F49AD8C52D3272CCBFE35EDD576DF281782E2BE4AAC8A503DD
+5B2167C002421D2E394A499CFBCBE862B8934953
+ike V=root:0:ra-ipsec-radius:1544: sent IKE msg (AUTH_RESPONSE): 10.128.202.142:500->10.21.4.174:1012, len=128, vrf=0, id=97
+0b8bb45d3f14b3/37fafd7754815545:00000001, oif=6
+ike V=root:0: comes 10.21.4.174:1012->10.128.202.142:500,ifindex=6,vrf=0,len=80....
+ike V=root:0: IKEv2 exchange=AUTH id=970b8bb45d3f14b3/37fafd7754815545:00000002 len=80
+ike 0: in 970B8BB45D3F14B337FAFD77548155452E202308000000020000005030000034E2D62DA1992D8FB1B046D831BAD41F687CFD897F78A3ACC53C
+C9FDF654665F873F32D41FC36B6060FB7F17636E3DBC55
+ike 0:ra-ipsec-radius:1544: dec 970B8BB45D3F14B337FAFD77548155452E202308000000020000002D300000040000000D02EC0009017669746F
+ike V=root:0:ra-ipsec-radius:1544: responder received EAP msg
+ike V=root:0:ra-ipsec-radius:1544: send EAP message to FNBAM
+ike V=root:0:ra-ipsec-radius:1544: initiating EAP authentication
+ike V=root:0:ra-ipsec-radius: EAP user "vito"
+[1738] handle_req-Rcvd auth req 799105187849 for vito in labDC-radius-ITAdmins opt=00000000 prot=7 svc=9
+[332] __compose_group_list_from_req-Group 'labDC-radius-ITAdmins', type 1
+[507] create_auth_session-Session created for req id 799105187849
+[590] fnbamd_cfg_get_tac_plus_list-
+[545] __fnbamd_cfg_get_tac_plus_list_by_group-
+[557] __fnbamd_cfg_get_tac_plus_list_by_group-Group 'labDC-radius-ITAdmins'
+[606] fnbamd_cfg_get_tac_plus_list-Total tac+ servers to try: 0
+[840] fnbamd_cfg_get_ldap_list-
+[756] __fnbamd_cfg_get_ldap_list_by_group-
+[856] fnbamd_cfg_get_ldap_list-Total LDAP servers to try: 0
+[416] ldap_start-Didn't find ldap servers
+[316] radius_start-eap_local=0
+[896] fnbamd_cfg_get_radius_list-
+[844] __fnbamd_cfg_get_radius_list_by_group-
+[858] __fnbamd_cfg_get_radius_list_by_group-Group 'labDC-radius-ITAdmins'
+[456] fnbamd_rad_get-vfid=0, name='labDC-radius'
+[805] __rad_auth_ctx_insert-Loaded RADIUS server 'labDC-radius'
+[863] __fnbamd_cfg_get_radius_list_by_group-Loaded RADIUS server 'labDC-radius' for usergroup 'labDC-radius-ITAdmins' (6)
+[818] __rad_auth_ctx_insert_all_usergroup-
+[918] fnbamd_cfg_get_radius_list-Total rad servers to try: 1
+[936] fnbamd_rad_get_auth_server-
+[295] fnbamd_radius_get_next_auth_prot-Next auth prot EAP
+[1025] __auth_ctx_svr_push-Added addr 10.21.1.100:1812 from rad 'labDC-radius'
+[853] __fnbamd_rad_get_next_addr-Next available address of rad 'labDC-radius': 10.21.1.100:1812.
+[1043] __auth_ctx_start-Connection starts labDC-radius:10.21.1.100, addr 10.21.1.100:1812 proto: UDP
+[231] __rad_udp_open-Opened radius socket 9, sa_family 2
+[868] __rad_conn_start-Socket 9 is created for rad 'labDC-radius'.
+[744] __rad_add_job_timer-
+[439] fnbamd_cfg_get_pop3_list-
+[417] __fnbamd_cfg_get_pop3_list_by_group-
+ike V=root:0:ra-ipsec-radius: EAP 799105187849 pending
+[422] __fnbamd_cfg_get_pop3_list_by_group-Group 'labDC-radius-ITAdmins'
+[449] fnbamd_cfg_get_pop3_list-Total pop3 servers to try: 0
+[481] fnbamd_cfg_get_ext_idp_list-
+[455] __fnbamd_cfg_get_ext_idp_list_by_group-
+[461] __fnbamd_cfg_get_ext_idp_list_by_group-Group 'labDC-radius-ITAdmins'
+[491] fnbamd_cfg_get_ext_idp_list-Total external identity provider servers to try: 0
+[433] start_remote_auth-Total 1 server(s) to try
+[1881] handle_req-r=4
+[765] __rad_rxtx-fd 9, state 1(Auth)
+[767] __rad_rxtx-Stop rad conn timer.
+[774] __rad_rxtx-
+[606] fnbamd_rad_make_access_request-
+[328] __create_access_request-Compose RADIUS request
+fnbamd_dbg_hex_pnt[49] EAP msg from client (9)-02 EC 00 09 01 76 69 74 6F
+[589] __create_access_request-Created RADIUS Access-Request. Len: 136.
+[1159] fnbamd_socket_update_interface-vfid is 0, intf mode is 0, intf name is , server address is 10.21.1.100:1812, source a
+ddress is null, protocol number is 17, oif id is 0
+[304] __rad_udp_send-oif=0, intf_sel.mode=0, intf_sel.name=
+[796] __rad_rxtx-Sent radius req to server 'labDC-radius': fd=9, IP=10.21.1.100(10.21.1.100:1812) code=1 id=37 len=136
+[805] __rad_rxtx-Start rad conn timer.
+[765] __rad_rxtx-fd 9, state 1(Auth)
+[767] __rad_rxtx-Stop rad conn timer.
+[808] __rad_rxtx-
+[382] __rad_udp_recv-Recved 90 bytes. Buf sz 8192
+[1144] __rad_chk_resp_authenticator-ret=0
+[1210] fnbamd_rad_validate_pkt-RADIUS resp code 11
+[835] __rad_rxtx-
+[1262] fnbamd_rad_process-Result from radius svr 'labDC-radius' is 2, req 799105187849
+fnbamd_dbg_hex_pnt[49] EAP msg from server (6)-01 ED 00 06 19 20
+[1451] fnbamd_rad_process-Challenged: 1, FTK_Challenge: 0, CHG_PWD: 0, Invaid_Digest: 0, State_Len: 36
+[239] fnbamd_comm_send_result-Sending result 2 (nid 0) for req 799105187849, len=6622
+[1164] fnbamd_rad_pause-Pausing labDC-radius:10.21.1.100.
+ike V=root:0:ra-ipsec-radius:1544 EAP 799105187849 result FNBAM_CHALLENGED
+ike V=root:0:ra-ipsec-radius: EAP challenged for user "vito"
+[1168] fnbamd_rad_pause-Stop rad conn timer.
+[721] __rad_del_job_timer-
+[1240] freeze_auth_session-
+ike V=root:0:ra-ipsec-radius:1544: responder preparing EAP pass through message
+ike 0:ra-ipsec-radius:1544: enc 0000000A01ED00061920050403020105
+ike 0:ra-ipsec-radius:1544: out 970B8BB45D3F14B337FAFD77548155452E2023200000000200000050300000346CF29DB2FB251411CFB5B3E16AC8
+B49E21BCFB315AA0B36A52BE595BB2E466BB508B2BDD517C00298E48154B21AEA0A9
+ike V=root:0:ra-ipsec-radius:1544: sent IKE msg (AUTH_RESPONSE): 10.128.202.142:500->10.21.4.174:1012, len=80, vrf=0, id=970
+b8bb45d3f14b3/37fafd7754815545:00000002, oif=6
+ike V=root:0: comes 10.21.4.174:1012->10.128.202.142:500,ifindex=6,vrf=0,len=80....
+ike V=root:0: IKEv2 exchange=AUTH id=970b8bb45d3f14b3/37fafd7754815545:00000003 len=80
+ike 0: in 970B8BB45D3F14B337FAFD77548155452E202308000000030000005030000034C2CB516CC01D745716D35D2F6CF85FDB33A08BFED7D9635E9C
+463961D9D6B452563685526F84116A4792FCDFA45464C7
+ike 0:ra-ipsec-radius:1544: dec 970B8BB45D3F14B337FAFD77548155452E202308000000030000002B300000040000000B02ED0007031A06
+ike V=root:0:ra-ipsec-radius:1544: responder received EAP msg
+ike V=root:0:ra-ipsec-radius:1544: send EAP message to FNBAM
+ike V=root:0:ra-ipsec-radius: EAP 799105187849 pending
+[2317] handle_req-Rcvd chal rsp for req 799105187849
+[1257] unfreeze_auth_session-
+[1056] fnbamd_auth_send_chal_rsp-svr_type=2, idx=0
+[1830] fnbamd_ldaps_destroy-
+[1019] fnbamd_tacs_destroy-
+[1243] fnbamd_rads_resume-
+[1205] fnbamd_rad_resume-labDC-radius:10.21.1.100, addr 10.21.1.100
+[1228] fnbamd_rad_resume-state 2.
+[744] __rad_add_job_timer-
+[765] __rad_rxtx-fd 9, state 2(Challenged)
+[767] __rad_rxtx-Stop rad conn timer.
+[774] __rad_rxtx-
+[678] fnbamd_rad_make_chal_request-
+[328] __create_access_request-Compose RADIUS request
+fnbamd_dbg_hex_pnt[49] EAP msg from client (7)-02 ED 00 07 03 1A 06
+[589] __create_access_request-Created RADIUS Access-Request. Len: 172.
+[1159] fnbamd_socket_update_interface-vfid is 0, intf mode is 0, intf name is , server address is 10.21.1.100:1812, source a
+ddress is null, protocol number is 17, oif id is 0
+[304] __rad_udp_send-oif=0, intf_sel.mode=0, intf_sel.name=
+[796] __rad_rxtx-Sent radius req to server 'labDC-radius': fd=9, IP=10.21.1.100(10.21.1.100:1812) code=1 id=38 len=172
+[805] __rad_rxtx-Start rad conn timer.
+[765] __rad_rxtx-fd 9, state 2(Challenged)
+[767] __rad_rxtx-Stop rad conn timer.
+[808] __rad_rxtx-
+[382] __rad_udp_recv-Recved 44 bytes. Buf sz 8192
+[1144] __rad_chk_resp_authenticator-ret=0
+[1210] fnbamd_rad_validate_pkt-RADIUS resp code 3
+[951] __rad_error-Ret 1, st = 2.
+[295] fnbamd_radius_get_next_auth_prot-Next auth prot ??
+[1000] __rad_error-
+[257] __rad_udp_close-closed.
+[887] __rad_conn_stop-Stop rad conn timer.
+[1262] fnbamd_rad_process-Result from radius svr 'labDC-radius' is 1, req 799105187849
+fnbamd_dbg_hex_pnt[49] EAP msg from server (4)-04 ED 00 04
+[1451] fnbamd_rad_process-Challenged: 0, FTK_Challenge: 0, CHG_PWD: 0, Invaid_Digest: 0, State_Len: 0
+[239] fnbamd_comm_send_result-Sending result 1 (nid 0) for req 799105187849, len=6620
+ike V=root:0:ra-ipsec-radius:1544 EAP 799105187849 result FNBAM_DENIED
+ike V=root:0:ra-ipsec-radius: EAP failed for user "vito"
+ike V=root:0:ra-ipsec-radius:1544: responder preparing EAP pass through message
+ike 0:ra-ipsec-radius:1544: enc 0000000804ED00040706050403020107
+ike 0:ra-ipsec-radius:1544: out 970B8BB45D3F14B337FAFD77548155452E202320000000030000005030000034352156FAB37CB8A0376BED97E172
+96FD96EEC0E8F5F9790AC3B36A7B097BDD92EB64CAF6C94C52A8F4B1B9B646719796
+ike V=root:0:ra-ipsec-radius:1544: sent IKE msg (AUTH_RESPONSE): 10.128.202.142:500->10.21.4.174:1012, len=80, vrf=0, id=970
+b8bb45d3f14b3/37fafd7754815545:00000003, oif=6
+ike V=root:0:ra-ipsec-radius: connection expiring due to EAP failure
+ike V=root:0:ra-ipsec-radius: going to be deleted
+[599] destroy_auth_session-delete session 799105187849
+[1260] fnbamd_rads_destroy-
+[516] fnbamd_rad_auth_ctx_free-Freeing 'labDC-radius' ctx
+[1132] fnbamd_rad_auth_ctx_uninit-
+[892] __rad_stop-
+[887] __rad_conn_stop-Stop rad conn timer.
+[721] __rad_del_job_timer-
+[364] fnbamd_rad_free-Freeing labDC-radius, ref:2
+[41] __rad_server_free-Freeing 10.21.1.100, ref:2
+[519] fnbamd_rad_auth_ctx_free-
+[1263] fnbamd_rads_destroy-
+[1830] fnbamd_ldaps_destroy-
+[1019] fnbamd_tacs_destroy-
+[889] fnbamd_pop3s_destroy-
+[1068] fnbamd_ext_idps_destroy-
+[2347] handle_req-Rcvd abort req for 799105187849
+[2362] handle_req-Can't abort, no active req 799105187849
+
+FortiWiFi-61E #
+FortiWiFi-61E #
+FortiWiFi-61E #
+FortiWiFi-61E # ike :shrank heap by 331776 bytes

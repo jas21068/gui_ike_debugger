@@ -29,7 +29,7 @@
     <h1>Analysis Result</h1>
     <pre>
 {% for result in results %}
-{{ result }}
+{{ result | safe }}
 {% endfor %}
     </pre>
     <a href="/">Go Back</a>

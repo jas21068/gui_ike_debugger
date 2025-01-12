@@ -56,6 +56,8 @@ def ike_parser(text):
     dst=''
     src_mis=''
     dst_mis=''
+    RED = '\033[91m'
+    RESET = '\033[0m'
     passive_mode_pattern = r"ignoring request to establish IPsec SA, gateway is in passive mode"
     connection_pattern = r"IPsec SA connect \d+ (\d+\.\d+\.\d+\.\d+->\d+\.\d+\.\d+\.\d+:\d+)"
     for i, line in enumerate(lines):
@@ -202,6 +204,12 @@ def ike_parser(text):
 
         if "connection expiring due to phase1 down" in line and timeout_index == -1:
             _phase_1_retrans_check_1(line,lines,i)
+        if "connection expiring due to phase1 down" in line and timeout_index != -1:
+            start_index_failure = comes_line_phase_1.index("comes")
+            failure_message = comes_line_phase_1[start_index_failure:]
+            for prev_line in lines[:i]:
+                if "EAP identity request" in prev_line:
+                    analysis_output.append(f'[{str(i+1)}]::VPN with IP Connection as:: '+failure_message+' is down due to bad PSK in EAP Request from clinet')
 
         if "negotiation timeout, deleting" in line:
             timeout_index = i
@@ -277,14 +285,47 @@ def ike_parser(text):
                     match = re.search(r"EAP (\d+)", entry)
                     if match:
                         eap_id = match.group(1)
+            if user and group==None  and eap_id==None:
+                analysis_output.append(f'   The auth log anlysis for the above connection \n    user: {user} group: Unknown   Fnbamd-ID: Unknown')
             if user and group  and eap_id:
                 analysis_output.append(f'   The auth log anlysis for the above connection \n    user: {user} group: {group}   Fnbamd-ID: {eap_id}')
+            if user and eap_id:
+                analysis_output.append(f'   The auth log anlysis for the above connection \n    user: {user} group: Unknown   Fnbamd-ID: {eap_id}')
+            if group  and eap_id:
+                analysis_output.append(f'   The auth log anlysis for the above connection \n    user: Unknown group: {group}   Fnbamd-ID: {eap_id}')                            
+            print(user)
             if eap_id:
                 rest_lines = lines[i:]
                 for k,remaining_line in enumerate(rest_lines):
                     
                     if eap_id in remaining_line:
                         analysis_output.append(f'   [{str(i+k+1)}]{remaining_line.strip()}')
+                    if 'fnbamd_rad_process-Result' in remaining_line:
+                        pattern = r"svr\s'([^']+)'\s.*?is\s(\d+)"
+                        match = re.search(pattern, remaining_line)
+                        if match:
+                            svr = match.group(1)  # Extracts 'EAP_PROXY'
+                            code = match.group(2)  # Extracts '1'
+                            if svr == 'EAP_PROXY':
+                                result = ''
+                                if code == '1':
+                                    result = 'denied'
+                                if code == '0':
+                                    result = 'success'
+                                if code == '2':
+                                    result = 'Challenged or still in progress or need more info'
+                                analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] Trying Local authentication with local-user and the current status is {result}</span>')
+                            else:
+                                if code == '1':
+                                    result = 'denied'
+                                if code == '0':
+                                    result = 'success'
+                                if code == '2':
+                                    result = 'Challenged or still in progress or need more info'
+                                analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] Trying radius authentication and the current status as {result}</span>')
+
+                        else:
+                            analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] Check the server response in the above line</span>')
                     if eap_id in remaining_line and 'result' in remaining_line:
                         context = rest_lines[k:k + 7]
                         for info in context:
@@ -500,15 +541,18 @@ def parse_to_table(data_string):
 
     # Parse each entry and extract incoming and local information
     for entry in entries:
-        incoming_part, local_part = entry.split(" | ")
+        try:
+            incoming_part, local_part = entry.split(" | ")
 
-        # Extract the key and value parts for incoming and local
-        incoming_key, incoming_val1, incoming_val2 = eval(incoming_part.split(": ")[1])
-        local_key, local_val1, local_val2 = eval(local_part.split(": ")[1])
+            # Extract the key and value parts for incoming and local
+            incoming_key, incoming_val1, incoming_val2 = eval(incoming_part.split(": ")[1])
+            local_key, local_val1, local_val2 = eval(local_part.split(": ")[1])
 
-        # Append the parsed values to the respective lists
-        incoming_data.append([incoming_key, incoming_val1, incoming_val2])
-        local_data.append([local_key, local_val1, local_val2])
+            # Append the parsed values to the respective lists
+            incoming_data.append([incoming_key, incoming_val1, incoming_val2])
+            local_data.append([local_key, local_val1, local_val2])
+        except:
+            return 'Please check if any VPN tunnels are configured for the above connection details'
 
     # Create DataFrames for Incoming and Local data
     incoming_df = pd.DataFrame(incoming_data, columns=["Key", "Value1", "Value2"])
@@ -573,4 +617,4 @@ def about():
 
 # Run the Flask app
 if __name__ == "__main__":
-    app.run(debug=True,host="0.0.0.0", port=8080)
+    app.run(debug=True,host="0.0.0.0", port=8888)
