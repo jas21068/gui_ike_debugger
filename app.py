@@ -99,7 +99,7 @@ def ike_parser(text):
             ipsec_lines = lines[-10:]
             ipsec_sa_pattern = re.compile(r"IPsec SA connect .* (\d+\.\d+\.\d+\.\d+->\d+\.\d+\.\d+\.\d+:\d+)")
             ipsec_connections = [match.group(1) for line in ipsec_lines if (match := ipsec_sa_pattern.search(line))]
-            analysis_output.append(f'[{str(i+1)}]:: No Policy found for connection as: {list(set(ipsec_connections))[0]}')
+            analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: No Policy found for connection as: {list(set(ipsec_connections))[0]} </span>')
 
         if 'no policy configured' in line and 'ignoring request to establish IPsec SA' not in line:
             _no_policy_configured(i,comes_line_phase_1)
@@ -107,7 +107,7 @@ def ike_parser(text):
             comes_line_phase_1 = None
         
         if "gw validation failed" in line:
-            print('BINGO')
+            # print('BINGO')
             last_10_lines = []
             start_index = max(i - 10, 0) 
             last_10_lines.append(line)
@@ -205,17 +205,22 @@ def ike_parser(text):
         if "connection expiring due to phase1 down" in line and timeout_index == -1:
             _phase_1_retrans_check_1(line,lines,i)
         if "connection expiring due to phase1 down" in line and timeout_index != -1:
-            start_index_failure = comes_line_phase_1.index("comes")
-            failure_message = comes_line_phase_1[start_index_failure:]
-            for prev_line in lines[:i]:
-                if "EAP identity request" in prev_line:
-                    analysis_output.append(f'[{str(i+1)}]::VPN with IP Connection as:: '+failure_message+' is down due to bad PSK in EAP Request from clinet')
+            if comes_line_phase_1:
+                start_index_failure = comes_line_phase_1.index("comes")
+                failure_message = comes_line_phase_1[start_index_failure:]
+                proceed = True
+                for prev_line in reversed(lines[:i]):
+                    if 'rad_conn_timeout-Connction' in prev_line:
+                        proceed = False
+                        analysis_output.append(f'<span style="color: orange;">[{str(i+1)}]::VPN with IP Connection as:: '+failure_message+' is down and highly likely due to Radius server timing out </span>')
+                    elif "EAP identity request" in prev_line and proceed==True:
+                        analysis_output.append(f'<span style="color: orange;">[{str(i+1)}]::VPN with IP Connection as:: '+failure_message+' is down and highly likely due to bad PSK in EAP Request from clinet </span>')
 
         if "negotiation timeout, deleting" in line:
             timeout_index = i
         
         if timeout_index != -1 and abs(i - timeout_index) <= 5:
-            print('hit the old con exp')
+            # print('hit the old con exp')
             if "connection expiring due to phase1 down" in line:
                 # Search for the connection info pattern in the log
                 _phase_1_retrans_check_1(line,lines,i)
@@ -227,7 +232,7 @@ def ike_parser(text):
             for j in range(i + 1, len(lines)):
                 match = re.search(connection_pattern, lines[j])
                 if match:
-                    analysis_output.append(f'[{str(i+1)}]:: Gateway in passive mode for connection: '+match.group(1))
+                    analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: Gateway in passive mode for connection: </span>'+match.group(1))
                     break
         
         # Check for rekey of phaase-2
@@ -236,7 +241,7 @@ def ike_parser(text):
             parts = line.split()
             for part in parts:
                 if "->" in part and ":" in part:
-                    analysis_output.append(f'[{str(i+1)}]:: Rekey connection found: {part}')
+                    analysis_output.append(f'<span style="color: yellow;">[{str(i+1)}]:: Rekey connection found: {part}</span>')
                     break
         # Rekey failures catch
         if 'rekey in progress' in line:
@@ -245,7 +250,7 @@ def ike_parser(text):
                 if 'RETRANSMIT_CREATE_CHILD' in lines[j]:
                     retransmit_count += 1
                 if retransmit_count >= 3:
-                    analysis_output.append(f'[{str(i+1)}]:: rekey in progress followed by 3 RETRANSMIT_CREATE_CHILD. Possible re-key failures')
+                    analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: rekey in progress followed by 3 RETRANSMIT_CREATE_CHILD. Possible re-key failures</span>')
 
         
         # Check for keepalives
@@ -264,14 +269,14 @@ def ike_parser(text):
 
             # Check if it meets the condition
             if keepalive_count >= 5:
-                analysis_output.append(f'[{str(i+1)}]:: 5 consecutive keep-alives detected for connection: {part}. Check: \n-> ISP issues \n->re-key issues \n-> Check if peer is Meraki')
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: 5 consecutive keep-alives detected for connection: {part}. Check:</span> \n-> ISP issues \n->re-key issues \n-> Check if peer is Meraki')
 
         # Check for network unreachable
         if "Network is unreachable" in line:
             # Use regex to extract the IP connection details
             match = re.search(r"(\d+\.\d+\.\d+\.\d+:\d+->\d+\.\d+\.\d+\.\d+:\d+)", line)
             if match:
-                analysis_output.append(f'[{str(i+1)}]:: Network Unreachable for connection: {match.group(1)} Check: \n->Next hop IP \n->Route to the peer \n->Arp of next hop')
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: Network Unreachable for connection: {match.group(1)} Check:</span> \n->Next hop IP \n->Route to the peer \n->Arp of next hop')
 
         if 'ike' in line and 'send EAP message to FNBAM' in line:
             context = lines[i:i + 15]
@@ -286,14 +291,13 @@ def ike_parser(text):
                     if match:
                         eap_id = match.group(1)
             if user and group==None  and eap_id==None:
-                analysis_output.append(f'   The auth log anlysis for the above connection \n    user: {user} group: Unknown   Fnbamd-ID: Unknown')
+                analysis_output.append(f'<span style="color: yellow;">   The auth log anlysis for the above connection \n    user: {user} group: Unknown   Fnbamd-ID: Unknown</span>')
             if user and group  and eap_id:
-                analysis_output.append(f'   The auth log anlysis for the above connection \n    user: {user} group: {group}   Fnbamd-ID: {eap_id}')
-            if user and eap_id:
-                analysis_output.append(f'   The auth log anlysis for the above connection \n    user: {user} group: Unknown   Fnbamd-ID: {eap_id}')
-            if group  and eap_id:
-                analysis_output.append(f'   The auth log anlysis for the above connection \n    user: Unknown group: {group}   Fnbamd-ID: {eap_id}')                            
-            print(user)
+                analysis_output.append(f'<span style="color: yellow;">   The auth log anlysis for the above connection \n    user: {user} group: {group}   Fnbamd-ID: {eap_id}</span>')
+            if user and eap_id and group==None:
+                analysis_output.append(f'<span style="color: yellow;">   The auth log anlysis for the above connection \n    user: {user} group: Unknown   Fnbamd-ID: {eap_id}</span>')
+            if group  and eap_id and user==None:
+                analysis_output.append(f'<span style="color: yellow;">   The auth log anlysis for the above connection \n    user: Unknown group: {group}   Fnbamd-ID: {eap_id}</span>')                            
             if eap_id:
                 rest_lines = lines[i:]
                 for k,remaining_line in enumerate(rest_lines):
@@ -355,13 +359,13 @@ def _phase_1_check(i,line,lines,comes_line_phase_1):
     start_index_failure = comes_line_phase_1.index("comes")
     failure_message = comes_line_phase_1[start_index_failure:]
     # Also get the connection for which SA proposal is chosen
-    analysis_output.append(f'[{str(i+1)}]::'+sa_proposal+' VPN with IP Connection as:'+failure_message+' is UP for phase-1')
+    analysis_output.append(f'<span style="color: green;">[{str(i+1)}]::'+sa_proposal+' VPN with IP Connection as:'+failure_message+' is UP for phase-1</span>')
 
 # Phase-2 check helper function
 def _phase_2_check(i,line,lines,comes_line_phase_1,selectors):
     start_index_failure = comes_line_phase_1.index("comes")
     failure_message = comes_line_phase_1[start_index_failure:]
-    analysis_output.append(f'[{str(i+1)}]::'+'VPN with IP Connection as -> '+failure_message+' is UP for phase-2 \n'+selectors)
+    analysis_output.append(f'<span style="color: green;">[{str(i+1)}]::'+'VPN with IP Connection as -> '+failure_message+' is UP for phase-2</span> \n'+selectors)
 
 # Phase-1/2 mismatch helper function
 def _phase_1_2_mismatch(i,line,comes_line_phase_1,ike_phase_1_type,Ike_param,NETWORK_ID):
@@ -404,10 +408,10 @@ def _phase_1_2_mismatch(i,line,comes_line_phase_1,ike_phase_1_type,Ike_param,NET
         if ("PFS is disabled" in Ike_param[0] and "PFS is disabled" not in Ike_param[1]):
             if "IKEv1" in ike_phase_1_type:
                 Ike_type = "IKE-V1"
-                analysis_output.append(f'[{str(i+1)}]::'+' Negotiation Failure for '+f'{Ike_type}'+ ' Phase-2 connection '+failure_message.split()[1]+' due to PFS being disabled in remote peer')
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' Negotiation Failure for '+f'{Ike_type}'+ ' Phase-2 connection '+failure_message.split()[1]+' due to PFS being disabled in remote peer</span>')
             if "IKEv2" in ike_phase_1_type:
                 Ike_type = "IKE-V2"
-                analysis_output.append(f'[{str(i+1)}]::'+' Negotiation Failure for '+f'{Ike_type}'+ ' Phase-2 connection '+failure_message.split()[1]+' due to PFS being disabled in remote peer')
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' Negotiation Failure for '+f'{Ike_type}'+ ' Phase-2 connection '+failure_message.split()[1]+' due to PFS being disabled in remote peer</span>')
             # turn on phase_2 flag
             phase_2=True
             
@@ -415,22 +419,22 @@ def _phase_1_2_mismatch(i,line,comes_line_phase_1,ike_phase_1_type,Ike_param,NET
         if ("PFS is disabled" in Ike_param[1] and "PFS is disabled" not in Ike_param[0]):
             if "IKEv1" in ike_phase_1_type:
                 Ike_type = "IKE-V1"
-                analysis_output.append(f'[{str(i+1)}]::'+' Negotiation Failure for '+f'{Ike_type}'+ ' Phase-2 connection '+failure_message.split()[1]+' due to PFS being disabled in local peer')
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' Negotiation Failure for '+f'{Ike_type}'+ ' Phase-2 connection '+failure_message.split()[1]+' due to PFS being disabled in local peer</span>')
             if "IKEv2" in ike_phase_1_type:
                 Ike_type = "IKE-V2"
-                analysis_output.append(f'[{str(i+1)}]::'+' Negotiation Failure for '+f'{Ike_type}'+ ' Phase-2 connection '+failure_message.split()[1]+' due to PFS being disabled in local peer')
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' Negotiation Failure for '+f'{Ike_type}'+ ' Phase-2 connection '+failure_message.split()[1]+' due to PFS being disabled in local peer</span>')
             # turn on phase_2 flag
             phase_2=True
     
     # only hit this statement if phase_2 remains false
     if "IKEv1" in ike_phase_1_type and phase_2==False:
         Ike_type = "IKE-V1"
-        analysis_output.append(f'[{str(i+1)}]::'+' Negotiation Failure for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' With mismatch as'+NETWORK_ID+'\n'+str(parse_to_table(mismatch_param)))
+        analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' Negotiation Failure for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' With mismatch as</span>'+NETWORK_ID+'\n'+str(parse_to_table(mismatch_param)))
 
     # only hit this statement if phase_2 remains false
     if "IKEv2" in ike_phase_1_type and phase_2==False:
         Ike_type = "IKE-V2"
-        analysis_output.append(f'[{str(i+1)}]::'+' Negotiation Failure for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' With mismatch as'+NETWORK_ID+'\n'+str(parse_to_table(mismatch_param)))
+        analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' Negotiation Failure for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' With mismatch as</span>'+NETWORK_ID+'\n'+str(parse_to_table(mismatch_param)))
 
 
 def _phase_1_psk_fail(i,line,comes_line_phase_1,ike_phase_1_type):
@@ -439,13 +443,13 @@ def _phase_1_psk_fail(i,line,comes_line_phase_1,ike_phase_1_type):
     failure_message = comes_line_phase_1[start_index_failure:]
     if "IKEv1" in ike_phase_1_type:
         Ike_type = "IKE-V1"
-        analysis_output.append(f'[{str(i+1)}]::'+' PSK Mismatch for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please check PSK ')
+        analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' PSK Mismatch for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please check PSK </span>')
     if "IKEv2" in ike_phase_1_type:
         Ike_type = "IKE-V2"
-        analysis_output.append(f'[{str(i+1)}]::'+' PSK Mismatch for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please check PSK ')
+        analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' PSK Mismatch for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please check PSK</span> ')
 
 def _notify_no_proposal_chosen(i,line,comes_line_phase_1):
-    analysis_output.append(f'[{str(i+1)}]::'+' Peer connection: '+comes_line_phase_1+ ' is notifying a no proposal chosen or negotiation mismatch')
+    analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' Peer connection: '+comes_line_phase_1+ ' is notifying a no proposal chosen or negotiation mismatch</span>')
 
 def _gw_validation_fail(i,line,comes_line_phase_1,ike_phase_1_type):
     Ike_type = ''
@@ -453,10 +457,10 @@ def _gw_validation_fail(i,line,comes_line_phase_1,ike_phase_1_type):
     failure_message = comes_line_phase_1[start_index_failure:]
     if "IKEv1" in ike_phase_1_type:
         Ike_type = "IKE-V1"
-        analysis_output.append(f'[{str(i+1)}]::'+' Gateway validation fail for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please Check: \n->peer ID \n->certificate settings \n->network ID')
+        analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' Gateway validation fail for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please Check:</span> \n->peer ID \n->certificate settings \n->network ID')
     if "IKEv2" in ike_phase_1_type:
         Ike_type = "IKE-V2"
-        analysis_output.append(f'[{str(i+1)}]::'' Gateway validation fail for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please Check: \n->peer ID \n->certificate settings \n->network ID')
+        analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'' Gateway validation fail for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please Check: </span>\n->peer ID \n->certificate settings \n->network ID')
 
 def _peer_id_fail(i,line,comes_line_phase_1,ike_phase_1_type):
     Ike_type = ''
@@ -464,16 +468,16 @@ def _peer_id_fail(i,line,comes_line_phase_1,ike_phase_1_type):
     failure_message = comes_line_phase_1[start_index_failure:]
     if "IKEv1" in ike_phase_1_type:
         Ike_type = "IKE-V1"
-        analysis_output.append(f'[{str(i+1)}]::'+' PEER ID fail for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please Check: ->peer ID')
+        analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' PEER ID fail for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please Check: ->peer ID</span>')
     if "IKEv2" in ike_phase_1_type:
         Ike_type = "IKE-V2"
-        analysis_output.append(f'[{str(i+1)}]::'+' PEER ID fail for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please Check: ->peer ID')
+        analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' PEER ID fail for '+f'{Ike_type}'+ ' Connection '+failure_message.split()[1]+' Please Check: ->peer ID</span>')
 
 
 def _phase_2_subset(i,line,lines,selectors):
     accepted_proposals = ''
     if i + 1 < len(lines):
-        analysis_output.append(f'[{str(i+1)}]:: phase-2 matched by intersection. Accepted proposals are: \n' + selectors + '\n advised to use matching selectors and not sub/super sets')
+        analysis_output.append(f'<span style="color: yellow;">[{str(i+1)}]:: phase-2 matched by intersection. Accepted proposals are: \n' + selectors + '\n advised to use matching selectors and not sub/super sets</span>')
 
 # phase_2 selector mismatch on responder
 def _phase_2_ts_mismatch_responder(i,line,lines,comes_line_phase_1,ike_phase_1_type,selectors):
@@ -482,10 +486,10 @@ def _phase_2_ts_mismatch_responder(i,line,lines,comes_line_phase_1,ike_phase_1_t
     if i + 1 < len(lines):
         if "IKEv1" in ike_phase_1_type:
             Ike_type = "IKE-V1"
-            analysis_output.append(f'[{str(i+1)}]:: phase2 selector mismatch for incoming traffic selectors \n' + selectors + '\n advised to check traffic selectors on initiatior for \n' + f'{Ike_type}' + ' connection ' + f'{failure_message}')
+            analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: phase2 selector mismatch for incoming traffic selectors</span> \n' + selectors + '\n advised to check traffic selectors on initiatior for \n' + f'{Ike_type}' + ' connection ' + f'{failure_message}')
         if "IKEv2" in ike_phase_1_type:
             Ike_type = "IKE-V2"
-            analysis_output.append(f'[{str(i+1)}]:: phase2 selector mismatch for incoming traffic selectors \n' + selectors + '\n advised to check traffic selectors on initiatior for \n' + f'{Ike_type}' + ' connection ' + f'{failure_message}')
+            analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: phase2 selector mismatch for incoming traffic selectors</span> \n' + selectors + '\n advised to check traffic selectors on initiatior for \n' + f'{Ike_type}' + ' connection ' + f'{failure_message}')
 
 # phase_2 selector mismatch on initiator
 def _phase_2_ts_mismatch_initiator(i,line,lines,comes_line_phase_1,ike_phase_1_type):
@@ -493,15 +497,15 @@ def _phase_2_ts_mismatch_initiator(i,line,lines,comes_line_phase_1,ike_phase_1_t
     failure_message = comes_line_phase_1[start_index_failure:]
     if "IKEv1" in ike_phase_1_type:
         Ike_type = "IKE-V1"
-        analysis_output.append(f'[{str(i+1)}]:: phase2 selector mismatch \n advised to check traffic selectors on responder for \n' + f'{Ike_type}' + ' connection ' + f'{failure_message}')
+        analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: phase2 selector mismatch \n advised to check traffic selectors on responder for \n' + f'{Ike_type}' + ' connection ' + f'{failure_message}</span>')
     if "IKEv2" in ike_phase_1_type:
         Ike_type = "IKE-V2"
-        analysis_output.append(f'[{str(i+1)}]:: phase2 selector mismatch \n advised to check traffic selectors on responder for \n' + f'{Ike_type}' + ' connection ' + f'{failure_message}')
+        analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: phase2 selector mismatch \n advised to check traffic selectors on responder for \n' + f'{Ike_type}' + ' connection ' + f'{failure_message}</span>')
 
 def _no_policy_configured(i,comes_line_phase_1):
     start_index_failure = comes_line_phase_1.index("comes")
     failure_message = comes_line_phase_1[start_index_failure:]
-    analysis_output.append(f'[{str(i+1)}]:: No Policy is Configured for connection'+failure_message)
+    analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: No Policy is Configured for connection</span>'+failure_message)
 
 # check for retrans for phase-1 down
 def _phase_1_retrans_check_1(line,lines,i):
@@ -520,9 +524,9 @@ def _phase_1_retrans_check_1(line,lines,i):
                     if retransmit_match:
                         retransmit_type = retransmit_match.group(1)
                         if 'response' in retransmit_type or 'RESPONSE' in retransmit_type:
-                            analysis_output.append(f'[{str(k+1)}]::VPN with IP Connection as:: '+connection_match.group(1)+' is down due to negotiation or timeout')
+                            analysis_output.append(f'<span style="color: red;">[{str(k+1)}]::VPN with IP Connection as:: '+connection_match.group(1)+' is down due to negotiation or timeout</span>')
                         else:
-                            analysis_output.append(f'[{str(i+1)}]:: VPN with IP Connection as: '+connection_match.group(1)+' is down for Phase-1 due to retransmission failures \n  Possible issues could be: \n -> NAT-T blocked \n -> ISP blocking IKE \n -> port forward misconfig\n -> Network Overlay ID mismatch')
+                            analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: VPN with IP Connection as: '+connection_match.group(1)+' is down for Phase-1 due to retransmission failures</span> \n  Possible issues could be: \n -> NAT-T blocked \n -> ISP blocking IKE \n -> port forward misconfig\n -> Network Overlay ID mismatch')
                 if retransmit_match:
                     retransmit_type = retransmit_match.group(1)
                     retransmit_info = retransmit_match.group(2)
