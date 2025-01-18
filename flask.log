@@ -123,3 +123,10 @@ AttributeError: 'NoneType' object has no attribute 'index'
 192.168.1.76 - - [17/Jan/2025 11:14:55] "GET / HTTP/1.1" 200 -
 192.168.1.76 - - [17/Jan/2025 11:15:15] "POST / HTTP/1.1" 200 -
 192.168.1.76 - - [17/Jan/2025 11:15:20] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+192.168.1.76 - - [18/Jan/2025 10:36:05] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 10:36:21] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 10:36:49] "GET / HTTP/1.1" 200 -

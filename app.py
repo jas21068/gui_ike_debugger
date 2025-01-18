@@ -304,6 +304,10 @@ def ike_parser(text):
                     
                     if eap_id in remaining_line:
                         analysis_output.append(f'   [{str(i+k+1)}]{remaining_line.strip()}')
+                    if eap_id in remaining_line and "FNBAM_DENIED" in remaining_line:
+                        last_10_lines = rest_lines[max(0, k - 9):k + 1]
+                        if any("find_matched_usr_grps-Failed group matching" in l for l in last_10_lines):
+                            analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] Fnbamd failing due to possible group mismatch</span>')
                     if 'fnbamd_rad_process-Result' in remaining_line:
                         pattern = r"svr\s'([^']+)'\s.*?is\s(\d+)"
                         match = re.search(pattern, remaining_line)
