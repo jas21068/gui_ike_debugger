@@ -23,6 +23,7 @@
             font-size: 3rem;
             color: #d32f2f; /* Fortinet red */
             margin-bottom: 20px;
+            margin-top: 500px;
             animation: slideIn 1s ease-out;
             letter-spacing: 2px;
         }
@@ -173,6 +174,23 @@
         </form>
     </div>
 
+    <div class="scenarios-section">
+        <center><h2>Upcoming Enhancements</h2></center>
+        <button class="accordion">RADIUS  (IKEv1)</button>
+        <div class="panel">
+            <ul>
+                <li>Scenarios involving RADIUS authentication specifically for IKE-v1.</li>
+            </ul>
+        </div>
+        <button class="accordion">SAML  (IKEv1/v2)</button>
+        <div class="panel">
+            <ul>
+                <li>Detection and troubleshooting for SAML authentication in IKE scenarios.</li>
+            </ul>
+        </div>
+    </div>
+
+
     <!-- Separate Section for Supported Scenarios -->
     <div class="scenarios-section">
         <center><h2>Supported Scenarios</h2></center>
@@ -235,6 +253,23 @@
             </ul>
         </div>
 
+        <button class="accordion">ClientScenarios (IKEv1)</button>
+        <div class="panel">
+            <ul>
+                <li>LDAP fnbamd detection</li>
+                <li>Local fnbamd detection</li>
+                <li>Server timeouts</li>
+            </ul>
+        </div>        
+
+        <button class="accordion">ClientScenarios (IKEv2)</button>
+        <div class="panel">
+            <ul>
+                <li>Radius issues with EAP proxy</li>
+                <li>Local authentication</li>
+                <li>Server timeouts</li>
+            </ul>
+        </div>
         <button class="accordion">Phase-2 Scenarios (IKEv2)</button>
         <div class="panel">
             <ul>
