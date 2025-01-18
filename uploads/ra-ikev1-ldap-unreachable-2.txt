@@ -1,0 +1,367 @@
+FortiWiFi-61E #
+FortiWiFi-61E #
+FortiWiFi-61E #
+FortiWiFi-61E # di de en
+
+FortiWiFi-61E # 2025-01-15 08:48:42.784809 ike V=root:0: comes 10.21.4.174:1012->10.128.202.142:500,ifindex=6,vrf=0,len=513....
+2025-01-15 08:48:42.784964 ike V=root:0: IKEv1 exchange=Aggressive id=18744307c41dacf3/0000000000000000 len=513 vrf=0
+2025-01-15 08:48:42.785040 ike 0: in 18744307C41DACF30000000000000000011004000000000000000201040000640000000100000001000000580101000203000
+02801010000800B0001000C00040001518080010007800E00808003000180020002800400050000002802010000800B0001000C00040001518080010007800E01008003000
+180020004800400050A0000C4AA00EC37EB94B4FDC5314949808F54501C7D7325E44229D688EB6344520971DD22AB4D9EE85228BD046CB1524F2AAA2807EDACAA314C98FDD
+63C753BD5595ED877FAA0BD7B7BF163E868E808C0DA2C97C4A6F20BC70D25B46F40589E83B347476529ACAB34235C4A4FD8EFDEAA2CBCD716423C1F0B059E90258DC08C236
+8602F93D38E50EFFBF0F9B2B8688C0E541B64BB4C6FEC78F81A741786BF6170C2CF09F2C187712F1D96CC9D44AF7B26301424F3BDECBCF0E530A11C8B038B9699FB1B05000
+0149824D6DDC6ECA0C170A9D98ABE2ED7CF0D00001102000000696B6576316C6461700D00001412F5F28C457168A9702D9FE274CC01000D0000144A131C81070358455C572
+8F20E95452F0D000014CD60464335DF21F87CFDB2FC68B6A4480D00001490CB80913EBB696E086381B5EC427B1F0D00000C09002689DFD6B7120D000014AFCAD71368A1F1C
+96B8696FC775701000D0000144C53427B6D465D1B337BB755A37A7FEF00000014B4F01CA951E9DA8D0BAFBBD34AD3044E
+2025-01-15 08:48:42.785197 ike V=root:0:18744307c41dacf3/0000000000000000:35398: responder: aggressive mode get 1st message...
+2025-01-15 08:48:42.785282 ike V=root:0:18744307c41dacf3/0000000000000000:35398: VID CISCO-UNITY 12F5F28C457168A9702D9FE274CC0100
+2025-01-15 08:48:42.785383 ike V=root:0:18744307c41dacf3/0000000000000000:35398: VID RFC 3947 4A131C81070358455C5728F20E95452F
+2025-01-15 08:48:42.785461 ike V=root:0:18744307c41dacf3/0000000000000000:35398: VID draft-ietf-ipsec-nat-t-ike-02 CD60464335DF21F87CFDB2F
+C68B6A448
+2025-01-15 08:48:42.785544 ike V=root:0:18744307c41dacf3/0000000000000000:35398: VID draft-ietf-ipsec-nat-t-ike-02\n 90CB80913EBB696E08638
+1B5EC427B1F
+2025-01-15 08:48:42.785624 ike V=root:0:18744307c41dacf3/0000000000000000:35398: VID draft-ietf-ipsra-isakmp-xauth-06.txt 09002689DFD6B712
+2025-01-15 08:48:42.785695 ike V=root:0:18744307c41dacf3/0000000000000000:35398: VID DPD AFCAD71368A1F1C96B8696FC77570100
+2025-01-15 08:48:42.785766 ike V=root:0:18744307c41dacf3/0000000000000000:35398: VID forticlient connect license 4C53427B6D465D1B337BB755A
+37A7FEF
+2025-01-15 08:48:42.785836 ike V=root:0:18744307c41dacf3/0000000000000000:35398: VID Fortinet Endpoint Control B4F01CA951E9DA8D0BAFBBD34AD
+3044E
+2025-01-15 08:48:42.785894 ike V=root:0::35398: received peer identifier FQDN 'ikev1ldap'
+2025-01-15 08:48:42.786160 ike V=root:0: IKEv1 Aggressive, comes 10.21.4.174:1012->10.128.202.142 6
+2025-01-15 08:48:42.786260 ike V=root:0:18744307c41dacf3/0000000000000000:35398: negotiation result
+2025-01-15 08:48:42.786332 ike V=root:0:18744307c41dacf3/0000000000000000:35398: proposal id = 1:
+2025-01-15 08:48:42.786388 ike V=root:0:18744307c41dacf3/0000000000000000:35398:   protocol id = ISAKMP:
+2025-01-15 08:48:42.786444 ike V=root:0:18744307c41dacf3/0000000000000000:35398:      trans_id = KEY_IKE.
+2025-01-15 08:48:42.786499 ike V=root:0:18744307c41dacf3/0000000000000000:35398:      encapsulation = IKE/none
+2025-01-15 08:48:42.786553 ike V=root:0:18744307c41dacf3/0000000000000000:35398:         type=OAKLEY_ENCRYPT_ALG, val=AES_CBC, key-len=256
+2025-01-15 08:48:42.786610 ike V=root:0:18744307c41dacf3/0000000000000000:35398:         type=OAKLEY_HASH_ALG, val=SHA2_256.
+2025-01-15 08:48:42.786666 ike V=root:0:18744307c41dacf3/0000000000000000:35398:         type=AUTH_METHOD, val=PRESHARED_KEY.
+2025-01-15 08:48:42.786722 ike V=root:0:18744307c41dacf3/0000000000000000:35398:         type=OAKLEY_GROUP, val=MODP1536.
+2025-01-15 08:48:42.786777 ike V=root:0:18744307c41dacf3/0000000000000000:35398: ISAKMP SA lifetime=86400
+2025-01-15 08:48:42.786850 ike V=root:0:18744307c41dacf3/0000000000000000:35398: SA proposal chosen, matched gateway ikev1-ldap
+2025-01-15 08:48:42.786942 ike V=root:0:ikev1-ldap:ikev1-ldap: created connection: 0x740c458 6 10.128.202.142->10.21.4.174:1012.
+2025-01-15 08:48:42.787020 ike V=root:0:ikev1-ldap:35398: DPD negotiated
+2025-01-15 08:48:42.787106 ike V=root:0:ikev1-ldap:35398: XAUTHv6 negotiated
+2025-01-15 08:48:42.787159 ike V=root:0:ikev1-ldap:35398: peer supports UNITY
+2025-01-15 08:48:42.787210 ike V=root:0:ikev1-ldap:35398: enable FortiClient license check
+2025-01-15 08:48:42.787265 ike V=root:0:ikev1-ldap:35398: enable FortiClient endpoint compliance check, use 169.254.2.1
+2025-01-15 08:48:42.787320 ike V=root:0:ikev1-ldap:35398: selected NAT-T version: RFC 3947
+2025-01-15 08:48:42.787398 ike V=root:0:ikev1-ldap:35398: generate DH public value request queued
+2025-01-15 08:48:42.787574 ike V=root:0:ikev1-ldap:35398: compute DH shared secret request queued
+2025-01-15 08:48:42.789000 ike V=root:0:ikev1-ldap:35398: cookie 18744307c41dacf3/114178799aa3f88b
+2025-01-15 08:48:42.789242 ike 0:ikev1-ldap:35398: ISAKMP SA 18744307c41dacf3/114178799aa3f88b key 32:70FD501060D1D262FE2A3BD88A5C8974217A
+03EC11D0CFCFF942E364ACF6BEA5
+2025-01-15 08:48:42.789399 ike 0:ikev1-ldap:35398: out 18744307C41DACF3114178799AA3F88B01100400000000000000022C0400003C0000000100000001000
+00030010100010000002802010000800B0001000C00040001518080010007800E01008003000180020004800400050A0000C4D18E1C21C86EB896E6DD443053210D088A604
+3CC0663E948B87512AF4576C6005A3E27E2FCE76FDDAF0B6909E44C9DEF94D5585D60C0793C15D49441861B2CA4A8540986F61E7A02B6EF02068F4888E02BC708AED7E5815
+47569B32363E4589FDBBA2771132EE332460F55F3D90F7533089D49995A08879BF80E6B8B02AB55749F8E1854FA97DF13BABFD74DF19CD7797FE79E65CF2FFB626EDA2F4DE
+DC662D775C49001F89B84B93A491EBF4F0D1A0D7064F70B407DBBAB31B3968A3C5660D905000014E39A38DEB97E011CFBA53E56C1CA52F50800000C010000000A80CA8E0D0
+0002457F8DBAD5D489BC11FC8284C0173D505734F67F3EB46D7E4DB24D155D57FA89E140000144A131C81070358455C5728F20E95452F14000024C0573ED6826DE8A02B57B
+DA5624D69374D01F1A1D4B5B722080C75A693C644130D0000247EC850FCD5C1BF7C8343199AF8CD0E553DC7E34012B2E48224E28D5ECD3762420D000014AFCAD71368A1F1C
+96B8696FC775701000D00000C09002689DFD6B7120D00001412F5F28C457168A9702D9FE274CC02040D0000144C53427B6D465D1B337BB755A37A7FEF0D000014B4F01CA95
+1E9DA8D0BAFBBD34AD3044E000000148299031757A36082C6A621DE00000000
+2025-01-15 08:48:42.789598 ike V=root:0:ikev1-ldap:35398: sent IKE msg (agg_r1send): 10.128.202.142:500->10.21.4.174:1012, len=556, vrf=0,
+ id=18744307c41dacf3/114178799aa3f88b
+2025-01-15 08:48:42.903725 ike V=root:0: comes 10.21.4.174:64917->10.128.202.142:4500,ifindex=6,vrf=0,len=176....
+2025-01-15 08:48:42.903849 ike V=root:0: IKEv1 exchange=Aggressive id=18744307c41dacf3/114178799aa3f88b len=172 vrf=0
+2025-01-15 08:48:42.903910 ike 0: in 18744307C41DACF3114178799AA3F88B0810040100000000000000AC6385D7E6041464FCD80B2DF678DE4D2B410ED79DB0219
+0ED4FBCCBEC0B10CA3F0FD5F1C307501EBF920A48D1C0909399E8E9F466AEB21AD0B33A9F2AC8A2F6E47C33A5722419302F6ECCD9C4968E82EF8EED3C57D5DCCDF0C854681
+949579480F12AA7525C36A199049115CD4C46D89AD32977CA8E988D28B833C84101A692F4E9EDAC9B4455D0FCBA870A11203EE884
+2025-01-15 08:48:42.904005 ike V=root:0:ikev1-ldap:35398: responder: aggressive mode get 2nd response...
+2025-01-15 08:48:42.904139 ike 0:ikev1-ldap:35398: dec 18744307C41DACF3114178799AA3F88B0810040100000000000000AC14000024D019A7A0E96F1CCFB85
+88FB001105C0FF4C6BBA341402B61D4A45FC29945BE6A14000024B7947B1C1BB27D00740D4DD3E79E3C8D18AA11C9D8B12139D0CACE55A814EC7C0B0000247E8B44DB527A3
+4E71EF2ED1A0A074526FF15AD591C2293F758E222590D3098620000001C000000010110600218744307C41DACF3114178799AA3F88BB591918FE9B3C707
+2025-01-15 08:48:42.904218 ike V=root:0:ikev1-ldap:35398: received NAT-D payload type 20
+2025-01-15 08:48:42.904290 ike V=root:0:ikev1-ldap:35398: received NAT-D payload type 20
+2025-01-15 08:48:42.904351 ike V=root:0:ikev1-ldap:35398: received p1 notify type INITIAL-CONTACT
+2025-01-15 08:48:42.904463 ike V=root:0:ikev1-ldap:35398: PSK authentication succeeded
+2025-01-15 08:48:42.904517 ike V=root:0:ikev1-ldap:35398: authentication OK
+2025-01-15 08:48:42.904568 ike V=root:0:ikev1-ldap:35398: NAT detected: PEER
+2025-01-15 08:48:42.904734 ike V=root:0:ikev1-ldap:35398: remote port change 1012 -> 64917
+2025-01-15 08:48:42.904809 ike V=root:0:ikev1-ldap: mode-cfg allocate 192.168.59.10/0.0.0.0
+2025-01-15 08:48:42.904863 ike V=root:0:ikev1-ldap: IPv6 pool is not configured
+2025-01-15 08:48:42.904919 ike V=root:0:ikev1-ldap: adding new dynamic tunnel for 10.21.4.174:64917
+2025-01-15 08:48:42.905044 ike V=root:0:ikev1-ldap_0: tunnel created tun_id 192.168.59.10/::10.0.0.29 remote_location 0.0.0.0
+2025-01-15 08:48:42.905264 ike V=root:0:ikev1-ldap_0: added new dynamic tunnel for 10.21.4.174:64917
+2025-01-15 08:48:42.905336 ike V=root:0:ikev1-ldap_0:35398: established IKE SA 18744307c41dacf3/114178799aa3f88b
+2025-01-15 08:48:42.905443 ike V=root:0:ikev1-ldap_0:35398: check peer route: if_addr4_rcvd=0, if_addr6_rcvd=0, mode_cfg=0
+2025-01-15 08:48:42.905589 ike V=root:0:ikev1-ldap_0:35398: processing INITIAL-CONTACT
+2025-01-15 08:48:42.905645 ike V=root:0:ikev1-ldap_0: flushing
+2025-01-15 08:48:42.905739 ike V=root:0:ikev1-ldap_0: flushed
+2025-01-15 08:48:42.905794 ike V=root:0:ikev1-ldap_0:35398: processed INITIAL-CONTACT
+2025-01-15 08:48:42.905846 ike V=root:0:ikev1-ldap_0:35398: initiating XAUTH.
+2025-01-15 08:48:42.905934 ike V=root:0:ikev1-ldap_0:35398: sending XAUTH request
+2025-01-15 08:48:42.906110 ike 0:ikev1-ldap_0:35398: enc 18744307C41DACF3114178799AA3F88B081006010CADF2F3000000540E000024B7D1C6400CBCC8447
+DA20E42218A627EE8AD1A5DC413A2697A766024CDED2B89000000140100CF06C088000040890000408A0000
+2025-01-15 08:48:42.906212 ike 0:ikev1-ldap_0:35398: out 18744307C41DACF3114178799AA3F88B081006010CADF2F30000005C693E1871C2C1D57362DE732D9
+606B24A5D4BA2C65B794F7A45027656BE33CED91179DAB4C5C95E4775EB71DF9661E1C081593EBDA94F50358D34CBAC4DFD353B
+2025-01-15 08:48:42.906348 ike V=root:0:ikev1-ldap_0:35398: sent IKE msg (cfg_send): 10.128.202.142:4500->10.21.4.174:64917, len=92, vrf=0
+, id=18744307c41dacf3/114178799aa3f88b:0cadf2f3
+2025-01-15 08:48:42.906489 ike V=root:0:ikev1-ldap_0:35398: peer has not completed XAUTH exchange
+2025-01-15 08:48:42.907783 ike V=root:0: comes 10.21.4.174:64917->10.128.202.142:4500,ifindex=6,vrf=0,len=112....
+2025-01-15 08:48:42.907867 ike V=root:0: IKEv1 exchange=Mode config id=18744307c41dacf3/114178799aa3f88b:0cadf2f3 len=108 vrf=0
+2025-01-15 08:48:42.907922 ike 0: in 18744307C41DACF3114178799AA3F88B081006010CADF2F30000006C97D258D5BD875E366C9343790FFF602D20E652CB7E280
+AFEC1DC1D2F79A7EC747831A4D55590CFABC1ABFDF475D2D445351F40A82CB47A84868F9505E9A138A4F01321FFC752CECF7C28E029A9AA1671
+2025-01-15 08:48:42.908021 ike 0:ikev1-ldap_0:35398: dec 18744307C41DACF3114178799AA3F88B081006010CADF2F30000006C0E000024133A6A07A8EB1C5AC
+1A8F684563D2A90AEF566A3D6B1EAC139B8508D95806FB20000001F0200CF06C0880000408900047669746F408A000766677421313233FFCBB79EA3AE9C96C28ED7D10C
+2025-01-15 08:48:42.908138 ike V=root:0:ikev1-ldap_0:35398: received XAUTH_USER_NAME 'vito' length 4
+2025-01-15 08:48:42.908197 ike V=root:0:ikev1-ldap_0:35398: received XAUTH_USER_PASSWORD length 7
+2025-01-15 08:48:42.908253 ike V=root:0:ikev1-ldap_0: XAUTH user "vito"
+2025-01-15 08:48:42 [1738] handle_req-Rcvd auth req 799105187906 for vito in labDC-ldap-ITAdmins opt=00000000 prot=4 svc=2
+2025-01-15 08:48:42 [332] __compose_group_list_from_req-Group 'labDC-ldap-ITAdmins', type 1
+2025-01-15 08:48:42 [760] fnbamd_saml_auth_cache_lookup-Authneticating 'vito'.
+2025-01-15 08:48:42 [507] create_auth_session-Session created for req id 799105187906
+2025-01-15 08:48:42 [353] auth_local-started for vito
+2025-01-15 08:48:42 [425] auth_local-No conclusion, FNBAM_UNKNOWN
+2025-01-15 08:48:42 [590] fnbamd_cfg_get_tac_plus_list-
+2025-01-15 08:48:42 [545] __fnbamd_cfg_get_tac_plus_list_by_group-
+2025-01-15 08:48:42 [557] __fnbamd_cfg_get_tac_plus_list_by_group-Group 'labDC-ldap-ITAdmins'
+2025-01-15 08:48:42 [606] fnbamd_cfg_get_tac_plus_list-Total tac+ servers to try: 0
+2025-01-15 08:48:42 [840] fnbamd_cfg_get_ldap_list-
+2025-01-15 08:48:42 [756] __fnbamd_cfg_get_ldap_list_by_group-
+2025-01-15 08:48:42 [348] fnbamd_ldap_get-vfid=0, name='labDC-ldap'
+2025-01-15 08:48:42 [818] __fnbamd_cfg_get_ldap_list_by_group-Loaded LDAP server 'labDC-ldap' for usergroup 'labDC-ldap-ITAdmins' (8)
+2025-01-15 08:48:42 [856] fnbamd_cfg_get_ldap_list-Total LDAP servers to try: 1
+2025-01-15 08:48:42 [1751] fnbamd_ldap_auth_ctx_init-User: vito, password query: 0, group list query: 1, group only: 0, UPN query: 0, user
+ domain query: 0
+2025-01-15 08:48:42 [874] fnbamd_ldap_get_auth_server-
+2025-01-15 08:48:42 [1704] __auth_ctx_svr_push-Added addr 10.21.1.123:389 from LDAP 'labDC-ldap'
+2025-01-15 08:48:42 [1536] __fnbamd_ldap_get_next_addr-Next available address of LDAP 'labDC-ldap': 10.21.1.123:389.
+2025-01-15 08:48:42 [1722] __auth_ctx_start-Connection starts labDC-ldap:10.21.1.123, addr 10.21.1.123:389
+2025-01-15 08:48:42 [1420] __ldap_tcps_open-vfid 0, addr 10.21.1.123, src_ip , ssl_opt 0
+2025-01-15 08:48:42 [1159] fnbamd_socket_update_interface-vfid is 0, intf mode is 0, intf name is , server address is 10.21.1.123:389, sou
+rce address is null, protocol number is 6, oif id is 0
+2025-01-15 08:48:42 [1443] __ldap_tcps_open-oif=0, intf_sel.mode=0, intf_sel.name=
+2025-01-15 08:48:42 [1458] __ldap_tcps_open-Still connecting 10.21.1.123.
+2025-01-15 08:48:42 [1475] __ldap_tcps_open-Start ldap conn timer.
+2025-01-15 08:48:42 [1551] __ldap_conn_start-Socket 9 is created for LDAP 'labDC-ldap'.
+2025-01-15 08:48:42 [662] __ldap_add_job_timer-
+2025-01-15 08:48:42 [316] radius_start-eap_local=0
+2025-01-15 08:48:42 [896] fnbamd_cfg_get_radius_list-
+2025-01-15 08:48:42 [844] __fnbamd_cfg_get_radius_list_by_group-
+2025-01-15 08:48:42.915446 ike V=root:0:ikev1-ldap_0: XAUTH 799105187906 pending
+2025-01-15 08:48:42 [858] __fnbamd_cfg_get_radius_list_by_group-Group 'labDC-ldap-ITAdmins'
+2025-01-15 08:48:42 [818] __rad_auth_ctx_insert_all_usergroup-
+2025-01-15 08:48:42 [918] fnbamd_cfg_get_radius_list-Total rad servers to try: 0
+2025-01-15 08:48:42 [439] fnbamd_cfg_get_pop3_list-
+2025-01-15 08:48:42 [417] __fnbamd_cfg_get_pop3_list_by_group-
+2025-01-15 08:48:42 [422] __fnbamd_cfg_get_pop3_list_by_group-Group 'labDC-ldap-ITAdmins'
+2025-01-15 08:48:42 [449] fnbamd_cfg_get_pop3_list-Total pop3 servers to try: 0
+2025-01-15 08:48:42 [481] fnbamd_cfg_get_ext_idp_list-
+2025-01-15 08:48:42 [455] __fnbamd_cfg_get_ext_idp_list_by_group-
+2025-01-15 08:48:42 [461] __fnbamd_cfg_get_ext_idp_list_by_group-Group 'labDC-ldap-ITAdmins'
+2025-01-15 08:48:42 [491] fnbamd_cfg_get_ext_idp_list-Total external identity provider servers to try: 0
+2025-01-15 08:48:42 [433] start_remote_auth-Total 1 server(s) to try
+2025-01-15 08:48:42 [1881] handle_req-r=4
+2025-01-15 08:48:43 [594] __ldap_conn_timeout-Connction with labDC-ldap:10.21.1.123 timed out.
+2025-01-15 08:48:43 [1642] __ldap_error-Ret 10, st = 0.
+2025-01-15 08:48:43 [1656] __ldap_error-Conn failed.
+2025-01-15 08:48:43 [905] fnbamd_cfg_ldap_update_reachability-10.21.1.123, conn_fails 2/5
+2025-01-15 08:48:43 [1663] __ldap_error-
+2025-01-15 08:48:43 [1485] __ldap_tcps_close-closed.
+2025-01-15 08:48:43 [1567] __ldap_conn_stop-Stop ldap conn timer.
+2025-01-15 08:48:43 [1605] __ldap_try_next_addr-No more addr to try.
+2025-01-15 08:48:43 [1672] __ldap_error-
+2025-01-15 08:48:43 [1619] __ldap_try_next_server-
+2025-01-15 08:48:43 [1572] __ldap_stop-
+2025-01-15 08:48:43 [1567] __ldap_conn_stop-Stop ldap conn timer.
+2025-01-15 08:48:43 [653] __ldap_del_job_timer-
+2025-01-15 08:48:43 [1132] __ldap_auth_ctx_clear-
+2025-01-15 08:48:43 [1120] __ldap_auth_ctx_reset-
+2025-01-15 08:48:43 [874] fnbamd_ldap_get_auth_server-
+2025-01-15 08:48:43 [29] __ldap_server_free-Freeing 10.21.1.123, ref:2
+2025-01-15 08:48:43 [1625] __ldap_try_next_server-No more server to try.
+2025-01-15 08:48:43 [1679] __ldap_error-
+2025-01-15 08:48:43 [1567] __ldap_conn_stop-Stop ldap conn timer.
+2025-01-15 08:48:43 [2614] fnbamd_ldap_result-Error (10) for req 799105187906
+2025-01-15 08:48:43 [239] fnbamd_comm_send_result-Sending result 10 (nid 0) for req 799105187906, len=2524
+2025-01-15 08:48:43.420143 ike V=root:0:ikev1-ldap_0:35398: XAUTH 799105187906 result FNBAM_TIMEOUT
+2025-01-15 08:48:43.420261 ike V=root:0:ikev1-ldap_0: XAUTH failed for user "vito", retry(2).
+2025-01-15 08:48:43.420441 ike V=root:0:ikev1-ldap_0:35398: sending XAUTH request
+2025-01-15 08:48:43.420710 ike 0:ikev1-ldap_0:35398: enc 18744307C41DACF3114178799AA3F88B08100601AD965A6E000000540E000024C382DCF1F4F6FD9BC
+E020BCE6970C06AE6C8E5348629E5FB2C9BC0C372F32A900000001401005CDBC088000040890000408A0000
+2025-01-15 08:48:43.420846 ike 0:ikev1-ldap_0:35398: out 18744307C41DACF3114178799AA3F88B08100601AD965A6E0000005C2C5EEC680CAB0C07178581457
+DCB5FE2969DBBB485A62689470E403AC395B205621098B37FCDB4FB4DA0F2EBC06F13F7054DDFE65D6D4E6109C020098619241B
+2025-01-15 08:48:43.421024 ike V=root:0:ikev1-ldap_0:35398: sent IKE msg (cfg_send): 10.128.202.142:4500->10.21.4.174:64917, len=92, vrf=0
+, id=18744307c41dacf3/114178799aa3f88b:ad965a6e
+2025-01-15 08:48:43 [599] destroy_auth_session-delete session 799105187906
+2025-01-15 08:48:43 [1263] fnbamd_rads_destroy-
+2025-01-15 08:48:43 [1830] fnbamd_ldaps_destroy-
+2025-01-15 08:48:43 [442] fnbamd_ldap_auth_ctx_free-Freeing 'labDC-ldap' ctx
+2025-01-15 08:48:43 [1789] fnbamd_ldap_auth_ctx_uninit-
+2025-01-15 08:48:43 [1572] __ldap_stop-
+2025-01-15 08:48:43 [1567] __ldap_conn_stop-Stop ldap conn timer.
+2025-01-15 08:48:43 [1132] __ldap_auth_ctx_clear-
+2025-01-15 08:48:43 [1120] __ldap_auth_ctx_reset-
+2025-01-15 08:48:43 [249] fnbamd_ldap_free-Freeing labDC-ldap, ref:2
+2025-01-15 08:48:43 [1019] fnbamd_tacs_destroy-
+2025-01-15 08:48:43 [889] fnbamd_pop3s_destroy-
+2025-01-15 08:48:43 [1068] fnbamd_ext_idps_destroy-
+2025-01-15 08:48:45.435417 ike 0:ikev1-ldap_0:35398: out 18744307C41DACF3114178799AA3F88B08100601AD965A6E0000005C2C5EEC680CAB0C07178581457
+DCB5FE2969DBBB485A62689470E403AC395B205621098B37FCDB4FB4DA0F2EBC06F13F7054DDFE65D6D4E6109C020098619241B
+2025-01-15 08:48:45.435628 ike V=root:0:ikev1-ldap_0:35398: sent IKE msg (CFG_RETRANS): 10.128.202.142:4500->10.21.4.174:64917, len=92, vr
+f=0, id=18744307c41dacf3/114178799aa3f88b:ad965a6e
+2025-01-15 08:48:49.445428 ike 0:ikev1-ldap_0:35398: out 18744307C41DACF3114178799AA3F88B08100601AD965A6E0000005C2C5EEC680CAB0C07178581457
+DCB5FE2969DBBB485A62689470E403AC395B205621098B37FCDB4FB4DA0F2EBC06F13F7054DDFE65D6D4E6109C020098619241B
+2025-01-15 08:48:49.445641 ike V=root:0:ikev1-ldap_0:35398: sent IKE msg (CFG_RETRANS): 10.128.202.142:4500->10.21.4.174:64917, len=92, vr
+f=0, id=18744307c41dacf3/114178799aa3f88b:ad965a6e
+2025-01-15 08:48:52.785592 ike :shrank heap by 335872 bytes
+2025-01-15 08:48:54 [2369] handle_req-Rcvd auth_cert req id=1164169840042, len=3411, opt=8
+2025-01-15 08:48:54 [1161] __cert_auth_ctx_init-req_id=1164169840042, opt=8
+2025-01-15 08:48:54 [103] __cert_chg_st- 'Init'
+2025-01-15 08:48:54 [201] fnbamd_cert_load_certs_from_req-2 cert(s) in req.
+2025-01-15 08:48:54 [839] __cert_init-req_id=1164169840042
+2025-01-15 08:48:54 [888] __cert_build_chain-req_id=1164169840042
+2025-01-15 08:48:54 [319] fnbamd_chain_build-Chain discovery, opt 0x19, cur total 1
+2025-01-15 08:48:54 [337] fnbamd_chain_build-Following depth 0
+2025-01-15 08:48:54 [382] fnbamd_chain_build-Extend chain by builtin CA cache. (good)
+2025-01-15 08:48:54 [337] fnbamd_chain_build-Following depth 1
+2025-01-15 08:48:54 [351] fnbamd_chain_build-Self-sign detected.
+2025-01-15 08:48:55 [99] __cert_chg_st- 'Init' -> 'Validation'
+2025-01-15 08:48:55 [1010] __cert_verify-req_id=1164169840042
+2025-01-15 08:48:55 [1011] __cert_verify-Chain is complete.
+2025-01-15 08:48:55 [481] fnbamd_builtin_cert_check-Following cert chain depth 0
+2025-01-15 08:48:55 [504] fnbamd_builtin_cert_check-Builtin CRL found: a15c7b4f
+2025-01-15 08:48:55 [481] fnbamd_builtin_cert_check-Following cert chain depth 1
+2025-01-15 08:48:55 [1051] __cert_verify_do_next-req_id=1164169840042
+2025-01-15 08:48:55 [99] __cert_chg_st- 'Validation' -> 'Done'
+2025-01-15 08:48:55 [1098] __cert_done-req_id=1164169840042
+2025-01-15 08:48:55 [1523] fnbamd_auth_session_done-Session done, id=1164169840042
+2025-01-15 08:48:55 [1144] __fnbamd_cert_auth_run-Exit, req_id=1164169840042
+2025-01-15 08:48:55 [1566] create_auth_cert_session-fnbamd_cert_auth_init returns 0, id=1164169840042
+2025-01-15 08:48:55 [1479] auth_cert_success-id=1164169840042
+2025-01-15 08:48:55 [1256] fnbamd_cert_auth_copy_cert_status-req_id=1164169840042
+2025-01-15 08:48:55 [1383] fnbamd_cert_auth_copy_cert_status-Cert st 210, req_id=1164169840042
+2025-01-15 08:48:55 [239] fnbamd_comm_send_result-Sending result 0 (nid 0) for req 1164169840042, len=2520
+2025-01-15 08:48:55 [1354] destroy_auth_cert_session-id=1164169840042
+2025-01-15 08:48:55 [1228] fnbamd_cert_auth_uninit-req_id=1164169840042
+2025-01-15 08:48:55 [1830] fnbamd_ldaps_destroy-
+2025-01-15 08:48:55 [1263] fnbamd_rads_destroy-
+2025-01-15 08:48:55 [2369] handle_req-Rcvd auth_cert req id=1164169840043, len=3411, opt=8
+2025-01-15 08:48:55 [1161] __cert_auth_ctx_init-req_id=1164169840043, opt=8
+2025-01-15 08:48:55 [103] __cert_chg_st- 'Init'
+2025-01-15 08:48:55 [201] fnbamd_cert_load_certs_from_req-2 cert(s) in req.
+2025-01-15 08:48:55 [839] __cert_init-req_id=1164169840043
+2025-01-15 08:48:55 [888] __cert_build_chain-req_id=1164169840043
+2025-01-15 08:48:55 [319] fnbamd_chain_build-Chain discovery, opt 0x19, cur total 1
+2025-01-15 08:48:55 [337] fnbamd_chain_build-Following depth 0
+2025-01-15 08:48:55 [382] fnbamd_chain_build-Extend chain by builtin CA cache. (good)
+2025-01-15 08:48:55 [337] fnbamd_chain_build-Following depth 1
+2025-01-15 08:48:55 [351] fnbamd_chain_build-Self-sign detected.
+2025-01-15 08:48:55 [99] __cert_chg_st- 'Init' -> 'Validation'
+2025-01-15 08:48:55 [1010] __cert_verify-req_id=1164169840043
+2025-01-15 08:48:55 [1011] __cert_verify-Chain is complete.
+2025-01-15 08:48:55 [481] fnbamd_builtin_cert_check-Following cert chain depth 0
+2025-01-15 08:48:55 [504] fnbamd_builtin_cert_check-Builtin CRL found: a15c7b4f
+2025-01-15 08:48:55 [481] fnbamd_builtin_cert_check-Following cert chain depth 1
+2025-01-15 08:48:55 [1051] __cert_verify_do_next-req_id=1164169840043
+2025-01-15 08:48:55 [99] __cert_chg_st- 'Validation' -> 'Done'
+2025-01-15 08:48:55 [1098] __cert_done-req_id=1164169840043
+2025-01-15 08:48:55 [1523] fnbamd_auth_session_done-Session done, id=1164169840043
+2025-01-15 08:48:55 [1144] __fnbamd_cert_auth_run-Exit, req_id=1164169840043
+2025-01-15 08:48:55 [1566] create_auth_cert_session-fnbamd_cert_auth_init returns 0, id=1164169840043
+2025-01-15 08:48:55 [1479] auth_cert_success-id=1164169840043
+2025-01-15 08:48:55 [1256] fnbamd_cert_auth_copy_cert_status-req_id=1164169840043
+2025-01-15 08:48:55 [1383] fnbamd_cert_auth_copy_cert_status-Cert st 210, req_id=1164169840043
+2025-01-15 08:48:55 [239] fnbamd_comm_send_result-Sending result 0 (nid 0) for req 1164169840043, len=2520
+2025-01-15 08:48:55 [1354] destroy_auth_cert_session-id=1164169840043
+2025-01-15 08:48:55 [1228] fnbamd_cert_auth_uninit-req_id=1164169840043
+2025-01-15 08:48:55 [1830] fnbamd_ldaps_destroy-
+2025-01-15 08:48:55 [1263] fnbamd_rads_destroy-
+2025-01-15 08:48:55 [2369] handle_req-Rcvd auth_cert req id=1164169840044, len=3411, opt=8
+2025-01-15 08:48:55 [1161] __cert_auth_ctx_init-req_id=1164169840044, opt=8
+2025-01-15 08:48:55 [103] __cert_chg_st- 'Init'
+2025-01-15 08:48:55 [201] fnbamd_cert_load_certs_from_req-2 cert(s) in req.
+2025-01-15 08:48:55 [839] __cert_init-req_id=1164169840044
+2025-01-15 08:48:55 [888] __cert_build_chain-req_id=1164169840044
+2025-01-15 08:48:55 [319] fnbamd_chain_build-Chain discovery, opt 0x19, cur total 1
+2025-01-15 08:48:55 [337] fnbamd_chain_build-Following depth 0
+2025-01-15 08:48:55 [382] fnbamd_chain_build-Extend chain by builtin CA cache. (good)
+2025-01-15 08:48:55 [337] fnbamd_chain_build-Following depth 1
+2025-01-15 08:48:55 [351] fnbamd_chain_build-Self-sign detected.
+2025-01-15 08:48:55 [99] __cert_chg_st- 'Init' -> 'Validation'
+2025-01-15 08:48:55 [1010] __cert_verify-req_id=1164169840044
+2025-01-15 08:48:55 [1011] __cert_verify-Chain is complete.
+2025-01-15 08:48:55 [481] fnbamd_builtin_cert_check-Following cert chain depth 0
+2025-01-15 08:48:55 [504] fnbamd_builtin_cert_check-Builtin CRL found: a15c7b4f
+2025-01-15 08:48:55 [481] fnbamd_builtin_cert_check-Following cert chain depth 1
+2025-01-15 08:48:55 [1051] __cert_verify_do_next-req_id=1164169840044
+2025-01-15 08:48:55 [99] __cert_chg_st- 'Validation' -> 'Done'
+2025-01-15 08:48:55 [1098] __cert_done-req_id=1164169840044
+2025-01-15 08:48:55 [1523] fnbamd_auth_session_done-Session done, id=1164169840044
+2025-01-15 08:48:55 [1144] __fnbamd_cert_auth_run-Exit, req_id=1164169840044
+2025-01-15 08:48:55 [1566] create_auth_cert_session-fnbamd_cert_auth_init returns 0, id=1164169840044
+2025-01-15 08:48:55 [1479] auth_cert_success-id=1164169840044
+2025-01-15 08:48:55 [1256] fnbamd_cert_auth_copy_cert_status-req_id=1164169840044
+2025-01-15 08:48:55 [1383] fnbamd_cert_auth_copy_cert_status-Cert st 210, req_id=1164169840044
+2025-01-15 08:48:55 [239] fnbamd_comm_send_result-Sending result 0 (nid 0) for req 1164169840044, len=2520
+2025-01-15 08:48:55 [1354] destroy_auth_cert_session-id=1164169840044
+2025-01-15 08:48:55 [1228] fnbamd_cert_auth_uninit-req_id=1164169840044
+2025-01-15 08:48:55 [1830] fnbamd_ldaps_destroy-
+2025-01-15 08:48:55 [1263] fnbamd_rads_destroy-
+2025-01-15 08:48:55 [2369] handle_req-Rcvd auth_cert req id=1164169840045, len=3411, opt=8
+2025-01-15 08:48:55 [1161] __cert_auth_ctx_init-req_id=1164169840045, opt=8
+2025-01-15 08:48:55 [103] __cert_chg_st- 'Init'
+2025-01-15 08:48:55 [201] fnbamd_cert_load_certs_from_req-2 cert(s) in req.
+2025-01-15 08:48:55 [839] __cert_init-req_id=1164169840045
+2025-01-15 08:48:55 [888] __cert_build_chain-req_id=1164169840045
+2025-01-15 08:48:55 [319] fnbamd_chain_build-Chain discovery, opt 0x19, cur total 1
+2025-01-15 08:48:55 [337] fnbamd_chain_build-Following depth 0
+2025-01-15 08:48:55 [382] fnbamd_chain_build-Extend chain by builtin CA cache. (good)
+2025-01-15 08:48:55 [337] fnbamd_chain_build-Following depth 1
+2025-01-15 08:48:55 [351] fnbamd_chain_build-Self-sign detected.
+2025-01-15 08:48:55 [99] __cert_chg_st- 'Init' -> 'Validation'
+2025-01-15 08:48:55 [1010] __cert_verify-req_id=1164169840045
+2025-01-15 08:48:55 [1011] __cert_verify-Chain is complete.
+2025-01-15 08:48:55 [481] fnbamd_builtin_cert_check-Following cert chain depth 0
+2025-01-15 08:48:55 [504] fnbamd_builtin_cert_check-Builtin CRL found: a15c7b4f
+2025-01-15 08:48:55 [481] fnbamd_builtin_cert_check-Following cert chain depth 1
+2025-01-15 08:48:55 [1051] __cert_verify_do_next-req_id=1164169840045
+2025-01-15 08:48:55 [99] __cert_chg_st- 'Validation' -> 'Done'
+2025-01-15 08:48:55 [1098] __cert_done-req_id=1164169840045
+2025-01-15 08:48:55 [1523] fnbamd_auth_session_done-Session done, id=1164169840045
+2025-01-15 08:48:55 [1144] __fnbamd_cert_auth_run-Exit, req_id=1164169840045
+2025-01-15 08:48:55 [1566] create_auth_cert_session-fnbamd_cert_auth_init returns 0, id=1164169840045
+2025-01-15 08:48:55 [1479] auth_cert_success-id=1164169840045
+2025-01-15 08:48:55 [1256] fnbamd_cert_auth_copy_cert_status-req_id=1164169840045
+2025-01-15 08:48:55 [1383] fnbamd_cert_auth_copy_cert_status-Cert st 210, req_id=1164169840045
+2025-01-15 08:48:55 [239] fnbamd_comm_send_result-Sending result 0 (nid 0) for req 1164169840045, len=2520
+2025-01-15 08:48:55 [1354] destroy_auth_cert_session-id=1164169840045
+2025-01-15 08:48:55 [1228] fnbamd_cert_auth_uninit-req_id=1164169840045
+2025-01-15 08:48:55 [1830] fnbamd_ldaps_destroy-
+2025-01-15 08:48:55 [1263] fnbamd_rads_destroy-
+2025-01-15 08:48:55 [2369] handle_req-Rcvd auth_cert req id=1164169840046, len=3411, opt=8
+2025-01-15 08:48:55 [1161] __cert_auth_ctx_init-req_id=1164169840046, opt=8
+2025-01-15 08:48:55 [103] __cert_chg_st- 'Init'
+2025-01-15 08:48:55 [201] fnbamd_cert_load_certs_from_req-2 cert(s) in req.
+2025-01-15 08:48:55 [839] __cert_init-req_id=1164169840046
+2025-01-15 08:48:55 [888] __cert_build_chain-req_id=1164169840046
+2025-01-15 08:48:55 [319] fnbamd_chain_build-Chain discovery, opt 0x19, cur total 1
+2025-01-15 08:48:55 [337] fnbamd_chain_build-Following depth 0
+2025-01-15 08:48:55 [382] fnbamd_chain_build-Extend chain by builtin CA cache. (good)
+2025-01-15 08:48:55 [337] fnbamd_chain_build-Following depth 1
+2025-01-15 08:48:55 [351] fnbamd_chain_build-Self-sign detected.
+2025-01-15 08:48:55 [99] __cert_chg_st- 'Init' -> 'Validation'
+2025-01-15 08:48:55 [1010] __cert_verify-req_id=1164169840046
+2025-01-15 08:48:55 [1011] __cert_verify-Chain is complete.
+2025-01-15 08:48:55 [481] fnbamd_builtin_cert_check-Following cert chain depth 0
+2025-01-15 08:48:55 [504] fnbamd_builtin_cert_check-Builtin CRL found: a15c7b4f
+2025-01-15 08:48:55 [481] fnbamd_builtin_cert_check-Following cert chain depth 1
+2025-01-15 08:48:55 [1051] __cert_verify_do_next-req_id=1164169840046
+2025-01-15 08:48:55 [99] __cert_chg_st- 'Validation' -> 'Done'
+2025-01-15 08:48:55 [1098] __cert_done-req_id=1164169840046
+2025-01-15 08:48:55 [1523] fnbamd_auth_session_done-Session done, id=1164169840046
+2025-01-15 08:48:55 [1144] __fnbamd_cert_auth_run-Exit, req_id=1164169840046
+2025-01-15 08:48:55 [1566] create_auth_cert_session-fnbamd_cert_auth_init returns 0, id=1164169840046
+2025-01-15 08:48:55 [1479] auth_cert_success-id=1164169840046
+2025-01-15 08:48:55 [1256] fnbamd_cert_auth_copy_cert_status-req_id=1164169840046
+2025-01-15 08:48:55 [1383] fnbamd_cert_auth_copy_cert_status-Cert st 210, req_id=1164169840046
+2025-01-15 08:48:55 [239] fnbamd_comm_send_result-Sending result 0 (nid 0) for req 1164169840046, len=2520
+2025-01-15 08:48:55 [1354] destroy_auth_cert_session-id=1164169840046
+2025-01-15 08:48:55 [1228] fnbamd_cert_auth_uninit-req_id=1164169840046
+2025-01-15 08:48:55 [1830] fnbamd_ldaps_destroy-
+2025-01-15 08:48:55 [1263] fnbamd_rads_destroy-
+2025-01-15 08:48:57.455418 ike 0:ikev1-ldap_0:35398: out 18744307C41DACF3114178799AA3F88B08100601AD965A6E0000005C2C5EEC680CAB0C07178581457
+DCB5FE2969DBBB485A62689470E403AC395B205621098B37FCDB4FB4DA0F2EBC06F13F7054DDFE65D6D4E6109C020098619241B
+2025-01-15 08:48:57.455633 ike V=root:0:ikev1-ldap_0:35398: sent IKE msg (CFG_RETRANS): 10.128.202.142:4500->10.21.4.174:64917, len=92, vr
+f=0, id=18744307c41dacf3/114178799aa3f88b:ad965a6e

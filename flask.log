@@ -130,3 +130,47 @@ AttributeError: 'NoneType' object has no attribute 'index'
 192.168.1.76 - - [18/Jan/2025 10:36:05] "GET / HTTP/1.1" 200 -
 192.168.1.76 - - [18/Jan/2025 10:36:21] "POST / HTTP/1.1" 200 -
 192.168.1.76 - - [18/Jan/2025 10:36:49] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 10:39:02] "POST / HTTP/1.1" 200 -
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+192.168.1.76 - - [18/Jan/2025 12:26:45] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:27:10] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:27:16] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:27:22] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:27:52] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:27:58] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:28:01] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:28:11] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:28:47] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:28:53] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:29:20] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:29:28] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:29:48] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:29:54] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:30:13] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:30:21] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:30:35] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:30:42] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:31:03] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:31:12] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:31:39] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:31:47] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 12:32:06] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994

@@ -278,15 +278,89 @@ def ike_parser(text):
             if match:
                 analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: Network Unreachable for connection: {match.group(1)} Check:</span> \n->Next hop IP \n->Route to the peer \n->Arp of next hop')
 
+#IKE v1 auth logic
+        if 'ike' in line and 'sending XAUTH request' in line:
+            context = lines[i:i + 150]
+            user, group, eap_id = None, None, None
+            for entry in context:
+                if 'XAUTH user' in entry:
+                    user = entry.split('"')[1]  # Extract "vpnuser"
+                if 'auth group' in entry:
+                    group = entry.split()[-1]  # Extract "local-users"
+                if 'XAUTH' in entry and 'pending' in entry and 'ike' in entry:
+                    match = re.search(r"XAUTH (\d+)", entry)
+                    if match:
+                        eap_id = match.group(1)
+            if user and group==None  and eap_id==None:
+                analysis_output.append(f'   The auth log anlysis for the above connection \n    user: {user} group: Unknown   Fnbamd-ID: Unknown')
+            if user and group  and eap_id:
+                analysis_output.append(f'   The auth log anlysis for the above connection \n    user: {user} group: {group}   Fnbamd-ID: {eap_id}')
+            if user and eap_id:
+                analysis_output.append(f'   The auth log anlysis for the above connection \n    user: {user} group: Unknown   Fnbamd-ID: {eap_id}')
+            if group  and eap_id:
+                analysis_output.append(f'   The auth log anlysis for the above connection \n    user: Unknown group: {group}   Fnbamd-ID: {eap_id}')                            
+            if eap_id:
+                rest_lines = lines[i:]
+                for k,remaining_line in enumerate(rest_lines):
+                    
+                    if eap_id in remaining_line:
+                        analysis_output.append(f'   [{str(i+k+1)}]{remaining_line.strip()}')
+                    if eap_id in remaining_line and "FNBAM_DENIED" in remaining_line:
+                        last_10_lines = rest_lines[max(0, k - 9):k + 1]
+                        if any("find_matched_usr_grps-Failed group matching" in l for l in last_10_lines):
+                            analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] Fnbamd failing due to possible group mismatch</span>')
+                    if 'fnbam_user_auth_group_match' in remaining_line and eap_id in remaining_line:
+                            analysis_output.append(f'<span style="color: yellow;">[{str(i+k+1)}] Check the server response in the above line</span>')
+                    if 'fnbamd_comm_send_result' in remaining_line and eap_id in remaining_line:
+                        match = re.search(r"Sending result (\d+)", remaining_line)
+                        if match:
+                            result_value = int(match.group(1))
+                            if result_value == 0:
+                                analysis_output.append(f'<span style="color: green;">[{str(i+k+1)}] fnbamd success for the above connection </span>')
+                            if result_value == 1:
+                                analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] fnbamd deny for the above connection </span>')
+                            if result_value == 2:
+                                analysis_output.append(f'<span style="color: orange;">[{str(i+k+1)}] fnbamd Challenge for the above connection </span>')
+                            if result_value == 5:
+                                analysis_output.append(f'<span style="color: orange;">[{str(i+k+1)}] fnbamd ERROR for the above connection </span>')
+                        else:
+                            analysis_output.append(f'<span style="color: yellow;">[{str(i+k+1)}] Check the Fnbam result in the above line \n 0-->SUCCESS 1---> DENY 2--> CHALLENGE</span>')
+                    if eap_id in remaining_line and 'result' in remaining_line:
+                        context = rest_lines[k:k + 7]
+                        for info in context:
+                            if 'XAUTH' in info and 'result' not in info:
+                                analysis_output.append(f'       [{str(i+k+1)}]{info.strip()}')
+                    if eap_id in remaining_line and 'FNBAM_DENIED' in remaining_line:
+                        for prev_line in reversed(rest_lines[:k]):
+                            if "ldap_next_state" in prev_line and 'ldap_next_state-State' not in prev_line:
+                                analysis_output.append(f'<span style="color: orange;">[{str(i+k+1)}] LDAP log found for deny. Could be a possible reason as: {prev_line}</span>')
+                            if "fnbamd_ldap_parse_response-Error" in prev_line:
+                                analysis_output.append(f'<span style="color: orange;">[{str(i+k+1)}] LDAP log found for deny. Could be a possible reason as: {prev_line}</span>')
+                    if eap_id in remaining_line and 'FNBAM_ERROR' in remaining_line:
+                        analysis_output.append(f'<span style="color: yellow;">[{str(i+k+1)}] FNBAMD ERROR means possible FNBAMD Unavailaibility due to lack of servers or non_reachability or DNS issues</span>')
+                        for prev_line in reversed(rest_lines[:k]):
+                            if "__ldap_try_next_server-No more server to try." in prev_line:
+                                analysis_output.append(f'<span style="color: orange;">[{str(i+k+1)}] LDAP log found for FNBAM_error. Could be a possible reason as: {prev_line}</span>')
+                            if "fnbamd_dns_parse_resp" in prev_line and 'wrong dns format' in prev_line:
+                                analysis_output.append(f'<span style="color: orange;">[{str(i+k+1)}] LDAP log found for deny. DNS for LDAP server issue detected</span>')
+                    if eap_id in remaining_line and 'FNBAM_TIMEOUT' in remaining_line:
+                        analysis_output.append(f'<span style="color: yellow;">[{str(i+k+1)}] FNBAM_TIMEOUT means possible FNBAMD Unavailaibility due to lack of servers or non_reachability</span>')
+                        for prev_line in reversed(rest_lines[:k]):
+                            if "__ldap_try_next_server-No more server to try." in prev_line:
+                                analysis_output.append(f'<span style="color: orange;">[{str(i+k+1)}] LDAP log found for FNBAM_error. Could be a possible reason as: {prev_line}</span>')
+                            if "fnbamd_cfg_ldap_update_reachability" in prev_line and 'conn_fails' in prev_line:
+                                analysis_output.append(f'<span style="color: orange;">[{str(i+k+1)}] LDAP log found for deny. SERVER not reachable as in log {prev_line}</span>')
+
+#IKE v2 auth logic
         if 'ike' in line and 'send EAP message to FNBAM' in line:
-            context = lines[i:i + 15]
+            context = lines[i:i + 150]
             user, group, eap_id = None, None, None
             for entry in context:
                 if 'EAP user' in entry:
                     user = entry.split('"')[1]  # Extract "vpnuser"
                 if 'auth group' in entry:
                     group = entry.split()[-1]  # Extract "local-users"
-                if 'EAP' in entry and 'pending' in entry:
+                if 'EAP' in entry and 'pending' in entry and 'ike' in entry:
                     match = re.search(r"EAP (\d+)", entry)
                     if match:
                         eap_id = match.group(1)
@@ -339,6 +413,18 @@ def ike_parser(text):
                         for info in context:
                             if 'EAP' in info and 'result' not in info:
                                 analysis_output.append(f'       [{str(i+k+1)}]{info.strip()}')
+
+# Adding known issue
+        if 'compute DH shared secret request queued' in line:
+            pattern = "compute DH shared secret request queued"
+            count = 1
+
+            # Check the next 20 lines for additional matches
+            for j in range(1, 21):
+                if i + j < len(lines) and re.search(pattern, lines[i + j]):
+                    count += 1
+            if count >= 10:
+                analysis_output.append(f'<span style="color: red;">Known Issue detected \n Please check: https://community.fortinet.com/t5/FortiClient/Troubleshooting-Tip-Dial-up-IPsec-VPN-in-aggressive-mode-when/ta-p/189924</span>')
 
 
 def _extract_lines(lines, start_line, end_line):
@@ -530,7 +616,7 @@ def _phase_1_retrans_check_1(line,lines,i):
                         if 'response' in retransmit_type or 'RESPONSE' in retransmit_type:
                             analysis_output.append(f'<span style="color: red;">[{str(k+1)}]::VPN with IP Connection as:: '+connection_match.group(1)+' is down due to negotiation or timeout</span>')
                         else:
-                            analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: VPN with IP Connection as: '+connection_match.group(1)+' is down for Phase-1 due to retransmission failures</span> \n  Possible issues could be: \n -> NAT-T blocked \n -> ISP blocking IKE \n -> port forward misconfig\n -> Network Overlay ID mismatch')
+                            analysis_output.append(f'<span style="color: red;">[{str(i+1)}]:: VPN with IP Connection as: '+connection_match.group(1)+' is down for Phase-1 due to retransmission failures</span> \n  Possible issues could be: \n -> NAT-T blocked \n -> ISP blocking IKE \n -> port forward misconfig\n -> Network Overlay ID mismatch \n -> Possible PSK mismatch')
                 if retransmit_match:
                     retransmit_type = retransmit_match.group(1)
                     retransmit_info = retransmit_match.group(2)
