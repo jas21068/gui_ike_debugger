@@ -268,3 +268,71 @@ AttributeError: 'NoneType' object has no attribute 'index'
 192.168.1.76 - - [18/Jan/2025 13:41:04] "GET / HTTP/1.1" 200 -
 192.168.1.76 - - [18/Jan/2025 13:41:15] "GET / HTTP/1.1" 200 -
 192.168.1.76 - - [18/Jan/2025 13:41:23] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [18/Jan/2025 13:45:55] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 15:54:27] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+192.168.1.76 - - [20/Jan/2025 21:16:23] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 21:18:25] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 21:19:53] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 21:20:06] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 21:20:28] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 21:20:36] "POST / HTTP/1.1" 200 -
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+192.168.1.76 - - [20/Jan/2025 21:21:43] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 21:21:55] "POST / HTTP/1.1" 200 -
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+192.168.1.76 - - [20/Jan/2025 21:22:54] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 21:22:58] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 21:23:08] "POST / HTTP/1.1" 200 -
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+192.168.1.76 - - [20/Jan/2025 21:27:00] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 21:27:54] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 21:29:10] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 21:29:24] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [20/Jan/2025 21:30:38] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+labDC-radius
+labDC-radius
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
