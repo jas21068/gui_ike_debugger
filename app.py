@@ -356,7 +356,6 @@ def ike_parser(text):
                         match1 = re.search(r"svr\s'([^']+)'", remaining_line)
                         if match1:
                             svr = match1.group(1)  # Extracts 'EAP_PROXY'
-                            print(svr)
                             for prev_line in reversed(rest_lines[:k]):
                                 if "fnbamd_cfg_radius_update_reachability" in prev_line and 'conn_fails' in prev_line and svr in prev_line:
                                     analysis_output.append(f'<span style="color: orange;">[{str(i+k+1)}] RADIUS log found for deny. SERVER not reachable as in log {prev_line}</span>')
@@ -370,6 +369,8 @@ def ike_parser(text):
                         if match and proceed == True:
                             if int(match.group(1)) == 10:
                                 analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] radius issue detected for wrong username or password by USER: {user} </span>')
+                            if int(match.group(1)) == 1:
+                                analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] radius issue detected for wrong password by USER: {user} </span>')
 
 
 #IKE v2 auth logic
@@ -446,6 +447,35 @@ def ike_parser(text):
                     count += 1
             if count >= 10:
                 analysis_output.append(f'<span style="color: red;">Known Issue detected \n Please check: https://community.fortinet.com/t5/FortiClient/Troubleshooting-Tip-Dial-up-IPsec-VPN-in-aggressive-mode-when/ta-p/189924</span>')
+
+# CERT AUTH LOGIC
+        if 'ike' in line and 'received peer identifier' in line:
+            match = re.search(r"received peer identifier (.+)", line)
+            if match:
+                peer_identifier = match.group(1)
+                analysis_output.append(f'[{str(i+1)}]<span style="color: yellow;">Cert auth detected as : {peer_identifier}</span>')
+            else:
+                analysis_output.append(f'<span style="color: yellow;">Cert auth detected at line [{str(i+1)}]</span>')
+            
+        if 'ike' in line and 'peer cert' in line:
+            match = re.search(r"subject='([^']+)', issuer='([^']+)'", line)
+            if match:
+                subject = match.group(1)
+                issuer = match.group(2)
+                analysis_output.append(f'<span style="color: yellow;">Peer cert as :</span> \nSubject: {subject} \nIssuer: {issuer}')
+        if 'ike' in line and 'peer CA cert' in line:
+            match = re.search(r"subject='([^']+)', issuer='([^']+)'", line)
+            if match:
+                subject = match.group(1)
+                issuer = match.group(2)
+                print(f"Subject: {subject}")
+                print(f"Issuer: {issuer}")
+                analysis_output.append(f'<span style="color: yellow;">Peer CA cert :</span> \nSubject: {subject} \nIssuer: {issuer}')
+        if 'ike' in line and 'signature verification succeeded' in line:
+            analysis_output.append(f'<span style="color: green;">[{str(i+1)}]Cert auth succeeded')
+        if 'ike' in line and 'certificate validation failed' in line:
+            analysis_output.append(f'<span style="color: red;">[{str(i+1)}]IKE connection down due to Cert auth fail')
+            analysis_output.append(f'<span style="color: yellow;">Please Check:\n CA signed bt valid CA or the root CA istalled in FGT \n Bad PKI user \n Re-check cert auth settings: {issuer} ')
 
 
 def _extract_lines(lines, start_line, end_line):

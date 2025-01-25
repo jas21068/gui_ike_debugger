@@ -336,3 +336,50 @@ labDC-radius
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+192.168.1.76 - - [21/Jan/2025 10:06:01] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Jan/2025 10:06:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+192.168.1.76 - - [21/Jan/2025 10:07:53] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Jan/2025 10:11:18] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [21/Jan/2025 16:44:53] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [22/Jan/2025 02:52:40] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [22/Jan/2025 02:52:50] "POST / HTTP/1.1" 200 -
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
