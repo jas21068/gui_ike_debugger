@@ -13,6 +13,8 @@ if not os.path.exists(app.config['UPLOAD_FOLDER']):
     os.makedirs(app.config['UPLOAD_FOLDER'])
 
 analysis_output = []
+Incoming_conn = []
+SAML = False
 
 def read_file(filepath):
     """Reads the content of the file."""
@@ -166,6 +168,9 @@ def ike_parser(text):
         
         # Grabs the connection details for the phase-1 mismatch
         if "comes" in line:
+            match = re.search(r'comes ([\d.]+):\d+', line)
+            if match:
+                Incoming_conn.append(match.group(1))
             comes_line_phase_1 = line
             comes_line = i + 3
             if i + 1 < len(lines):
@@ -306,6 +311,10 @@ def ike_parser(text):
                     if eap_id in remaining_line:
                         analysis_output.append(f'   [{str(i+k+1)}]{remaining_line.strip()}')
                     if eap_id in remaining_line and "FNBAM_DENIED" in remaining_line:
+                        if SAML == False:
+                            analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] Fnbamd DENIED DETECTED</span>')
+                        if SAML == True:
+                            analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] Fnbamd DENIED DETECTED with SAML.</span> <span style="color: yellow;">\n->Check Group Mismatch \n-> Check Group Attribute/Name Mismatch</span>')
                         last_10_lines = rest_lines[max(0, k - 9):k + 1]
                         if any("find_matched_usr_grps-Failed group matching" in l for l in last_10_lines):
                             analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] Fnbamd failing due to possible group mismatch</span>')
@@ -401,9 +410,29 @@ def ike_parser(text):
                     if eap_id in remaining_line:
                         analysis_output.append(f'   [{str(i+k+1)}]{remaining_line.strip()}')
                     if eap_id in remaining_line and "FNBAM_DENIED" in remaining_line:
+                        if SAML == False:
+                            analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] Fnbamd DENIED DETECTED</span>')
+                        if SAML == True:
+                            analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] Fnbamd DENIED DETECTED with SAML.</span> <span style="color: yellow;">\n->Check Group Mismatch \n-> Check Group Attribute/Name Mismatch</span>')
                         last_10_lines = rest_lines[max(0, k - 9):k + 1]
                         if any("find_matched_usr_grps-Failed group matching" in l for l in last_10_lines):
                             analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] Fnbamd failing due to possible group mismatch</span>')
+                    if "handle_req-Error starting session" in remaining_line and SAML == True:
+                        analysis_output.append(f'<span style="color: yellow;">[{str(i+k+1)}] Fnbamd failing to start. \n->Check if SAML server is responsive \n-> Check: https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-IPsec-SAML-Authentication-fails-due-to/ta-p/339738</span>')
+                    if 'fnbamd_comm_send_result' in remaining_line and eap_id in remaining_line:
+                        match = re.search(r"Sending result (\d+)", remaining_line)
+                        if match:
+                            result_value = int(match.group(1))
+                            if result_value == 0:
+                                analysis_output.append(f'<span style="color: green;">[{str(i+k+1)}] fnbamd success for the above connection </span>')
+                            if result_value == 1:
+                                analysis_output.append(f'<span style="color: red;">[{str(i+k+1)}] fnbamd deny for the above connection </span>')
+                            if result_value == 2:
+                                analysis_output.append(f'<span style="color: orange;">[{str(i+k+1)}] fnbamd Challenge for the above connection </span>')
+                            if result_value == 5:
+                                analysis_output.append(f'<span style="color: orange;">[{str(i+k+1)}] fnbamd ERROR for the above connection </span>')
+                        else:
+                            analysis_output.append(f'<span style="color: yellow;">[{str(i+k+1)}] Check the Fnbam result in the above line \n 0-->SUCCESS 1---> DENY 2--> CHALLENGE</span>')                    
                     if 'fnbamd_rad_process-Result' in remaining_line:
                         pattern = r"svr\s'([^']+)'\s.*?is\s(\d+)"
                         match = re.search(pattern, remaining_line)
@@ -711,6 +740,37 @@ def parse_to_table(data_string):
     # Pretty-print the table
     return tabulate(combined_df, headers="keys", tablefmt="grid")
 
+def saml_parser(text):
+    analysis_output.append(f'======================================================== \n<span style="color: Yellow;">SAML AUTHENTICATION DETECTED</span>\n======================================================== ')
+    if re.search(r'authd_http_wait_saml_msg', text):
+        analysis_output.append(f'<span style="color: green;">AUTHD DEBUGS DETECTED</span>')
+        lines = text.splitlines()
+        for i, line in enumerate(lines):
+            if 'samld_send_common_reply' in line:
+                analysis_output.append(f'<span style="color: yellow;">[{str(i+1)}] {line}</span>')
+    else:
+        analysis_output.append(f'<span style="color: red;">AUTHD DEBUGS NOT DETECTED. SAML SESSION CO-RELATION may not be 100% correct</span>')
+        lines = text.splitlines()
+        for i, line in enumerate(lines):
+            if 'samld_send_common_reply' in line and 'magic' in line:
+                analysis_output.append(f'<span style="color:  green;">[{str(i+1)}] MAGIC ID AS:{line}</span>')
+            if 'samld_send_common_reply' in line and 'identity/claims' in line:
+                match = re.search(r'/identity/claims/(.*)', line)
+                if match:
+                    analysis_output.append(f'   <span style="color: yellow;"> [{str(i+1)}] {match.group(1)}</span>')
+            if 'samld_send_common_reply' in line and 'group' in line:
+                match = re.search(r"group'\s*'([\w-]+)'", line)
+                if match:
+                    analysis_output.append(f'   <span style="color: yellow;">[{str(i+1)}] GROUP: {match.group(1)}</span>')
+            if 'samld_send_common_reply' in line and "'name'" in line:
+                email = re.search(r"'name'\s+'([^']+)'", line)
+                if email:
+                    analysis_output.append(f'   <span style="color: yellow;">[{str(i+1)}] NAME: {email.group(1)}</span>')
+            if 'samld_sp_login_resp' in line and 'Failed to verify signature' in line:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] SAML wrong certficate on FortiGate Detected. Please check the base x64 cert on Fortigate for SAML</span>')
+            if 'samld_send_common_reply' in line and 'Failed to verify signature' in line:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] SAML wrong certficate on FortiGate Detected. Please check the base x64 cert on Fortigate for SAML</span>')
+
 # ENDS the business logic
 # '========================================================================================================================================'
 # '========================================================================================================================================'
@@ -742,8 +802,17 @@ def index():
 
         # Clear previous analysis output
         global analysis_output
+        global Incoming_conn
+        global SAML
         analysis_output = []
+        Incoming_conn = []
+        SAML = False
+
+        if re.search(r'samld', ike_log):
+            SAML = True
         ike_parser(ike_log)
+        if SAML == True:
+            saml_parser(ike_log)
         def deduplicate_array(arr):
             unique_elements = []
             for item in arr:
