@@ -540,3 +540,68 @@ NameError: name 'ike_log' is not defined
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 581-451-994
+192.168.1.76 - - [25/Jan/2025 15:11:46] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:11:53] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:12:25] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:12:33] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:12:38] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:12:46] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:13:02] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:13:09] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:13:27] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:13:36] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:13:50] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:14:00] "POST / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:14:20] "GET / HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 15:14:48] "POST / HTTP/1.1" 200 -
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+192.168.1.76 - - [25/Jan/2025 16:09:00] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/jaskirat/Desktop/gui_project/venv/lib/python3.12/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaskirat/Desktop/gui_project/venv/lib/python3.12/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaskirat/Desktop/gui_project/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaskirat/Desktop/gui_project/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaskirat/Desktop/gui_project/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaskirat/Desktop/gui_project/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaskirat/Desktop/gui_project/app.py", line 848, in index
+    saml_parser(ike_log)
+  File "/home/jaskirat/Desktop/gui_project/app.py", line 746, in saml_parser
+    if re.search(r'authd_http_wait_saml_msg', ike_log):
+                                              ^^^^^^^^^
+NameError: name 'ike_log' is not defined
+192.168.1.76 - - [25/Jan/2025 16:09:00] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 16:09:00] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 16:09:00] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+192.168.1.76 - - [25/Jan/2025 16:09:09] "GET / HTTP/1.1" 200 -
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+ * Detected change in '/home/jaskirat/Desktop/gui_project/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 581-451-994
+192.168.1.76 - - [25/Jan/2025 16:09:37] "POST / HTTP/1.1" 200 -

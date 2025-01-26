@@ -741,13 +741,46 @@ def parse_to_table(data_string):
     return tabulate(combined_df, headers="keys", tablefmt="grid")
 
 def saml_parser(text):
+    magic_number=''
     analysis_output.append(f'======================================================== \n<span style="color: Yellow;">SAML AUTHENTICATION DETECTED</span>\n======================================================== ')
     if re.search(r'authd_http_wait_saml_msg', text):
-        analysis_output.append(f'<span style="color: green;">AUTHD DEBUGS DETECTED</span>')
+        analysis_output.append(f'<span style="color: green;">AUTHD DEBUGS DETECTED.SAML SESSION CO-RELATION will work</span>')
         lines = text.splitlines()
         for i, line in enumerate(lines):
-            if 'samld_send_common_reply' in line:
-                analysis_output.append(f'<span style="color: yellow;">[{str(i+1)}] {line}</span>')
+            if 'authd_http_wait_saml_msg' in line:
+                found_ips = [ip for ip in Incoming_conn if re.search(r'\b' + re.escape(ip) + r'\b', line)]
+                if found_ips:
+                    analysis_output.append(f'<span style="color: yellow;">[{str(i+1)}] AUTHD SESSION FOUND for ike connection</span> \n {line}')
+                    for j in range(i + 1, min(i + 11, len(lines))):
+                        if "authd_saml_login_req" in lines[j]:
+                            print(j)
+                            match = re.search(r"magic=([a-f0-9]+)", lines[j])
+                            if match:
+                                magic_number = match.group(1)
+                                analysis_output.append(f'<span style="color: green;">MAGIC ID for SAML session found as: {magic_number}</span>')
+            if magic_number in line and 'samld_send_common_reply' in line:
+                for j in range(i, min(i + 50, len(lines))):
+                    if 'samld_send_common_reply' in lines[j] and 'magic' in lines[j]:
+                        analysis_output.append(f'<span style="color:  green;">[{str(i+1)}] MAGIC ID AS:{line}</span>')
+                    if 'samld_send_common_reply' in lines[j] and 'identity/claims' in lines[j]:
+                        match = re.search(r'/identity/claims/(.*)', lines[j])
+                        if match:
+                            analysis_output.append(f'   <span style="color: yellow;"> [{str(i+1)}] {match.group(1)}</span>')
+                    if 'samld_send_common_reply' in lines[j] and 'group' in lines[j]:
+                        match = re.search(r"group'\s*'([\w-]+)'", lines[j])
+                        if match:
+                            analysis_output.append(f'   <span style="color: yellow;">[{str(i+1)}] GROUP: {match.group(1)}</span>')
+                    if 'samld_send_common_reply' in lines[j] and "'name'" in lines[j]:
+                        email = re.search(r"'name'\s+'([^']+)'", lines[j])
+                        if email:
+                            analysis_output.append(f'   <span style="color: yellow;">[{str(i+1)}] NAME: {email.group(1)}</span>')
+
+            if 'samld_sp_login_resp' in line and 'Failed to verify signature' in line:
+                analysis_output.append(f'<span style=": red;">[{str(i+1)}] SAML wrong certficate on FortiGate Detected. Please check the base x64 cert on Fortigate for SAML</span>')
+            if 'samld_send_common_reply' in line and 'Failed to verify signature' in line:
+                analysis_output.append(f'<span style=": red;">[{str(i+1)}] SAML wrong certficate on FortiGate Detected. Please check the base x64 cert on Fortigate for SAML</span>')
+            # if 'samld_send_common_reply' in line:
+            #     analysis_output.append(f'<span style="color: yellow;">[{str(i+1)}] {line}</span>')
     else:
         analysis_output.append(f'<span style="color: red;">AUTHD DEBUGS NOT DETECTED. SAML SESSION CO-RELATION may not be 100% correct</span>')
         lines = text.splitlines()
