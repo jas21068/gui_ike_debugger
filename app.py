@@ -780,8 +780,17 @@ def saml_parser(text):
                 analysis_output.append(f'<span style=": red;">[{str(i+1)}] Wrong SAML certficate on FortiGate Detected. Please check certificate on Fortigate for SAML</span>')
             if 'samld_send_common_reply' in line and 'Failed to verify signature' in line:
                 analysis_output.append(f'<span style=": red;">[{str(i+1)}] Wrong SAML certficate on FortiGate Detected. Please check certificate on Fortigate for SAML</span>')
-            # if 'samld_send_common_reply' in line:
-            #     analysis_output.append(f'<span style="color: yellow;">[{str(i+1)}] {line}</span>')
+            if ('samld_send_common_reply' in line or '__samld_sp_login_resp' in line) and 'Generic error when an IdP or an SP ' in line:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Invalid request, ACS Url in request <ACS link> does not match configured ACS Url. Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
+            if ('samld_send_common_reply' in line or '__samld_sp_login_resp' in line) and 'The identifier of a provider is unknown to #LassoServer' in line:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] The identifier of a provider is unknown to #LassoServer. Please check if there is a typo Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
+            if 'fsv_saml_login_response' in line and 'No group info in SAML response' in line:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] No group in SAML reponse Detected. Please check the IDP for group attached to the user Please check if there is a typo Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
+            if 'fsv_saml_login_response' in line and 'No user name info in SAML response' in line:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] No user in SAML reponse Detected. Please check the IDP for user availaibility .Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
+            if '__samld_sp_login_resp' in line and 'Clock skew issue' in line:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Clock Skey Issue Detected. To fix the issue, make sure that time is in sync on both the SP and IdP sides. .Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
+
     else:
         analysis_output.append(f'<span style="color: yellow;">AUTHD DEBUGS NOT DETECTED. SAML SESSION CO-RELATION may not be 100% correct</span>')
         lines = text.splitlines()
@@ -804,6 +813,16 @@ def saml_parser(text):
                 analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Wrong SAML certficate on FortiGate Detected. Please check certificate on Fortigate for SAML</span>')
             if 'samld_send_common_reply' in line and 'Failed to verify signature' in line:
                 analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Wrong SAML certficate on FortiGate Detected. Please check certificate on Fortigate for SAML</span>')
+            if ('samld_send_common_reply' in line or '__samld_sp_login_resp' in line) and 'Generic error when an IdP or an SP ' in line:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Invalid request, ACS Url in request <ACS link> does not match configured ACS Url. Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
+            if ('samld_send_common_reply' in line or '__samld_sp_login_resp' in line) and 'The identifier of a provider is unknown to #LassoServer' in line:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] The identifier of a provider is unknown to #LassoServer. Please check if there is a typo Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
+            if 'fsv_saml_login_response' in line and 'No group info in SAML response' in line:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] No group in SAML reponse Detected. Please check the IDP for group attached to the user Please check if there is a typo Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
+            if 'fsv_saml_login_response' in line and 'No user name info in SAML response' in line:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] No user in SAML reponse Detected. Please check the IDP for user availaibility .Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
+            if '__samld_sp_login_resp' in line and 'Clock skew issue' in line:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Clock Skey Issue Detected. To fix the issue, make sure that time is in sync on both the SP and IdP sides. .Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
 
 # ENDS the business logic
 # '========================================================================================================================================'

@@ -1,0 +1,951 @@
+FGT6 # fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 244441
+authd_epoll_work: timeout 14330
+[_process_logon:1072]: VITO (10.21.4.174, 0) logged on from lab-fsso.
+[_process_logon:1115]: VITO (10.21.4.174, 0) from lab-fsso exists.
+[_process_logon:1072]: VITO (10.21.8.181, 0) logged on from lab-fsso.
+[_process_logon:1115]: VITO (10.21.8.181, 0) from lab-fsso exists.
+[_process_logon:1072]: VITO (10.21.1.100, 0) logged on from lab-fsso.
+[_process_logon:1115]: VITO (10.21.1.100, 0) from lab-fsso exists.
+authd_epoll_work: timeout 4700
+[authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+authd_http: change state from 0 to 1
+[authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+authd_http: change state from 1 to 2
+[authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+authd_http: change state from 2 to 6
+[authd_http_done:2780]: src 10.21.8.181 flag 10208000
+authd_epoll_work: timeout 4570
+fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 244445
+authd_epoll_work: timeout 4170
+[authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+authd_http: change state from 0 to 1
+[authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+authd_http: change state from 1 to 2
+[authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+[authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+authd_epoll_work: timeout 4100
+[authd_http_read:981]: src 10.21.8.181 flag 10208000
+[authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+authd_http: change state from 2 to 3
+[authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+[authd_http_read_http_message:493]: called
+authd_epoll_work: timeout 4080
+[authd_http_read:981]: src 10.21.8.181 flag 10208000
+[authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+[authd_http_read_http_message:493]: called
+[authd_http_is_full_http_message:443]: called
+authd_epoll_work: timeout 4060
+[authd_http_read:981]: src 10.21.8.181 flag 10208000
+[authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+[authd_http_read_http_message:493]: called
+[authd_http_is_full_http_message:443]: called
+[authd_http_on_method_post:5240]: src 10.21.8.181 flag 10208000
+[authd_local_saml_auth:5696]: SAML login with UID '448804186640428B941B1E0748567723'.
+[authd_http_prepare_javascript_redir:3909]: https://fgt3.vis.com:9443/saml?02020a849a9e0555
+[authd_http_send:1268]: src 10.21.8.181 flag 1020a000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+authd_http: change state from 3 to 5
+[authd_http_disconnect:2735]: src 10.21.8.181 flag 1020a000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+authd_http: change state from 5 to 6
+[authd_http_done:2780]: src 10.21.8.181 flag 1020a000
+[authd_local_saml_auth:5719]
+authd_epoll_work: timeout 3690
+[authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+authd_http: change state from 0 to 1
+[authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+authd_http: change state from 1 to 2
+[authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+[authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+authd_epoll_work: timeout 3300
+[authd_http_read:981]: src 10.21.8.181 flag 10208000
+[authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+[authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+authd_epoll_work: timeout 3280
+[authd_http_read:981]: src 10.21.8.181 flag 10208000
+[authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+authd_http: change state from 2 to 3
+[authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+[authd_http_read_http_message:493]: called
+[authd_http_is_full_http_message:443]: called
+[authd_http_on_method_get:5734]: src 10.21.8.181 flag 10208000
+[authd_http_check_local_portal:1835]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+authd_http: change state from 3 to 106
+[authd_http_wait_saml_msg:4621]: src 10.21.8.181 flag 1020a000
+[authd_saml_login_req:31]: SAML login req. ID:563461, relayState:magic=02020a849a9e0555
+samld_process_request [145]: len=228, cmd=0, pid=2060, job_id=563461
+samld_process_request [162]: Received 228, 0x153dea0
+authd_epoll_work: timeout 3230
+__samld_sp_create_auth_req [449]:
+**** AuthnRequest URL ****
+https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeL4qOZcI2oMg2aiBphdjtIpuAoUYOAT5cDuW2f19J7iNZN
+F1yOAcz52KWKIw%2B86oPL%2FYBvvaAIfputEU%2BfaxI7y13AhVyKwwgD5Ifqvs7TpOMn70LTjpNXiHvEwIRfFDOkmi%2FWZGn2Xy7Ybv5trotC8rqbFezosznVVnXW0p3JYm%2BgMehf0UGfIAQe9h
+bDMKGoZTRWZzlcZEdacGLGc%2BLRxJtBgdlRZiolxDOyNNUu5OyiVHSO3RdcFYrC4l0JqXAymeWyxgKCTFbLEQs5h2NRcsEiJt8MaM36WhGSbRzXsKU1Yp0QiOMGzWDlLrAn0rzK5VbZVtlT%2B8H8nx
+tQv7heGzi5tPhSKLqd0i1s9gb8AfwFyXh88PdX6HuFIrkonB04AvGitSDcQGmVa%2B6ZL0cH3wKza9H8r%2BggSBaEUS6TF%2Bzy%2BuZfBz2328ap5X8MYZhRPi3Xp7kU0W1cTe18t7iGaTqFLSDpdb
+uW%2B1BhCG64Hsg6fo69O05rn8C&RelayState=magic%3D02020a849a9e0555
+***********************
+__samld_sp_create_auth_req [463]:
+**** AuthnRequest ****
+<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="_57ED4F7EAB8324C0FC43817A8
+CCE22F8" Version="2.0" IssueInstant="2025-01-30T23:35:13Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2" Si
+gnType="0" SignMethod="0" ForceAuthn="false" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerService
+URL="https://fgt3.vis.com:9443/remote/saml/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy Format="u
+rn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" AllowCreate="true"/></samlp:AuthnRequest>
+***********************
+__samld_sp_create_auth_req [468]:
+**** SP Login Dump ****
+<lasso:Login xmlns:lasso="http://www.entrouvert.org/namespaces/lasso/0.0" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names
+:tc:SAML:2.0:assertion" LoginDumpVersion="2"><lasso:Request><samlp:AuthnRequest ID="_57ED4F7EAB8324C0FC43817A8CCE22F8" Version="2.0" IssueInstant="2025-
+01-30T23:35:13Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2" SignType="0" SignMethod="0" ForceAuthn="fals
+e" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerServiceURL="https://fgt3.vis.com:9443/remote/saml
+/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy Format="urn:oasis:names:tc:SAML:1.1:nameid-format:u
+nspecified" AllowCreate="true"/></samlp:AuthnRequest></lasso:Request><lasso:RemoteProviderID>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea61952
+6/</lasso:RemoteProviderID><lasso:MsgUrl>https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeL4qO
+ZcI2oMg2aiBphdjtIpuAoUYOAT5cDuW2f19J7iNZNF1yOAcz52KWKIw%2B86oPL%2FYBvvaAIfputEU%2BfaxI7y13AhVyKwwgD5Ifqvs7TpOMn70LTjpNXiHvEwIRfFDOkmi%2FWZGn2Xy7Ybv5trot
+C8rqbFezosznVVnXW0p3JYm%2BgMehf0UGfIAQe9hbDMKGoZTRWZzlcZEdacGLGc%2BLRxJtBgdlRZiolxDOyNNUu5OyiVHSO3RdcFYrC4l0JqXAymeWyxgKCTFbLEQs5h2NRcsEiJt8MaM36WhGSbRz
+XsKU1Yp0QiOMGzWDlLrAn0rzK5VbZVtlT%2B8H8nxtQv7heGzi5tPhSKLqd0i1s9gb8AfwFyXh88PdX6HuFIrkonB04AvGitSDcQGmVa%2B6ZL0cH3wKza9H8r%2BggSBaEUS6TF%2Bzy%2BuZfBz232
+8ap5X8MYZhRPi3Xp7kU0W1cTe18t7iGaTqFLSDpdbuW%2B1BhCG64Hsg6fo69O05rn8C&amp;RelayState=magic%3D02020a849a9e0555</lasso:MsgUrl><lasso:MsgRelayState>magic=02
+020a849a9e0555</lasso:MsgRelayState><lasso:HttpRequestMethod>4</lasso:HttpRequestMethod><lasso:RequestID>_57ED4F7EAB8324C0FC43817A8CCE22F8</lasso:Reques
+tID></lasso:Login>
+***********************
+samld_send_common_reply [91]: Code: 0, id: 563461, pid: 2060, len: 2547, data_len 2531
+samld_send_common_reply [99]:     Attr: 14, 1851, <lasso:Login xmlns:lasso="http://www.entrouvert.org/namespaces/lasso/0.0" xmlns:samlp="urn:oasis:names
+:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" LoginDumpVersion="2"><lasso:Request><samlp:AuthnRequest ID="_57ED4F7EAB8324C0F
+C43817A8CCE22F8" Version="2.0" IssueInstant="2025-01-30T23:35:13Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/s
+aml2" SignType="0" SignMethod="0" ForceAuthn="false" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsume
+rServiceURL="https://fgt3.vis.com:9443/remote/saml/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy F
+ormat="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" AllowCreate="true"/></samlp:AuthnRequest></lasso:Request><lasso:RemoteProviderID>https://s
+ts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</lasso:RemoteProviderID><lasso:MsgUrl>https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4
+aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeL4qOZcI2oMg2aiBphdjtIpuAoUYOAT5cDuW2f19J7iNZNF1yOAcz52KWKIw%2B86oPL%2FYBvvaAIfputEU%2BfaxI7y13AhVyKwwgD5If
+qvs7TpOMn70LTjpNXiHvEwIRfFDOkmi%2FWZGn2Xy7Ybv5trotC8rqbFezosznVVnXW0p3JYm%2BgMehf0UGfIAQe9hbDMKGoZTRWZzlcZEdacGLGc%2BLRxJtBgdlRZiolxDOyNNUu5OyiVHSO3RdcF
+YrC4l0JqXAymeWyxgKCTFbLEQs5h2NRcsEiJt8MaM36WhGSbRzXsKU1Yp0QiOMGzWDlLrAn0rzK5VbZVtlT%2B8H8nxtQv7heGzi5tPhSKLqd0i1s9gb8AfwFyXh88PdX6HuFIrkonB04AvGitSDcQGm
+Va%2B6ZL0cH3wKza9H8r%2BggSBaEUS6TF%2Bzy%2BuZfBz2328ap5X8MYZhRPi3Xp7kU0W1cTe18t7iGaTqFLSDpdbuW%2B1BhCG64Hsg6fo69O05rn8C&amp;RelayState=magic%3D02020a849a
+9e0555</lasso:MsgUrl><lasso:MsgRelayState>magic=02020a849a9e0555</lasso:MsgRelayState><lasso:HttpRequestMethod>4</lasso:HttpRequestMethod><lasso:Request
+ID>_57ED4F7EAB8324C0FC43817A8CCE22F8</lasso:RequestID></lasso:Login>
+samld_send_common_reply [99]:     Attr: 11, 680, https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2F
+ReBeL4qOZcI2oMg2aiBphdjtIpuAoUYOAT5cDuW2f19J7iNZNF1yOAcz52KWKIw%2B86oPL%2FYBvvaAIfputEU%2BfaxI7y13AhVyKwwgD5Ifqvs7TpOMn70LTjpNXiHvEwIRfFDOkmi%2FWZGn2Xy7
+Ybv5trotC8rqbFezosznVVnXW0p3JYm%2BgMehf0UGfIAQe9hbDMKGoZTRWZzlcZEdacGLGc%2BLRxJtBgdlRZiolxDOyNNUu5OyiVHSO3RdcFYrC4l0JqXAymeWyxgKCTFbLEQs5h2NRcsEiJt8MaM3
+6WhGSbRzXsKU1Yp0QiOMGzWDlLrAn0rzK5VbZVtlT%2B8H8nxtQv7heGzi5tPhSKLqd0i1s9gb8AfwFyXh88PdX6HuFIrkonB04AvGitSDcQGmVa%2B6ZL0cH3wKza9H8r%2BggSBaEUS6TF%2Bzy%2B
+uZfBz2328ap5X8MYZhRPi3Xp7kU0W1cTe18t7iGaTqFLSDpdbuW%2B1BhCG64Hsg6fo69O05rn8C&RelayState=magic%3D02020a849a9e0555
+[authd_saml_read:120]: Resp len 2547 bytes
+[authd_saml_read:131]: Rcvd 2547 bytes
+[authd_http_on_saml_msg:4450]: src 10.21.8.181 flag 1020a000
+[authd_http_on_saml_msg:4459]: cmd 0, code 0.
+[authd_http_prepare_javascript_redir:3909]: https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeL
+4qOZcI2oMg2aiBphdjtIpuAoUYOAT5cDuW2f19J7iNZNF1yOAcz52KWKIw%2B86oPL%2FYBvvaAIfputEU%2BfaxI7y13AhVyKwwgD5Ifqvs7TpOMn70LTjpNXiHvEwIRfFDOkmi%2FWZGn2Xy7Ybv5t
+rotC8rqbFezosznVVnXW0p3JYm%2BgMehf0UGfIAQe9hbDMKGoZTRWZzlcZEdacGLGc%2BLRxJtBgdlRZiolxDOyNNUu5OyiVHSO3RdcFYrC4l0JqXAymeWyxgKCTFbLEQs5h2NRcsEiJt8MaM36WhGS
+bRzXsKU1Yp0QiOMGzWDlLrAn0rzK5VbZVtlT%2B8H8nxtQv7heGzi5tPhSKLqd0i1s9gb8AfwFyXh88PdX6HuFIrkonB04AvGitSDcQGmVa%2B6ZL0cH3wKza9H8r%2BggSBaEUS6TF%2Bzy%2BuZfBz
+2328ap5X8MYZhRPi3Xp7kU0W1cTe18t7iGaTqFLSDpdbuW%2B1BhCG64Hsg6fo69O05rn8C&RelayState=magic%3D02020a849a9e0555
+[authd_http_send:1268]: src 10.21.8.181 flag 1020a000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+authd_http: change state from 106 to 5
+[authd_http_disconnect:2735]: src 10.21.8.181 flag 1020a000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+authd_http: change state from 5 to 6
+[authd_http_done:2780]: src 10.21.8.181 flag 1020a000
+authd_epoll_work: timeout 3120
+authd_timer_run: 1 expired
+authd_epoll_work: timeout 9990
+fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 244447
+authd_epoll_work: timeout 4020
+authd_timer_run: 2 expired
+authd_epoll_work: timeout 990
+authd_timer_run: 1 expired
+authd_epoll_work: timeout 21000
+fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 244449
+authd_epoll_work: timeout 15860
+fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 244451
+authd_epoll_work: timeout 5710
+authd_timer_run: 2 expired
+authd_epoll_work: timeout 33990
+fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 244453
+authd_epoll_work: timeout 29550
+[authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+authd_http: change state from 0 to 1
+[authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+authd_http: change state from 1 to 2
+[authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+[authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+authd_epoll_work: timeout 25380
+[authd_http_read:981]: src 10.21.8.181 flag 10208000
+[authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+[authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+authd_epoll_work: timeout 25360
+[authd_http_read:981]: src 10.21.8.181 flag 10208000
+[authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+authd_http: change state from 2 to 3
+[authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+[authd_http_read_http_message:493]: called
+[authd_http_is_full_http_message:443]: called
+authd_epoll_work: timeout 25340
+[authd_http_read:981]: src 10.21.8.181 flag 10208000
+[authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+[authd_http_read_http_message:493]: called
+[authd_http_is_full_http_message:443]: called
+[authd_http_on_method_post:5240]: src 10.21.8.181 flag 10208000
+[authd_local_saml_auth:5680]
+[authd_saml_login_resp:63]: SAML login resp. ID:563461
+samld_process_request [145]: len=11877, cmd=2, pid=2060, job_id=563461
+samld_process_request [162]: Received 11877, 0x153dea0
+__update_sp_sig_opt [256]: SP no sig is required.
+__samld_sp_login_resp [815]:
+SP Login Response Msg Body (9888)
+authd_epoll_work: timeout 25290
+<samlp:Response ID="_1d94bb69-9486-48ce-8777-5c800a556165" Version="2.0" IssueInstant="2025-01-30T23:35:55.941Z" Destination="https://fgt3.vis.com:9443/
+remote/saml/login" InResponseTo="_57ED4F7EAB8324C0FC43817A8CCE22F8" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"><Issuer xmlns="urn:oasis:names:tc
+:SAML:2.0:assertion">https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><Signed
+Info><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa
+-sha256"/><Reference URI="#_1d94bb69-9486-48ce-8777-5c800a556165"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signatur
+e"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><Dig
+estValue>/8UFaQBBEOb6SQ2BWEvR7+KcWgadlb06H7oK4kDNxbc=</DigestValue></Reference></SignedInfo><SignatureValue>de2hYp5TlWvpfDrLKbujEUBqd98aZ4OnnoG5i7OHH94+
+BOjqP1jb77mLVRWg7vM81qqzQSbaY7FvNmEYlBfo6cY3CzUEL6RDBNSeAtLKb8KJnzUKhAqPP8wa3VFdAwvOvzg5kYXZ6JfjjbI7L73+phCUzzCtViyhMbA0q203I6YicemkWOOyiDjYl4M7bEMiA1rU
+Vs/5lr+qRGvm7AHOctKKTgMMLqLuc3g4E2FOCgvtHiQh06Hise+ATB7VMbVqrMV6G4VerWgPO0JcFuZCaaxoHJm0HBF/Z0tL46bPj0TqqNyktvm8uYdZTWAwr2aOqYU9JaQs6JR7k8JsNre0fw==</Si
+gnatureValue><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgkq
+hkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3Jv
+c29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBSk
+yoBDqR8wXb8nGARILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp+
+7wAjh2teoUL5xVTslGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQEB
+CwUAA4IBAQDTsnE2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzdk
+YexiiBBEDx5plvfNroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz5
+NVxNJ7ECDDjBJn6WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</ds:X509Certificate></ds:X509Data></ds:KeyInfo></Signature><samlp:Status><samlp:StatusCode Value="urn:o
+asis:names:tc:SAML:2.0:status:Success"/></samlp:Status><Assertion ID="_aea208f9-f327-4213-8155-b935f1478700" IssueInstant="2025-01-30T23:35:55.937Z" Ver
+sion="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"><Issuer>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Signature xmlns=
+"http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm
+="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_aea208f9-f327-4213-8155-b935f1478700"><Transforms><Transform Algorithm="http://w
+ww.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="ht
+tp://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>Pv11OJWb+y5OV4DqEbtCUB8FEVHMnQOK+9WJugCryqQ=</DigestValue></Reference></SignedInfo><SignatureValue>
+szfr+fwkjlTGNUEnpl61mUvBgz9DO67DGfoDtY3G3Ire82bI56p3Y3Pnb31LYM4BxtqTKpVv31yU4ihXaVAg03Gziy67v0si8mg2tteHx1D1r9hEEDckkP30IFOag+E4MpLKDwvbJ4cFOMffJZexpkQ6
+IFEiPUJ1TWE7jy0ViB21Hi6YhcH0HCrXoPu25/3w/PEf6wWD/bJPaY7qVpOqPd3rNa5xJubKZKdrhLiG6ld08h7pPX6FIFyqtIgwjM9a28Qra+cuGRgMfHNr3ockRdbiMFySrRSU4AEn7GKbCNTshYLq
+z33VyvQlWt8+GuJ5+Eecj/a7LWre3bQsslU8sQ==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgkqhkiG9w0BAQs
+FADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenV
+yZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBSkyoBDqR8wXb8
+nGARILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp+7wAjh2teoUL
+5xVTslGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQD
+TsnE2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzdkYexiiBBEDx5
+plvfNroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz5NVxNJ7ECDDj
+BJn6WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</X509Certificate></X509Data></KeyInfo></Signature><Subject><NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-form
+at:emailAddress">vito@svishal.onmicrosoft.com</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"><SubjectConfirmationData InRes
+ponseTo="_57ED4F7EAB8324C0FC43817A8CCE22F8" NotOnOrAfter="2025-01-31T00:35:55.813Z" Recipient="https://fgt3.vis.com:9443/remote/saml/login"/></SubjectCo
+nfirmation></Subject><Conditions NotBefore="2025-01-30T23:30:55.813Z" NotOnOrAfter="2025-01-31T00:35:55.813Z"><AudienceRestriction><Audience>http://fgt3
+.vis.com:9443/remote/saml/metadata/</Audience></AudienceRestriction></Conditions><AttributeStatement><Attribute Name="http://schemas.microsoft.com/ident
+ity/claims/tenantid"><AttributeValue>2e48b41c-e3ce-499a-a7f2-ad4aea619526</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com/iden
+tity/claims/objectidentifier"><AttributeValue>b0d68efc-87df-41fd-802c-d9caa63f854a</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft
+.com/identity/claims/identityprovider"><AttributeValue>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</AttributeValue></Attribute><Attrib
+ute Name="http://schemas.microsoft.com/claims/authnmethodsreferences"><AttributeValue>http://schemas.microsoft.com/ws/2008/06/identity/authenticationmet
+hod/password</AttributeValue><AttributeValue>http://schemas.microsoft.com/claims/multipleauthn</AttributeValue></Attribute><Attribute Name="http://schem
+as.microsoft.com/ws/2008/06/identity/claims/wids"><AttributeValue>62e90394-69f5-4237-9190-012177145e10</AttributeValue><AttributeValue>b79fbf4d-3ef9-468
+9-8143-76b194e85509</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"><AttributeValue>Vishal
+</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"><AttributeValue>Singh</AttributeValue></Att
+ribute><Attribute Name="name"><AttributeValue>vito@svishal.onmicrosoft.com</AttributeValue></Attribute><Attribute Name="group"><AttributeValue>f1c4e338-
+e6b7-4d16-8290-06559a741274</AttributeValue><AttributeValue>dd9fb092-8e2f-48e2-9ce8-63f27c1b84b9</AttributeValue></Attribute></AttributeStatement><Authn
+Statement AuthnInstant="2025-01-30T23:35:52.303Z" SessionIndex="_aea208f9-f327-4213-8155-b935f1478700"><AuthnContext><AuthnContextClassRef>urn:oasis:nam
+es:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion></samlp:Response>
+__samld_sp_login_resp [836]:
+**** Assertion Dump ****
+<Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" ID="_aea208f9-f327-4213-8155-b935f1478700" I
+ssueInstant="2025-01-30T23:35:55.937Z" Version="2.0"><Issuer>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Signature xmlns="htt
+p://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="ht
+tp://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_aea208f9-f327-4213-8155-b935f1478700"><Transforms><Transform Algorithm="http://www.w
+3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http:/
+/www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>Pv11OJWb+y5OV4DqEbtCUB8FEVHMnQOK+9WJugCryqQ=</DigestValue></Reference></SignedInfo><SignatureValue>szfr
++fwkjlTGNUEnpl61mUvBgz9DO67DGfoDtY3G3Ire82bI56p3Y3Pnb31LYM4BxtqTKpVv31yU4ihXaVAg03Gziy67v0si8mg2tteHx1D1r9hEEDckkP30IFOag+E4MpLKDwvbJ4cFOMffJZexpkQ6IFEi
+PUJ1TWE7jy0ViB21Hi6YhcH0HCrXoPu25/3w/PEf6wWD/bJPaY7qVpOqPd3rNa5xJubKZKdrhLiG6ld08h7pPX6FIFyqtIgwjM9a28Qra+cuGRgMfHNr3ockRdbiMFySrRSU4AEn7GKbCNTshYLqz33V
+yvQlWt8+GuJ5+Eecj/a7LWre3bQsslU8sQ==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgkqhkiG9w0BAQsFADA
+0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSB
+GZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBSkyoBDqR8wXb8nGAR
+ILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp+7wAjh2teoUL5xVT
+slGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQDTsnE
+2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzdkYexiiBBEDx5plvf
+NroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz5NVxNJ7ECDDjBJn6
+WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</X509Certificate></X509Data></KeyInfo></Signature><Subject><NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:e
+mailAddress">vito@svishal.onmicrosoft.com</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"><SubjectConfirmationData InRespons
+eTo="_57ED4F7EAB8324C0FC43817A8CCE22F8" NotOnOrAfter="2025-01-31T00:35:55.813Z" Recipient="https://fgt3.vis.com:9443/remote/saml/login"/></SubjectConfir
+mation></Subject><Conditions NotBefore="2025-01-30T23:30:55.813Z" NotOnOrAfter="2025-01-31T00:35:55.813Z"><AudienceRestriction><Audience>http://fgt3.vis
+.com:9443/remote/saml/metadata/</Audience></AudienceRestriction></Conditions><AttributeStatement><Attribute Name="http://schemas.microsoft.com/identity/
+claims/tenantid"><AttributeValue>2e48b41c-e3ce-499a-a7f2-ad4aea619526</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com/identity
+/claims/objectidentifier"><AttributeValue>b0d68efc-87df-41fd-802c-d9caa63f854a</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com
+/identity/claims/identityprovider"><AttributeValue>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</AttributeValue></Attribute><Attribute
+Name="http://schemas.microsoft.com/claims/authnmethodsreferences"><AttributeValue>http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/
+password</AttributeValue><AttributeValue>http://schemas.microsoft.com/claims/multipleauthn</AttributeValue></Attribute><Attribute Name="http://schemas.m
+icrosoft.com/ws/2008/06/identity/claims/wids"><AttributeValue>62e90394-69f5-4237-9190-012177145e10</AttributeValue><AttributeValue>b79fbf4d-3ef9-4689-81
+43-76b194e85509</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"><AttributeValue>Vishal</At
+tributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"><AttributeValue>Singh</AttributeValue></Attribu
+te><Attribute Name="name"><AttributeValue>vito@svishal.onmicrosoft.com</AttributeValue></Attribute><Attribute Name="group"><AttributeValue>f1c4e338-e6b7
+-4d16-8290-06559a741274</AttributeValue><AttributeValue>dd9fb092-8e2f-48e2-9ce8-63f27c1b84b9</AttributeValue></Attribute></AttributeStatement><AuthnStat
+ement AuthnInstant="2025-01-30T23:35:52.303Z" SessionIndex="_aea208f9-f327-4213-8155-b935f1478700"><AuthnContext><AuthnContextClassRef>urn:oasis:names:t
+c:SAML:2.0:ac:classes:Password</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion>
+***********************
+__samld_sp_login_resp [843]: Clock skew tolerance: 15
+
+__samld_parse_attr_statement [205]:
+__samld_sp_login_resp [876]:
+**** SP session Dump ****
+<Session xmlns="http://www.entrouvert.org/namespaces/lasso/0.0" Version="2"><Assertion RemoteProviderID="https://sts.windows.net/2e48b41c-e3ce-499a-a7f2
+-ad4aea619526/"><Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" ID="_aea208f9-f327-4213-8155
+-b935f1478700" IssueInstant="2025-01-30T23:35:55.937Z" Version="2.0"><Issuer>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Sign
+ature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMeth
+od Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_aea208f9-f327-4213-8155-b935f1478700"><Transforms><Transform Algorit
+hm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod A
+lgorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>Pv11OJWb+y5OV4DqEbtCUB8FEVHMnQOK+9WJugCryqQ=</DigestValue></Reference></SignedInfo><Sig
+natureValue>szfr+fwkjlTGNUEnpl61mUvBgz9DO67DGfoDtY3G3Ire82bI56p3Y3Pnb31LYM4BxtqTKpVv31yU4ihXaVAg03Gziy67v0si8mg2tteHx1D1r9hEEDckkP30IFOag+E4MpLKDwvbJ4cF
+OMffJZexpkQ6IFEiPUJ1TWE7jy0ViB21Hi6YhcH0HCrXoPu25/3w/PEf6wWD/bJPaY7qVpOqPd3rNa5xJubKZKdrhLiG6ld08h7pPX6FIFyqtIgwjM9a28Qra+cuGRgMfHNr3ockRdbiMFySrRSU4AEn
+7GKbCNTshYLqz33VyvQlWt8+GuJ5+Eecj/a7LWre3bQsslU8sQ==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgk
+qhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3J
+vc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBS
+kyoBDqR8wXb8nGARILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp
++7wAjh2teoUL5xVTslGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQE
+BCwUAA4IBAQDTsnE2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzd
+kYexiiBBEDx5plvfNroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz
+5NVxNJ7ECDDjBJn6WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</X509Certificate></X509Data></KeyInfo></Signature><Subject><NameID Format="urn:oasis:names:tc:SAML:1.1
+:nameid-format:emailAddress">vito@svishal.onmicrosoft.com</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"><SubjectConfirmati
+onData InResponseTo="_57ED4F7EAB8324C0FC43817A8CCE22F8" NotOnOrAfter="2025-01-31T00:35:55.813Z" Recipient="https://fgt3.vis.com:9443/remote/saml/login"/
+></SubjectConfirmation></Subject><Conditions NotBefore="2025-01-30T23:30:55.813Z" NotOnOrAfter="2025-01-31T00:35:55.813Z"><AudienceRestriction><Audience
+>http://fgt3.vis.com:9443/remote/saml/metadata/</Audience></AudienceRestriction></Conditions><AttributeStatement><Attribute Name="http://schemas.microso
+ft.com/identity/claims/tenantid"><AttributeValue>2e48b41c-e3ce-499a-a7f2-ad4aea619526</AttributeValue></Attribute><Attribute Name="http://schemas.micros
+oft.com/identity/claims/objectidentifier"><AttributeValue>b0d68efc-87df-41fd-802c-d9caa63f854a</AttributeValue></Attribute><Attribute Name="http://schem
+as.microsoft.com/identity/claims/identityprovider"><AttributeValue>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</AttributeValue></Attri
+bute><Attribute Name="http://schemas.microsoft.com/claims/authnmethodsreferences"><AttributeValue>http://schemas.microsoft.com/ws/2008/06/identity/authe
+nticationmethod/password</AttributeValue><AttributeValue>http://schemas.microsoft.com/claims/multipleauthn</AttributeValue></Attribute><Attribute Name="
+http://schemas.microsoft.com/ws/2008/06/identity/claims/wids"><AttributeValue>62e90394-69f5-4237-9190-012177145e10</AttributeValue><AttributeValue>b79fb
+f4d-3ef9-4689-8143-76b194e85509</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"><Attribute
+Value>Vishal</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"><AttributeValue>Singh</Attribut
+eValue></Attribute><Attribute Name="name"><AttributeValue>vito@svishal.onmicrosoft.com</AttributeValue></Attribute><Attribute Name="group"><AttributeVal
+ue>f1c4e338-e6b7-4d16-8290-06559a741274</AttributeValue><AttributeValue>dd9fb092-8e2f-48e2-9ce8-63f27c1b84b9</AttributeValue></Attribute></AttributeStat
+ement><AuthnStatement AuthnInstant="2025-01-30T23:35:52.303Z" SessionIndex="_aea208f9-f327-4213-8155-b935f1478700"><AuthnContext><AuthnContextClassRef>u
+rn:oasis:names:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion></Assertion><NidAndSessionIndex Provide
+rID="https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/" AssertionID="_aea208f9-f327-4213-8155-b935f1478700" SessionIndex="_aea208f9-f327-421
+3-8155-b935f1478700">
+<saml:NameID xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">vito@svishal.onmicrosoft
+.com</saml:NameID>
+</NidAndSessionIndex>
+</Session>
+***********************
+__samld_sp_login_resp [878]:
+**** SP Login Dump ****
+<lasso:Login xmlns:lasso="http://www.entrouvert.org/namespaces/lasso/0.0" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names
+:tc:SAML:2.0:assertion" LoginDumpVersion="2"><lasso:Request><samlp:AuthnRequest ID="_57ED4F7EAB8324C0FC43817A8CCE22F8" Version="2.0" IssueInstant="2025-
+01-30T23:35:13Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2" SignType="0" SignMethod="0" ForceAuthn="fals
+e" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerServiceURL="https://fgt3.vis.com:9443/remote/saml
+/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy Format="urn:oasis:names:tc:SAML:1.1:nameid-format:u
+nspecified" AllowCreate="true"/></samlp:AuthnRequest></lasso:Request><lasso:Response><samlp:Response ID="_1d94bb69-9486-48ce-8777-5c800a556165" InRespon
+seTo="_57ED4F7EAB8324C0FC43817A8CCE22F8" Version="2.0" IssueInstant="2025-01-30T23:35:55.941Z" Destination="https://fgt3.vis.com:9443/remote/saml/login"
+ SignType="0" SignMethod="0"><saml:Issuer>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</saml:Issuer><samlp:Status><samlp:StatusCode Val
+ue="urn:oasis:names:tc:SAML:2.0:status:Success"/></samlp:Status><Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" ID="_aea208f9-f327-4213-8155-b9
+35f1478700" IssueInstant="2025-01-30T23:35:55.937Z" Version="2.0"><Issuer>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Signatu
+re xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod
+Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_aea208f9-f327-4213-8155-b935f1478700"><Transforms><Transform Algorithm=
+"http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algo
+rithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>Pv11OJWb+y5OV4DqEbtCUB8FEVHMnQOK+9WJugCryqQ=</DigestValue></Reference></SignedInfo><Signat
+ureValue>szfr+fwkjlTGNUEnpl61mUvBgz9DO67DGfoDtY3G3Ire82bI56p3Y3Pnb31LYM4BxtqTKpVv31yU4ihXaVAg03Gziy67v0si8mg2tteHx1D1r9hEEDckkP30IFOag+E4MpLKDwvbJ4cFOMf
+fJZexpkQ6IFEiPUJ1TWE7jy0ViB21Hi6YhcH0HCrXoPu25/3w/PEf6wWD/bJPaY7qVpOqPd3rNa5xJubKZKdrhLiG6ld08h7pPX6FIFyqtIgwjM9a28Qra+cuGRgMfHNr3ockRdbiMFySrRSU4AEn7GK
+bCNTshYLqz33VyvQlWt8+GuJ5+Eecj/a7LWre3bQsslU8sQ==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgkqhk
+iG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3Jvc2
+9mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBSkyo
+BDqR8wXb8nGARILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp+7w
+Ajh2teoUL5xVTslGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQEBCw
+UAA4IBAQDTsnE2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzdkYe
+xiiBBEDx5plvfNroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz5NV
+xNJ7ECDDjBJn6WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</X509Certificate></X509Data></KeyInfo></Signature><Subject><NameID Format="urn:oasis:names:tc:SAML:1.1:na
+meid-format:emailAddress">vito@svishal.onmicrosoft.com</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"><SubjectConfirmationD
+ata InResponseTo="_57ED4F7EAB8324C0FC43817A8CCE22F8" NotOnOrAfter="2025-01-31T00:35:55.813Z" Recipient="https://fgt3.vis.com:9443/remote/saml/login"/></
+SubjectConfirmation></Subject><Conditions NotBefore="2025-01-30T23:30:55.813Z" NotOnOrAfter="2025-01-31T00:35:55.813Z"><AudienceRestriction><Audience>ht
+tp://fgt3.vis.com:9443/remote/saml/metadata/</Audience></AudienceRestriction></Conditions><AttributeStatement><Attribute Name="http://schemas.microsoft.
+com/identity/claims/tenantid"><AttributeValue>2e48b41c-e3ce-499a-a7f2-ad4aea619526</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft
+.com/identity/claims/objectidentifier"><AttributeValue>b0d68efc-87df-41fd-802c-d9caa63f854a</AttributeValue></Attribute><Attribute Name="http://schemas.
+microsoft.com/identity/claims/identityprovider"><AttributeValue>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</AttributeValue></Attribut
+e><Attribute Name="http://schemas.microsoft.com/claims/authnmethodsreferences"><AttributeValue>http://schemas.microsoft.com/ws/2008/06/identity/authenti
+cationmethod/password</AttributeValue><AttributeValue>http://schemas.microsoft.com/claims/multipleauthn</AttributeValue></Attribute><Attribute Name="htt
+p://schemas.microsoft.com/ws/2008/06/identity/claims/wids"><AttributeValue>62e90394-69f5-4237-9190-012177145e10</AttributeValue><AttributeValue>b79fbf4d
+-3ef9-4689-8143-76b194e85509</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"><AttributeVal
+ue>Vishal</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"><AttributeValue>Singh</AttributeVa
+lue></Attribute><Attribute Name="name"><AttributeValue>vito@svishal.onmicrosoft.com</AttributeValue></Attribute><Attribute Name="group"><AttributeValue>
+f1c4e338-e6b7-4d16-8290-06559a741274</AttributeValue><AttributeValue>dd9fb092-8e2f-48e2-9ce8-63f27c1b84b9</AttributeValue></Attribute></AttributeStateme
+nt><AuthnStatement AuthnInstant="2025-01-30T23:35:52.303Z" SessionIndex="_aea208f9-f327-4213-8155-b935f1478700"><AuthnContext><AuthnContextClassRef>urn:
+oasis:names:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion></samlp:Response></lasso:Response><lasso:N
+ameIdentifier><saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">vito@svishal.onmicrosoft.com</saml:NameID></lasso:NameIdentif
+ier><lasso:RemoteProviderID>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</lasso:RemoteProviderID><lasso:MsgUrl>https://login.microsofto
+nline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeL4qOZcI2oMg2aiBphdjtIpuAoUYOAT5cDuW2f19J7iNZNF1yOAcz52KWKIw%2B86oPL%2
+FYBvvaAIfputEU%2BfaxI7y13AhVyKwwgD5Ifqvs7TpOMn70LTjpNXiHvEwIRfFDOkmi%2FWZGn2Xy7Ybv5trotC8rqbFezosznVVnXW0p3JYm%2BgMehf0UGfIAQe9hbDMKGoZTRWZzlcZEdacGLGc%
+2BLRxJtBgdlRZiolxDOyNNUu5OyiVHSO3RdcFYrC4l0JqXAymeWyxgKCTFbLEQs5h2NRcsEiJt8MaM36WhGSbRzXsKU1Yp0QiOMGzWDlLrAn0rzK5VbZVtlT%2B8H8nxtQv7heGzi5tPhSKLqd0i1s9g
+b8AfwFyXh88PdX6HuFIrkonB04AvGitSDcQGmVa%2B6ZL0cH3wKza9H8r%2BggSBaEUS6TF%2Bzy%2BuZfBz2328ap5X8MYZhRPi3Xp7kU0W1cTe18t7iGaTqFLSDpdbuW%2B1BhCG64Hsg6fo69O05r
+n8C&amp;RelayState=magic%3D02020a849a9e0555</lasso:MsgUrl><lasso:MsgRelayState>magic=02020a849a9e0555</lasso:MsgRelayState><lasso:HttpRequestMethod>4</l
+asso:HttpRequestMethod><lasso:RequestID>_57ED4F7EAB8324C0FC43817A8CCE22F8</lasso:RequestID></lasso:Login>
+***********************
+__samld_sp_login_resp [880]:
+__samld_sp_create_logout_req [932]:
+SP Session Dump
+<Session xmlns="http://www.entrouvert.org/namespaces/lasso/0.0" Version="2"><Assertion RemoteProviderID="https://sts.windows.net/2e48b41c-e3ce-499a-a7f2
+-ad4aea619526/"><Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" ID="_aea208f9-f327-4213-8155
+-b935f1478700" IssueInstant="2025-01-30T23:35:55.937Z" Version="2.0"><Issuer>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Sign
+ature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMeth
+od Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_aea208f9-f327-4213-8155-b935f1478700"><Transforms><Transform Algorit
+hm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod A
+lgorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>Pv11OJWb+y5OV4DqEbtCUB8FEVHMnQOK+9WJugCryqQ=</DigestValue></Reference></SignedInfo><Sig
+natureValue>szfr+fwkjlTGNUEnpl61mUvBgz9DO67DGfoDtY3G3Ire82bI56p3Y3Pnb31LYM4BxtqTKpVv31yU4ihXaVAg03Gziy67v0si8mg2tteHx1D1r9hEEDckkP30IFOag+E4MpLKDwvbJ4cF
+OMffJZexpkQ6IFEiPUJ1TWE7jy0ViB21Hi6YhcH0HCrXoPu25/3w/PEf6wWD/bJPaY7qVpOqPd3rNa5xJubKZKdrhLiG6ld08h7pPX6FIFyqtIgwjM9a28Qra+cuGRgMfHNr3ockRdbiMFySrRSU4AEn
+7GKbCNTshYLqz33VyvQlWt8+GuJ5+Eecj/a7LWre3bQsslU8sQ==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgk
+qhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3J
+vc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBS
+kyoBDqR8wXb8nGARILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp
++7wAjh2teoUL5xVTslGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQE
+BCwUAA4IBAQDTsnE2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzd
+kYexiiBBEDx5plvfNroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz
+5NVxNJ7ECDDjBJn6WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</X509Certificate></X509Data></KeyInfo></Signature><Subject><NameID Format="urn:oasis:names:tc:SAML:1.1
+:nameid-format:emailAddress">vito@svishal.onmicrosoft.com</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"><SubjectConfirmati
+onData InResponseTo="_57ED4F7EAB8324C0FC43817A8CCE22F8" NotOnOrAfter="2025-01-31T00:35:55.813Z" Recipient="https://fgt3.vis.com:9443/remote/saml/login"/
+></SubjectConfirmation></Subject><Conditions NotBefore="2025-01-30T23:30:55.813Z" NotOnOrAfter="2025-01-31T00:35:55.813Z"><AudienceRestriction><Audience
+>http://fgt3.vis.com:9443/remote/saml/metadata/</Audience></AudienceRestriction></Conditions><AttributeStatement><Attribute Name="http://schemas.microso
+ft.com/identity/claims/tenantid"><AttributeValue>2e48b41c-e3ce-499a-a7f2-ad4aea619526</AttributeValue></Attribute><Attribute Name="http://schemas.micros
+oft.com/identity/claims/objectidentifier"><AttributeValue>b0d68efc-87df-41fd-802c-d9caa63f854a</AttributeValue></Attribute><Attribute Name="http://schem
+as.microsoft.com/identity/claims/identityprovider"><AttributeValue>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</AttributeValue></Attri
+bute><Attribute Name="http://schemas.microsoft.com/claims/authnmethodsreferences"><AttributeValue>http://schemas.microsoft.com/ws/2008/06/identity/authe
+nticationmethod/password</AttributeValue><AttributeValue>http://schemas.microsoft.com/claims/multipleauthn</AttributeValue></Attribute><Attribute Name="
+http://schemas.microsoft.com/ws/2008/06/identity/claims/wids"><AttributeValue>62e90394-69f5-4237-9190-012177145e10</AttributeValue><AttributeValue>b79fb
+f4d-3ef9-4689-8143-76b194e85509</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"><Attribute
+Value>Vishal</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"><AttributeValue>Singh</Attribut
+eValue></Attribute><Attribute Name="name"><AttributeValue>vito@svishal.onmicrosoft.com</AttributeValue></Attribute><Attribute Name="group"><AttributeVal
+ue>f1c4e338-e6b7-4d16-8290-06559a741274</AttributeValue><AttributeValue>dd9fb092-8e2f-48e2-9ce8-63f27c1b84b9</AttributeValue></Attribute></AttributeStat
+ement><AuthnStatement AuthnInstant="2025-01-30T23:35:52.303Z" SessionIndex="_aea208f9-f327-4213-8155-b935f1478700"><AuthnContext><AuthnContextClassRef>u
+rn:oasis:names:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion></Assertion><NidAndSessionIndex Provide
+rID="https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/" AssertionID="_aea208f9-f327-4213-8155-b935f1478700" SessionIndex="_aea208f9-f327-421
+3-8155-b935f1478700">
+<saml:NameID xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">vito@svishal.onmicrosoft
+.com</saml:NameID>
+</NidAndSessionIndex>
+</Session>
+
+__update_sp_sig_opt [256]: SP no sig is required.
+__samld_sp_create_logout_req [984]:
+**** SP Logout request ****
+<samlp:LogoutRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="_BA8E30F184D1A46D3B9E69F7
+30678362" Version="2.0" IssueInstant="2025-01-30T23:35:57Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2" S
+ignType="0" SignMethod="0"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nam
+eid-format:emailAddress">vito@svishal.onmicrosoft.com</saml:NameID><samlp:SessionIndex>_aea208f9-f327-4213-8155-b935f1478700</samlp:SessionIndex>
+</samlp:LogoutRequest>
+***********************
+__samld_sp_create_logout_req [989]:
+samld_send_common_reply [91]: Code: 0, id: 563461, pid: 2060, len: 14508, data_len 14492
+samld_send_common_reply [99]:     Attr: 14, 7258, <lasso:Login xmlns:lasso="http://www.entrouvert.org/namespaces/lasso/0.0" xmlns:samlp="urn:oasis:names
+:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" LoginDumpVersion="2"><lasso:Request><samlp:AuthnRequest ID="_57ED4F7EAB8324C0F
+C43817A8CCE22F8" Version="2.0" IssueInstant="2025-01-30T23:35:13Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/s
+aml2" SignType="0" SignMethod="0" ForceAuthn="false" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsume
+rServiceURL="https://fgt3.vis.com:9443/remote/saml/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy F
+ormat="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" AllowCreate="true"/></samlp:AuthnRequest></lasso:Request><lasso:Response><samlp:Response I
+D="_1d94bb69-9486-48ce-8777-5c800a556165" InResponseTo="_57ED4F7EAB8324C0FC43817A8CCE22F8" Version="2.0" IssueInstant="2025-01-30T23:35:55.941Z" Destina
+tion="https://fgt3.vis.com:9443/remote/saml/login" SignType="0" SignMethod="0"><saml:Issuer>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526
+/</saml:Issuer><samlp:Status><samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/></samlp:Status><Assertion xmlns="urn:oasis:names:tc:S
+AML:2.0:assertion" ID="_aea208f9-f327-4213-8155-b935f1478700" IssueInstant="2025-01-30T23:35:55.937Z" Version="2.0"><Issuer>https://sts.windows.net/2e48
+b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://ww
+w.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_aea208f9-f327-4213-81
+55-b935f1478700"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2001/
+10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>Pv11OJWb+y5OV4DqEbtCUB8FEVHMnQOK+9WJugCr
+yqQ=</DigestValue></Reference></SignedInfo><SignatureValue>szfr+fwkjlTGNUEnpl61mUvBgz9DO67DGfoDtY3G3Ire82bI56p3Y3Pnb31LYM4BxtqTKpVv31yU4ihXaVAg03Gziy67v
+0si8mg2tteHx1D1r9hEEDckkP30IFOag+E4MpLKDwvbJ4cFOMffJZexpkQ6IFEiPUJ1TWE7jy0ViB21Hi6YhcH0HCrXoPu25/3w/PEf6wWD/bJPaY7qVpOqPd3rNa5xJubKZKdrhLiG6ld08h7pPX6FI
+FyqtIgwjM9a28Qra+cuGRgMfHNr3ockRdbiMFySrRSU4AEn7GKbCNTshYLqz33VyvQlWt8+GuJ5+Eecj/a7LWre3bQsslU8sQ==</SignatureValue><KeyInfo><X509Data><X509Certificate>
+MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUx
+MjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuP
+yMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBSkyoBDqR8wXb8nGARILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq
+05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp+7wAjh2teoUL5xVTslGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGW
+JMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQDTsnE2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQ
+Cru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzdkYexiiBBEDx5plvfNroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iw
+cvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz5NVxNJ7ECDDjBJn6WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</X509Certificate></X509Data></KeyInfo></Signature><Subj
+ect><NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">vito@svishal.onmicrosoft.com</NameID><SubjectConfirmation Method="urn:oasis:
+names:tc:SAML:2.0:cm:bearer"><SubjectConfirmationData InResponseTo="_57ED4F7EAB8324C0FC43817A8CCE22F8" NotOnOrAfter="2025-01-31T00:35:55.813Z" Recipient
+="https://fgt3.vis.com:9443/remote/saml/login"/></SubjectConfirmation></Subject><Conditions NotBefore="2025-01-30T23:30:55.813Z" NotOnOrAfter="2025-01-3
+1T00:35:55.813Z"><AudienceRestriction><Audience>http://fgt3.vis.com:9443/remote/saml/metadata/</Audience></AudienceRestriction></Conditions><AttributeSt
+atement><Attribute Name="http://schemas.microsoft.com/identity/claims/tenantid"><AttributeValue>2e48b41c-e3ce-499a-a7f2-ad4aea619526</AttributeValue></A
+ttribute><Attribute Name="http://schemas.microsoft.com/identity/claims/objectidentifier"><AttributeValue>b0d68efc-87df-41fd-802c-d9caa63f854a</Attribute
+Value></Attribute><Attribute Name="http://schemas.microsoft.com/identity/claims/identityprovider"><AttributeValue>https://sts.windows.net/2e48b41c-e3ce-
+499a-a7f2-ad4aea619526/</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com/claims/authnmethodsreferences"><AttributeValue>http://
+schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/password</AttributeValue><AttributeValue>http://schemas.microsoft.com/claims/multipleauth
+n</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/wids"><AttributeValue>62e90394-69f5-4237-9190-012
+177145e10</AttributeValue><AttributeValue>b79fbf4d-3ef9-4689-8143-76b194e85509</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/w
+s/2005/05/identity/claims/givenname"><AttributeValue>Vishal</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/
+claims/surname"><AttributeValue>Singh</AttributeValue></Attribute><Attribute Name="name"><AttributeValue>vito@svishal.onmicrosoft.com</AttributeValue></
+Attribute><Attribute Name="group"><AttributeValue>f1c4e338-e6b7-4d16-8290-06559a741274</AttributeValue><AttributeValue>dd9fb092-8e2f-48e2-9ce8-63f27c1b8
+4b9</AttributeValue></Attribute></AttributeStatement><AuthnStatement AuthnInstant="2025-01-30T23:35:52.303Z" SessionIndex="_aea208f9-f327-4213-8155-b935
+f1478700"><AuthnContext><AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef></AuthnContext></AuthnStatement></As
+sertion></samlp:Response></lasso:Response><lasso:NameIdentifier><saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">vito@svisha
+l.onmicrosoft.com</saml:NameID></lasso:NameIdentifier><lasso:RemoteProviderID>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</lasso:Remot
+eProviderID><lasso:MsgUrl>https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeL4qOZcI2oMg2aiBphdj
+tIpuAoUYOAT5cDuW2f19J7iNZNF1yOAcz52KWKIw%2B86oPL%2FYBvvaAIfputEU%2BfaxI7y13AhVyKwwgD5Ifqvs7TpOMn70LTjpNXiHvEwIRfFDOkmi%2FWZGn2Xy7Ybv5trotC8rqbFezosznVVn
+XW0p3JYm%2BgMehf0UGfIAQe9hbDMKGoZTRWZzlcZEdacGLGc%2BLRxJtBgdlRZiolxDOyNNUu5OyiVHSO3RdcFYrC4l0JqXAymeWyxgKCTFbLEQs5h2NRcsEiJt8MaM36WhGSbRzXsKU1Yp0QiOMGzW
+DlLrAn0rzK5VbZVtlT%2B8H8nxtQv7heGzi5tPhSKLqd0i1s9gb8AfwFyXh88PdX6HuFIrkonB04AvGitSDcQGmVa%2B6ZL0cH3wKza9H8r%2BggSBaEUS6TF%2Bzy%2BuZfBz2328ap5X8MYZhRPi3X
+p7kU0W1cTe18t7iGaTqFLSDpdbuW%2B1BhCG64Hsg6fo69O05rn8C&amp;RelayState=magic%3D02020a849a9e0555</lasso:MsgUrl><lasso:MsgRelayState>magic=02020a849a9e0555<
+/lasso:MsgRelayState><lasso:HttpRequestMethod>4</lasso:HttpRequestMethod><lasso:RequestID>_57ED4F7EAB8324C0FC43817A8CCE22F8</lasso:RequestID></lasso:Log
+in>
+samld_send_common_reply [99]:     Attr: 13, 5402, <Session xmlns="http://www.entrouvert.org/namespaces/lasso/0.0" Version="2"><Assertion RemoteProviderI
+D="https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/"><Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:samlp="urn:oasis:names:
+tc:SAML:2.0:protocol" ID="_aea208f9-f327-4213-8155-b935f1478700" IssueInstant="2025-01-30T23:35:55.937Z" Version="2.0"><Issuer>https://sts.windows.net/2
+e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http:/
+/www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_aea208f9-f327-4213
+-8155-b935f1478700"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/20
+01/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>Pv11OJWb+y5OV4DqEbtCUB8FEVHMnQOK+9WJu
+gCryqQ=</DigestValue></Reference></SignedInfo><SignatureValue>szfr+fwkjlTGNUEnpl61mUvBgz9DO67DGfoDtY3G3Ire82bI56p3Y3Pnb31LYM4BxtqTKpVv31yU4ihXaVAg03Gziy
+67v0si8mg2tteHx1D1r9hEEDckkP30IFOag+E4MpLKDwvbJ4cFOMffJZexpkQ6IFEiPUJ1TWE7jy0ViB21Hi6YhcH0HCrXoPu25/3w/PEf6wWD/bJPaY7qVpOqPd3rNa5xJubKZKdrhLiG6ld08h7pPX
+6FIFyqtIgwjM9a28Qra+cuGRgMfHNr3ockRdbiMFySrRSU4AEn7GKbCNTshYLqz33VyvQlWt8+GuJ5+Eecj/a7LWre3bQsslU8sQ==</SignatureValue><KeyInfo><X509Data><X509Certifica
+te>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxN
+zUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxM
+QuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBSkyoBDqR8wXb8nGARILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFj
+jhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp+7wAjh2teoUL5xVTslGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7R
+OGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQDTsnE2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNV
+sjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzdkYexiiBBEDx5plvfNroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib
+8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz5NVxNJ7ECDDjBJn6WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</X509Certificate></X509Data></KeyInfo></Signature><S
+ubject><NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">vito@svishal.onmicrosoft.com</NameID><SubjectConfirmation Method="urn:oas
+is:names:tc:SAML:2.0:cm:bearer"><SubjectConfirmationData InResponseTo="_57ED4F7EAB8324C0FC43817A8CCE22F8" NotOnOrAfter="2025-01-31T00:35:55.813Z" Recipi
+ent="https://fgt3.vis.com:9443/remote/saml/login"/></SubjectConfirmation></Subject><Conditions NotBefore="2025-01-30T23:30:55.813Z" NotOnOrAfter="2025-0
+1-31T00:35:55.813Z"><AudienceRestriction><Audience>http://fgt3.vis.com:9443/remote/saml/metadata/</Audience></AudienceRestriction></Conditions><Attribut
+eStatement><Attribute Name="http://schemas.microsoft.com/identity/claims/tenantid"><AttributeValue>2e48b41c-e3ce-499a-a7f2-ad4aea619526</AttributeValue>
+</Attribute><Attribute Name="http://schemas.microsoft.com/identity/claims/objectidentifier"><AttributeValue>b0d68efc-87df-41fd-802c-d9caa63f854a</Attrib
+uteValue></Attribute><Attribute Name="http://schemas.microsoft.com/identity/claims/identityprovider"><AttributeValue>https://sts.windows.net/2e48b41c-e3
+ce-499a-a7f2-ad4aea619526/</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com/claims/authnmethodsreferences"><AttributeValue>http
+://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/password</AttributeValue><AttributeValue>http://schemas.microsoft.com/claims/multiplea
+uthn</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/wids"><AttributeValue>62e90394-69f5-4237-9190-
+012177145e10</AttributeValue><AttributeValue>b79fbf4d-3ef9-4689-8143-76b194e85509</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.or
+g/ws/2005/05/identity/claims/givenname"><AttributeValue>Vishal</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identi
+ty/claims/surname"><AttributeValue>Singh</AttributeValue></Attribute><Attribute Name="name"><AttributeValue>vito@svishal.onmicrosoft.com</AttributeValue
+></Attribute><Attribute Name="group"><AttributeValue>f1c4e338-e6b7-4d16-8290-06559a741274</AttributeValue><AttributeValue>dd9fb092-8e2f-48e2-9ce8-63f27c
+1b84b9</AttributeValue></Attribute></AttributeStatement><AuthnStatement AuthnInstant="2025-01-30T23:35:52.303Z" SessionIndex="_aea208f9-f327-4213-8155-b
+935f1478700"><AuthnContext><AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef></AuthnContext></AuthnStatement><
+/Assertion></Assertion><NidAndSessionIndex ProviderID="https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/" AssertionID="_aea208f9-f327-4213-8
+155-b935f1478700" SessionIndex="_aea208f9-f327-4213-8155-b935f1478700">
+<saml:NameID xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">vito@svishal.onmicrosoft
+.com</saml:NameID>
+</NidAndSessionIndex>
+</Session>
+samld_send_common_reply [99]:     Attr: 17, 31, magic=02020a849a9e0555
+samld_send_common_reply [99]:     Attr: 18, 33, 2025-01-31T00:35:55.813Z
+samld_send_common_reply [95]:     Attr: 10, 99, 'http://schemas.microsoft.com/identity/claims/tenantid' '2e48b41c-e3ce-499a-a7f2-ad4aea619526'
+samld_send_common_reply [95]:     Attr: 10, 107, 'http://schemas.microsoft.com/identity/claims/objectidentifier' 'b0d68efc-87df-41fd-802c-d9caa63f854a'
+samld_send_common_reply [95]:     Attr: 10, 132, 'http://schemas.microsoft.com/identity/claims/identityprovider' 'https://sts.windows.net/2e48b41c-e3ce-
+499a-a7f2-ad4aea619526/'
+samld_send_common_reply [95]:     Attr: 10, 146, 'http://schemas.microsoft.com/claims/authnmethodsreferences' 'http://schemas.microsoft.com/ws/2008/06/i
+dentity/authenticationmethod/password'
+samld_send_common_reply [95]:     Attr: 10, 117, 'http://schemas.microsoft.com/claims/authnmethodsreferences' 'http://schemas.microsoft.com/claims/multi
+pleauthn'
+samld_send_common_reply [95]:     Attr: 10, 106, 'http://schemas.microsoft.com/ws/2008/06/identity/claims/wids' '62e90394-69f5-4237-9190-012177145e10'
+samld_send_common_reply [95]:     Attr: 10, 106, 'http://schemas.microsoft.com/ws/2008/06/identity/claims/wids' 'b79fbf4d-3ef9-4689-8143-76b194e85509'
+samld_send_common_reply [95]:     Attr: 10, 79, 'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname' 'Vishal'
+samld_send_common_reply [95]:     Attr: 10, 76, 'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname' 'Singh'
+samld_send_common_reply [95]:     Attr: 10, 42, 'name' 'vito@svishal.onmicrosoft.com'
+samld_send_common_reply [95]:     Attr: 10, 51, 'group' 'f1c4e338-e6b7-4d16-8290-06559a741274'
+samld_send_common_reply [95]:     Attr: 10, 51, 'group' 'dd9fb092-8e2f-48e2-9ce8-63f27c1b84b9'
+samld_send_common_reply [99]:     Attr: 11, 656, https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=fZJNa9wwEIbv%2
+FRVGd9n68pfYNd3gLCwkOTQlh16CYssbgSVtNdqQn1%2FZm5Q00JwEo3need9hNqDsfJI3%2FujP8Yf%2BfdYQs1c7O5Drzxadg5NegQHplNUg4yDvd7c3kuVEnoKPfvAz%2BoB8TSgAHaLxDmWHfose
+r3bNNSd72oie7kTV86v2umr3NSdV3fCKoexBB0j9W5TwBAGc9cFBVC6mEmElJhRz8pNxyUtZ1r9Q1qcMxqm4Us8xnkAWxeyPxuXWDMGDn6J3s3E6H7wtmBbNk6AD1nzQWLStwqqeGFajUFpVtC1ZVSzJ
+GOo2yytXE6FbpJPydIw8fzGwiMlWCF4EbX3UK1NYHdWooio2xUf2InSX9nPos70PVsX%2FL47mdK2YEU9rq9RWmXk3jkEDoO7FRP8dkoVnNefe%2FQ25OHobe5l0GXuS9wlL2zm4Ub92jyklI83U4omz
+GgtGOW5oWeKnlpcTFXVTE3KR%2BUR%2Be6%2F%2Bcz7dHw%3D%3D&RelayState=magic%3D02020a849a9e0555
+[authd_saml_read:120]: Resp len 14508 bytes
+[authd_saml_read:131]: Rcvd 14508 bytes
+[authd_http_on_saml_msg:4450]: src 10.21.8.181 flag 1020a000
+[authd_http_on_saml_msg:4459]: cmd 2, code 0.
+[authd_http_on_saml_msg:4535]: user 'vito@svishal.onmicrosoft.com'.
+[authd_http_on_saml_msg:4527]: group 'f1c4e338-e6b7-4d16-8290-06559a741274'.
+[authd_http_on_saml_msg:4527]: group 'dd9fb092-8e2f-48e2-9ce8-63f27c1b84b9'.
+[2579] handle_req-Rcvd auth cache message
+[139] __saml_auth_cache_push-Hash bucket 188
+[186] __saml_auth_cache_push-New auth cache entry is created, user='448804186640428B941B1E0748567723', saml_user='vito@svishal.onmicrosoft.com', expires
+=1738283755, SAML_server='Azure-saml-IPsec', vfid=0
+[authd_http_send:1268]: src 10.21.8.181 flag 1020a000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+authd_http: change state from 3 to 5
+[authd_http_disconnect:2735]: src 10.21.8.181 flag 1020a000
+[authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+authd_http: change state from 5 to 6
+[authd_http_done:2780]: src 10.21.8.181 flag 1020a000
+authd_epoll_work: timeout 24780
+ike 0: comes 10.21.8.181:500->172.16.254.1:500,ifindex=4,vrf=0....
+ike 0: IKEv2 exchange=SA_INIT id=849bc05f9c9ffdd8/0000000000000000 len=465
+ike 0: in 849BC05F9C9FFDD800000000000000002120220800000000000001D12200005C0200002C010100040300000C0100000C800E008003000008020000020300000803000002000000
+08040000050000002C020100040300000C0100000C800E01000300000802000005030000080300000C0000000804000005280000C8000500004F21A067B4FC59A64C6A20AD93DDBF595E4422
+8C04FC55ADB7126322283F6E4C2BFEEBAA66DC6A6A72A8CB43F159BAA0910B00C2122118DB1A6E30BED1704F77E7114FC4BE739A73C239625F6BC672E93C847C5E28CC86884A16B73D5C040D
+FE34F0CFE9F3D2258C941B59D73934E1A014EE98D70959AC8E7CE622888A5C20C3AE64047DE5F67D829CBA13586E12AD0C0A8A5E5E5218AF2419513F0185497A8A0A855F8379C091C4F45BF8
+62DEA210A77279239013CD6E0BD408AF82AA3C38402B000014BF33A6D564BD17253B04E187B764E2B02B0000144C53427B6D465D1B337BB755A37A7FEF2B000014B4F01CA951E9DA8D0BAFBB
+D34AD3044E29000014C1DC4350476B98A429B91781914CA43E2900001C000040041252C01E2B2B9433DEED3F818EFAEE5D3E9566632900001C000040051FB05097DA0803056551FD57DC56AF
+4FC10B9816000000090000F05000
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: responder received SA_INIT msg
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: VID forticlient connect license 4C53427B6D465D1B337BB755A37A7FEF
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: VID Fortinet Endpoint Control B4F01CA951E9DA8D0BAFBBD34AD3044E
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: VID Forticlient EAP Extension C1DC4350476B98A429B91781914CA43E
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: received notify type NAT_DETECTION_SOURCE_IP
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: received notify type NAT_DETECTION_DESTINATION_IP
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: received notify type VPN_NETWORK_ID
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: NETWORK ID : 0
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: incoming proposal:
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: proposal id = 1:
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:   protocol = IKEv2:
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:      encapsulation = IKEv2/none
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:         type=ENCR, val=AES_CBC (key_len = 128)
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:         type=INTEGR, val=AUTH_HMAC_SHA_96
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:         type=PRF, val=PRF_HMAC_SHA
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:         type=DH_GROUP, val=MODP1536.
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: proposal id = 2:
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:   protocol = IKEv2:
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:      encapsulation = IKEv2/none
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:         type=ENCR, val=AES_CBC (key_len = 256)
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:         type=INTEGR, val=AUTH_HMAC_SHA2_256_128
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:         type=PRF, val=PRF_HMAC_SHA2_256
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:         type=DH_GROUP, val=MODP1536.
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: matched proposal id 2
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: proposal id = 2:
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:   protocol = IKEv2:
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:      encapsulation = IKEv2/none
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:         type=ENCR, val=AES_CBC (key_len = 256)
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:         type=INTEGR, val=AUTH_HMAC_SHA2_256_128
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:         type=PRF, val=PRF_HMAC_SHA2_256
+ike 0:849bc05f9c9ffdd8/0000000000000000:314:         type=DH_GROUP, val=MODP1536.
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: lifetime=86400
+ike 0:849bc05f9c9ffdd8/0000000000000000:314: SA proposal chosen, matched gateway ipsec-ra-saml
+ike 0:ipsec-ra-saml: created connection: 0x10d64090 0 172.16.254.1->10.21.8.181:500.
+ike 0:ipsec-ra-saml:314: processing notify type NAT_DETECTION_SOURCE_IP
+ike 0:ipsec-ra-saml:314: processing NAT-D payload
+ike 0:ipsec-ra-saml:314: NAT not detected
+ike 0:ipsec-ra-saml:314: process NAT-D
+ike 0:ipsec-ra-saml:314: processing notify type NAT_DETECTION_DESTINATION_IP
+ike 0:ipsec-ra-saml:314: processing NAT-D payload
+ike 0:ipsec-ra-saml:314: NAT not detected
+ike 0:ipsec-ra-saml:314: process NAT-D
+ike 0:ipsec-ra-saml:314: enable FortiClient endpoint compliance check, use 169.254.1.1
+ike 0:ipsec-ra-saml:314: FCT EAP 2FA extension vendor ID received
+ike 0:ipsec-ra-saml:314: responder preparing SA_INIT msg
+ike 0:ipsec-ra-saml:314: generate DH public value request queued
+ike 0:ipsec-ra-saml:314: responder preparing SA_INIT msg
+ike 0:ipsec-ra-saml:314: compute DH shared secret request queued
+ike 0:ipsec-ra-saml:314: responder preparing SA_INIT msg
+ike 0:ipsec-ra-saml:314: create NAT-D hash local 172.16.254.1/500 remote 10.21.8.181/500
+ike 0:ipsec-ra-saml:314: out 849BC05F9C9FFDD83063C48897AD4DCF212022200000000000000160220000300000002C020100040300000C0100000C800E01000300000802000005030
+000080300000C0000000804000005280000C8000500006DE1025A13CCFB545275F1BCC93CAABD044D57958E4C323078EA20C438131B450C94999DB6BFBF708D78283698E5F8A02E752F9B108
+D6820A69CF72B169E881051615EAA06593BD00845443D31677341A3203B2D5C036BE324DE37947EBDCF10FBF0AC4D5BCFAB529C31B97B58B5580191A033E9C48CC3752CF5DA34311EC27C73D
+20671492BBA571982A0A29DBA2D3CD6F183DB908CC559AAEFDC9A73914B6B566177E185560FD9B8040ECDC9D89DDABFB1B3A84DC356AB4EEA50D2A75734F729000014C6B2BF733116EA5EAF4
+FA12DA7D406782900001C00004004BD58D966E51231E582E34B9C2CB1C3AB3703E2930000001C00004005FF9831337AA1352036E9D6FA178ED5205CAC06C0
+ike 0:ipsec-ra-saml:314: sent IKE msg (SA_INIT_RESPONSE): 172.16.254.1:500->10.21.8.181:500, len=352, vrf=0, id=849bc05f9c9ffdd8/3063c48897ad4dcf
+ike 0:ipsec-ra-saml:314: IKE SA 849bc05f9c9ffdd8/3063c48897ad4dcf SK_ei 32:70089F6A15495AE163B6034E2EBC5D55ABC1FC2FFD2C030FFF078AAA820DA036
+ike 0:ipsec-ra-saml:314: IKE SA 849bc05f9c9ffdd8/3063c48897ad4dcf SK_er 32:BF385393CFC34C1EBE908F72FF105A912B12BF68C330B092E0319367E4910D87
+ike 0:ipsec-ra-saml:314: IKE SA 849bc05f9c9ffdd8/3063c48897ad4dcf SK_ai 32:326F13D958969EB190856DD196FADCF7CC7809EFEA13C16FACAFF50EAA6DA4CB
+ike 0:ipsec-ra-saml:314: IKE SA 849bc05f9c9ffdd8/3063c48897ad4dcf SK_ar 32:9B2F0AB0846222C2D95E912524FC93D9415EF69A9D3E47ACA3052D65D5CD93D2
+ike 0: comes 10.21.8.181:500->172.16.254.1:500,ifindex=4,vrf=0....
+ike 0: IKEv2 exchange=AUTH id=849bc05f9c9ffdd8/3063c48897ad4dcf:00000001 len=624
+ike 0: in 849BC05F9C9FFDD83063C48897AD4DCF2E202308000000010000027023000254DC63E5EB4DC91C7654D1308B7081A3078B9B7424E98DFFA4C39200B331853C3FAD51FFE5C28F1A
+F4483D4D7BACA3433414FA6D3CA0CCAABAB3670BD28302148976ED97F91A47D7F285D222C59072BE5B772707575BF225C2E291244D605CDC4E44650BB37106E0C65279971DA618198A8C3988
+49CEC7E9C52DC4E9531A3F13A9F2424A9DD4C9A885D603BC4EC87BD384ECA8C4A68F2B2B08F824330096D33E72535F1421F577D1553E673B95EAAC58F5F03DB7EC7E926494E6C4F0B37CE475
+B59A688CC159219B2988C3408AC722F513D1E691417598D016A450BC4CE82A6A2F953EFCADAFAA6316B56286DE1236238A3A526EBDA7926C5E0846AE01C8274A608F80A47ECBDD06A523D5B9
+98E85F09302341EC573CA60A93D4495CCE3C2AE75E03F7A4741DF89E686B567E152D1296E1FBC3CEEC64EF5F8D0C4D524C51210EB891A42A7817196C7357F3D8BB0FEFF94AF940BF71F9DB54
+2F8A6DA9F147355145C9A1F0E7E5FF2044DBE78C09A1FE748158DA1A7301EBA6814EDD8E079995D25B1F609EA233B569C66CB45ED9EA507513034B8A2C29FDE64ECD4A9B0ADDBB19AA370D7D
+2F0B4F8E8A23D4BB7A185015B616390EAE9AC2A54E1276002F868CA65C5C64F07C82C122352BB52F8775B41B6F8DAFE3E0EB5009A5ACF7579BD2862B1A46D08329655AA77B2C86DF1CC89CE1
+0C4FCEA4BAA33116D2966405703649134B81EBD98CB9F7F6254E2A401AA716B220C875816115828DB2A9CC2D3566E901417C749A960320D82DA09BED53EB4B0E2FB9505CE1FF8ED0EF818600
+0C883B4BC3F6A5C6DC47F8002FF658285C654C3405
+ike 0:ipsec-ra-saml:314: dec 849BC05F9C9FFDD83063C48897AD4DCF2E2023080000000100000243230000042900000C010000000A1508B529000008000040002F00012F0000F100564
+5523D310A4643545645523D372E322E382E313134300A5549443D34343838303431383636343034323842393431423145303734383536373732330A49503D31302E32312E382E3138310A4D4
+1433D30302D36322D36632D36312D35662D30323B0A484F53543D7669746F2D310A555345523D34343838303431383636343034323842393431423145303734383536373732330A4F5356455
+23D4D6963726F736F66742057696E646F77732031312050726F66657373696F6E616C2045646974696F6E2C2036342D62697420286275696C64203232363231290A5245475F5354415455533
+D300A454D53534E3D464354454D53383832333030383639350A454D5349443D30303030303030303030303030303030303030303030303030303030303030300A002100005C0100000000070
+0104643543830303232313037373333303800010000000200000003000000040000000D00000019000000080000000F0000000A0000000B000070010000540A0000540B00007000000070060
+000001900002C000054020000280103040383294B1D0300000C0100000C800E008003000008030000020000000805000000000000280203040383294B1D0300000C0100000C800E010003000
+0080300000C00000008050000002D00001801000000070000100000FFFF00000000FFFFFFFF0000001801000000070000100000FFFF00000000FFFFFFFF
+ike 0:ipsec-ra-saml:314: responder received AUTH msg
+ike 0:ipsec-ra-saml:314: processing notify type INITIAL_CONTACT
+ike 0:ipsec-ra-saml:314: processing notify type FORTICLIENT_CONNECT
+ike 0:ipsec-ra-saml:314: received FCT data len = 295, data = 'VER=1
+FCTVER=7.2.8.1140
+UID=448804186640428B941B1E0748567723
+IP=10.21.8.181
+MAC=00-62-6c-61-5f-02;
+HOST=vito-1
+USER=448804186640428B941B1E0748567723
+OSVER=Microsoft Windows 11 Professional Edition, 64-bit (build 22621)
+REG_STATUS=0
+EMSSN=FCTEMS8823008695
+EMSID=00000000000000000000000000000000
+'
+ike 0:ipsec-ra-saml:314: received FCT-UID = 448804186640428B941B1E0748567723
+ike 0:ipsec-ra-saml:314: received EMS SN : FCTEMS8823008695
+ike 0:ipsec-ra-saml:314: received EMS tenant ID : 00000000000000000000000000000000
+ike 0:ipsec-ra-saml:314: peer identifier IPV4_ADDR 10.21.8.181
+ike 0:ipsec-ra-saml:314: re-validate gw ID
+ike 0:ipsec-ra-saml:314: gw validation OK
+ike 0:ipsec-ra-saml:314: responder preparing EAP identity request
+ike 0:ipsec-ra-saml:314: enc 2700000C01000000AC10FE013000002802000000ED080B6EC6C72CBB25DB47416FFB3D7BAE54D9B67DB67629DA6AE9B8E48EFD9200000009010F0005010
+20102
+ike 0:ipsec-ra-saml:314: out 849BC05F9C9FFDD83063C48897AD4DCF2E2023200000000100000080240000648DC922039E2F5200AEE05181519C1306CA7703093AA24766B1963B15C0D
+253216405F907EDDF871A36A1A8B3AC2C6A360DABAD552314CDF3CBF4E1393E1172DFDAACACDED3148E1297D5DEF56EB2812B0875B77A2E20A5FF1E4A73B912DA00B6
+ike 0:ipsec-ra-saml:314: sent IKE msg (AUTH_RESPONSE): 172.16.254.1:500->10.21.8.181:500, len=128, vrf=0, id=849bc05f9c9ffdd8/3063c48897ad4dcf:00000001
+ike 0: comes 10.21.8.181:500->172.16.254.1:500,ifindex=4,vrf=0....
+ike 0: IKEv2 exchange=AUTH id=849bc05f9c9ffdd8/3063c48897ad4dcf:00000002 len=112
+ike 0: in 849BC05F9C9FFDD83063C48897AD4DCF2E202308000000020000007030000054D212455FF7C36E2F359CB99E38820294187FFBDC9D0F185E609073BFA399E08F6B148BC52F7090
+8DF1F5F062ADD0117E2EB4AC2358AFFE2FD6FA35CFB7D4BB55E3028F9E88F98251076DB21244F20B64
+ike 0:ipsec-ra-saml:314: dec 849BC05F9C9FFDD83063C48897AD4DCF2E20230800000002000000493000000400000029020F00250134343838303431383636343034323842393431423
+14530373438353637373233
+ike 0:ipsec-ra-saml:314: responder received EAP msg
+ike 0:ipsec-ra-saml:314: send EAP message to FNBAM
+ike 0:ipsec-ra-saml:314: initiating EAP authentication
+ike 0:ipsec-ra-saml: EAP user "448804186640428B941B1E0748567723"
+ike 0:ipsec-ra-saml: auth group ipsec-saml-group
+[1939] handle_req-Rcvd auth req 1320322359 for 448804186640428B941B1E0748567723 in ipsec-saml-group opt=00000000 prot=8
+[489] __compose_group_list_from_req-Group 'ipsec-saml-group', type 1
+[616] fnbamd_pop3_start-448804186640428B941B1E0748567723
+ike 0:ipsec-ra-saml: EAP 1320322359 pending
+[645] fnbamd_cfg_get_radius_list-Loading RADIUS server 'eap_proxy'
+[342] fnbamd_create_radius_socket-Opened radius socket 10
+[342] fnbamd_create_radius_socket-Opened radius socket 11
+[1456] fnbamd_radius_auth_send-Compose RADIUS request
+fnbamd_dbg_hex_pnt[48] EAP msg from client (37)-02 0F 00 25 01 34 34 38 38 30 34 31 38 36 36 34 30 34 32 38 42 39 34 31 42 31 45 30 37 34 38 35 36 37 37
+ 32 33
+[1413] fnbamd_rad_dns_cb-127.0.0.1->127.0.0.1
+RADIUS SRV: Received 211 bytes from 127.0.0.1:6369
+RADIUS SRV: Received data - hexdump(len=211):
+ 01 12 00 d3 75 1d 21 03 d1 86 4e 14 61 52 7b d6 3f 91 3e bd 20 06 46 47 54 36 01 22 34 34 38 38
+ 30 34 31 38 36 36 34 30 34 32 38 42 39 34 31 42 31 45 30 37 34 38 35 36 37 37 32 33 4f 27 02 0f
+ 00 25 01 34 34 38 38 30 34 31 38 36 36 34 30 34 32 38 42 39 34 31 42 31 45 30 37 34 38 35 36 37
+ 37 32 33 08 06 0a 15 08 b5 3d 06 00 00 00 05 1f 0d 31 30 2e 32 31 2e 38 2e 31 38 31 1a 0c 00 00
+ 30 44 02 06 0a 15 08 b5 2c 0a 34 65 62 32 38 35 33 37 4d 0b 76 70 6e 2d 69 6b 65 76 32 1a 0c 00
+ 00 30 44 03 06 72 6f 6f 74 1a 18 00 00 30 44 01 12 69 70 73 65 63 2d 73 61 6d 6c 2d 67 72 6f 75
+ 70 50 12 95 33 80 76 8f 23 ce 6c a2 8c d3 88 e3 78 5d 61
+
+[454] __fnbamd_cfg_get_ext_idp_list_by_group-
+[460] __fnbamd_cfg_get_ext_idp_list_by_group-Group 'ipsec-saml-group'
+[490] fnbamd_cfg_get_ext_idp_list-Total external identity provider servers to try: 0
+[652] create_auth_session-Total 1 server(s) to try
+[1980] handle_req-r=4
+RADIUS SRV: NAS-ID - hexdump_ascii(len=4):
+     46 47 54 36                                       FGT6
+RADIUS SRV: CALLING-STATION-ID - hexdump_ascii(len=11):
+     31 30 2e 32 31 2e 38 2e 31 38 31                  10.21.8.181
+RADIUS SRV: SVC_TYPE - hexdump_ascii(len=9):
+     76 70 6e 2d 69 6b 65 76 32                        vpn-ikev2
+RADIUS SRV: New session 0x6 initialized
+RADIUS SRV: Received EAP data - hexdump(len=37):
+ 02 0f 00 25 01 34 34 38 38 30 34 31 38 36 36 34 30 34 32 38 42 39 34 31 42 31 45 30 37 34 38 35
+ 36 37 37 32 33
+
+EAP: EAP entering state INITIALIZE
+EAP: parseEapResp: rxResp=1 respId=15 respMethod=1 respVendor=0 respVendorMethod=0
+CTRL-EVENT-EAP-STARTED 00:00:00:00:00:00
+EAP: EAP entering state PICK_UP_METHOD
+CTRL-EVENT-EAP-PROPOSED-METHOD method=1
+EAP: EAP entering state METHOD_RESPONSE
+EAP-Identity: Peer identity - hexdump_ascii(len=32):
+     34 34 38 38 30 34 31 38 36 36 34 30 34 32 38 42   448804186640428B
+     39 34 31 42 31 45 30 37 34 38 35 36 37 37 32 33   941B1E0748567723
+EAP: EAP entering state SELECT_ACTION
+EAP: getDecision: another method available -> CONTINUE
+EAP: EAP entering state PROPOSE_METHOD
+EAP: getNextMethod: vendor 0 type 26
+CTRL-EVENT-EAP-PROPOSED-METHOD vendor=0 method=26
+EAP: EAP entering state METHOD_REQUEST
+EAP: building EAP-Request: Identifier 16
+EAP-MSCHAPV2: Challenge - hexdump(len=16):
+ eb 1d 09 ed 7f 85 34 2c 0b 51 2a bf ae 64 92 84
+
+EAP: EAP entering state SEND_REQUEST
+EAP: EAP entering state IDLE
+EAP: retransmit timeout 3 seconds (from dynamic back off; retransCount=0)
+RADIUS SRV: EAP data from the state machine - hexdump(len=33):
+ 01 10 00 21 1a 01 10 00 1c 10 eb 1d 09 ed 7f 85 34 2c 0b 51 2a bf ae 64 92 84 68 6f 73 74 61 70
+ 64
+
+RADIUS SRV: Reply to 127.0.0.1:6369
+[1523] fnbamd_auth_handle_radius_result-Timer of rad 'eap_proxy' is deleted
+[1888] fnbamd_radius_auth_validate_pkt-RADIUS resp code 11
+fnbamd_dbg_hex_pnt[48] EAP msg from server (33)-01 10 00 21 1A 01 10 00 1C 10 EB 1D 09 ED 7F 85 34 2C 0B 51 2A BF AE 64 92 84 68 6F 73 74 61 70 64
+[1549] fnbamd_auth_handle_radius_result-->Result for radius svr 'eap_proxy' 127.0.0.1(1) is 2
+[209] fnbamd_comm_send_result-Sending result 2 (nid 0) for req 1320322359, len=2569
+ike 0:ipsec-ra-saml:314 EAP 1320322359 result FNBAM_CHALLENGED
+ike 0:ipsec-ra-saml: EAP challenged for user "448804186640428B941B1E0748567723"
+ike 0:ipsec-ra-saml:314: responder preparing EAP pass through message
+ike 0:ipsec-ra-saml:314: enc 00000025011000211A0110001C10EB1D09ED7F85342C0B512ABFAE649284686F73746170640A0908070605040302010A
+ike 0:ipsec-ra-saml:314: out 849BC05F9C9FFDD83063C48897AD4DCF2E2023200000000200000070300000545689597237D78E38D6E86C0804E67AA90597FC40B6B6A1138B7A67B0C67
+70644A2D866BCD8A2D62495CCB8C12476212CD0F7EB9DA3C3ABC3F856AEC3FEF9F8992F91E02DF5008BA883A998FAC3ED8B21
+ike 0:ipsec-ra-saml:314: sent IKE msg (AUTH_RESPONSE): 172.16.254.1:500->10.21.8.181:500, len=112, vrf=0, id=849bc05f9c9ffdd8/3063c48897ad4dcf:00000002
+[1308] freeze_auth_session-
+ike 0: comes 10.21.8.181:500->172.16.254.1:500,ifindex=4,vrf=0....
+ike 0: IKEv2 exchange=AUTH id=849bc05f9c9ffdd8/3063c48897ad4dcf:00000003 len=160
+ike 0: in 849BC05F9C9FFDD83063C48897AD4DCF2E20230800000003000000A030000084B22C8ADB62DE5E3C9CE51322B5BC30023606658FDF2B94776D20A8B21338DA44A7E42283A330E9
+2014F39D4FCB632175474E0B46B2C0A03BAE45330417A52CD10874BA8A3F7341E9ACBE1881DF0785E18BD0B4E73F61AACD08FABF88E31BFC41FC536BE5F9B6B0CEA212C534E796778820A831
+7F6C6045B2917A716DE4B552B3
+ike 0:ipsec-ra-saml:314: dec 849BC05F9C9FFDD83063C48897AD4DCF2E202308000000030000007F300000040000005F0210005B1A0210005631F687EAA10EB50F5D1BC28FC2A5F0454
+400000000000000000A9E3DE4743E626D873F27A5DDEFED92B407646085A82882003434383830343138363634303432384239343142314530373438353637373233
+ike 0:ipsec-ra-saml:314: responder received EAP msg
+ike 0:ipsec-ra-saml:314: send EAP message to FNBAM
+ike 0:ipsec-ra-saml: EAP 1320322359 pending
+[2459] handle_req-Rcvd chal rsp for req 1320322359
+[1325] unfreeze_auth_session-
+[342] fnbamd_create_radius_socket-Opened radius socket 10
+[342] fnbamd_create_radius_socket-Opened radius socket 11
+[1456] fnbamd_radius_auth_send-Compose RADIUS request
+fnbamd_dbg_hex_pnt[48] EAP msg from client (91)-02 10 00 5B 1A 02 10 00 56 31 F6 87 EA A1 0E B5 0F 5D 1B C2 8F C2 A5 F0 45 44 00 00 00 00 00 00 00 00 0A
+ 9E 3D E4 74 3E 62 6D 87 3F 27 A5 DD EF ED 92 B4 07 64 60 85 A8 28 82 00 34 34 38 38 30 34 31 38 36 36 34 30 34 32 38 42 39 34 31 42 31 45 30 37 34 38 3
+5 36 37 37 32 33
+RADIUS SRV: Received 271 bytes from 127.0.0.1:17949
+RADIUS SRV: Received data - hexdump(len=271):
+ 01 13 01 0f d3 56 54 1c c2 1a 2b 27 9a 2a e6 87 b7 45 4c 69 20 06 46 47 54 36 18 06 00 00 00 06
+ 01 22 34 34 38 38 30 34 31 38 36 36 34 30 34 32 38 42 39 34 31 42 31 45 30 37 34 38 35 36 37 37
+[1385] __fnbamd_rad_send-Sent radius req to server 'eap_proxy': fd=10, IP=127.0.0.1(127.0.0.1:1812) code=1 id=19 len=271 user="448804186640428B941B1E074
+8567723" using EAP
+[1334] send_radius_challenge_rsp-Timer of rad 'eap_proxy' is added
+ 00 00 00 00 00 00 0a 9e 3d e4 74 3e 62 6d 87 3f 27 a5 dd ef ed 92 b4 07 64 60 85 a8 28 82 00 34
+ 34 38 38 30 34 31 38 36 36 34 30 34 32 38 42 39 34 31 42 31 45 30 37 34 38 35 36 37 37 32 33 08
+ 06 0a 15 08 b5 3d 06 00 00 00 05 1f 0d 31 30 2e 32 31 2e 38 2e 31 38 31 1a 0c 00 00 30 44 02 06
+ 0a 15 08 b5 2c 0a 34 65 62 32 38 35 33 37 4d 0b 76 70 6e 2d 69 6b 65 76 32 1a 0c 00 00 30 44 03
+ 06 72 6f 6f 74 1a 18 00 00 30 44 01 12 69 70 73 65 63 2d 73 61 6d 6c 2d 67 72 6f 75 70 50 12 4e
+ 17 71 28 10 00 52 1a f6 70 14 5e 4f 97 20 cf
+
+RADIUS SRV: Request for session 0x6
+RADIUS SRV: Received EAP data - hexdump(len=91):
+ 02 10 00 5b 1a 02 10 00 56 31 f6 87 ea a1 0e b5 0f 5d 1b c2 8f c2 a5 f0 45 44 00 00 00 00 00 00
+ 00 00 0a 9e 3d e4 74 3e 62 6d 87 3f 27 a5 dd ef ed 92 b4 07 64 60 85 a8 28 82 00 34 34 38 38 30
+ 34 31 38 36 36 34 30 34 32 38 42 39 34 31 42 31 45 30 37 34 38 35 36 37 37 32 33
+
+EAP: EAP entering state RECEIVED
+EAP: parseEapResp: rxResp=1 respId=16 respMethod=26 respVendor=0 respVendorMethod=0
+EAP: EAP entering state INTEGRITY_CHECK
+EAP: EAP entering state METHOD_RESPONSE
+EAP-MSCHAPV2: Peer-Challenge - hexdump(len=16):
+ f6 87 ea a1 0e b5 0f 5d 1b c2 8f c2 a5 f0 45 44
+
+EAP-MSCHAPV2: NT-Response - hexdump(len=24):
+ 0a 9e 3d e4 74 3e 62 6d 87 3f 27 a5 dd ef ed 92 b4 07 64 60 85 a8 28 82
+
+EAP-MSCHAPV2: Flags 0x0
+EAP-MSCHAPV2: Name - hexdump_ascii(len=32):
+     34 34 38 38 30 34 31 38 36 36 34 30 34 32 38 42   448804186640428B
+     39 34 31 42 31 45 30 37 34 38 35 36 37 37 32 33   941B1E0748567723
+EAP-MSCHAPV2: User name - hexdump_ascii(len=32):
+     34 34 38 38 30 34 31 38 36 36 34 30 34 32 38 42   448804186640428B
+     39 34 31 42 31 45 30 37 34 38 35 36 37 37 32 33   941B1E0748567723
+eap_comm_session_add 675 -- comm session added, ses_id=7
+
+eap_comm_server_read 317 req.msg_type:0.
+
+ep_fnbam_auth_wpa_user 402 -- svc_type='vpn-ikev2', user='448804186640428B941B1E0748567723', vdom='root', intf='FGT6'
+[1939] handle_req-Rcvd auth req 1320322360 for 448804186640428B941B1E0748567723 in  opt=00000000 prot=4
+[489] __compose_group_list_from_req-Group 'ipsec-saml-group', type 1
+[1008] fnbamd_saml_auth_cache_lookup-Authneticating '448804186640428B941B1E0748567723'.
+[1042] fnbamd_saml_auth_cache_lookup-Authentication passed.
+[234] __clear_one_entry-'448804186640428B941B1E0748567723' is cleared.
+[1980] handle_req-r=0
+[1623] fnbam_user_auth_group_match-req id: 1320322360, server: Azure-saml-IPsec, local auth: 0, dn match: 0
+[1994] handle_req-Failed group matching
+[209] fnbamd_comm_send_result-Sending result 1 (nid 0) for req 1320322360, len=2611
+wpad_fnbam_read() -- got response
+process_auth_result 650 -- ses_id=1320322360, auth_res=1.
+eap_comm_send_auth_result 240 rsp len:888
+
+ep_auth_session_del 149 -- auth session deleted, ses_id=1320322360
+eap_comm_client_read 580.rsp->msg_type:0
+
+EAP-MSCHAPV2: Invalid NT-Response
+eap_comm_session_del 489 -- comm session deleted, ses_id=7
+
+EAP: EAP entering state METHOD_REQUEST
+EAP: building EAP-Request: Identifier 17
+EAP-MSCHAPV2: Failure Request Message - hexdump_ascii(len=57):
+     45 3d 36 39 31 20 52 3d 30 20 43 3d 30 30 30 30   E=691 R=0 C=0000
+     30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30   0000000000000000
+     30 30 30 30 30 30 30 30 30 30 30 30 20 56 3d 33   000000000000 V=3
+     20 4d 3d 46 41 49 4c 45 44                         M=FAILED
+EAP: EAP entering state SEND_REQUEST
+EAP: EAP entering state IDLE
+EAP: retransmit timeout 3 seconds (from dynamic back off; retransCount=0)
+RADIUS SRV: Reply to 127.0.0.1:17949
+[1523] fnbamd_auth_handle_radius_result-Timer of rad 'eap_proxy' is deleted
+[1888] fnbamd_radius_auth_validate_pkt-RADIUS resp code 11
+fnbamd_dbg_hex_pnt[48] EAP msg from server (66)-01 11 00 42 1A 04 10 00 3D 45 3D 36 39 31 20 52 3D 30 20 43 3D 30 30 30 30 30 30 30 30 30 30 30 30 30 30
+ 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 20 56 3D 33 20 4D 3D 46 41 49 4C 45 44
+[1549] fnbamd_auth_handle_radius_result-->Result for radius svr 'eap_proxy' 127.0.0.1(1) is 2
+[209] fnbamd_comm_send_result-Sending result 2 (nid 0) for req 1320322359, len=2602
+ike 0:ipsec-ra-saml:314 EAP 1320322359 result FNBAM_CHALLENGED
+ike 0:ipsec-ra-saml: EAP challenged for user "448804186640428B941B1E0748567723"
+ike 0:ipsec-ra-saml:314: responder preparing EAP pass through message
+ike 0:ipsec-ra-saml:314: enc 00000046011100421A0410003D453D36393120523D3020433D303030303030303030303030303030303030303030303030303030303030303020563D332
+04D3D4641494C454409080706050403020109
+ike 0:ipsec-ra-saml:314: out 849BC05F9C9FFDD83063C48897AD4DCF2E2023200000000300000090300000745978927A9E1DBF8C134356ECD3BECADECC828709FD54357D837DDAD65A9
+E1080A9BD45B78CD03ED29C2CC9F1DFC0F53525EE5EA56B26FD95277C7FCB141BB2757B6DC3EC196FF1CEB0D12E7E6F2778812231299B6A8A9777874FA445EB2DD4ADC234E22946199114522
+8521FB709EE13
+ike 0:ipsec-ra-saml:314: sent IKE msg (AUTH_RESPONSE): 172.16.254.1:500->10.21.8.181:500, len=144, vrf=0, id=849bc05f9c9ffdd8/3063c48897ad4dcf:00000003
+ike 0: comes 10.21.8.181:500->172.16.254.1:500,ifindex=4,vrf=0....
+ike 0: IKEv2 exchange=AUTH id=849bc05f9c9ffdd8/3063c48897ad4dcf:00000004 len=80
+ike 0: in 849BC05F9C9FFDD83063C48897AD4DCF2E202308000000040000005030000034AC606545438FD3006970DE1F934D51AD74D1F44C8BB908259AD66D0FCE1CBD5A78CF7B61214F9E
+A6AC020561804CBF88
+ike 0:ipsec-ra-saml:314: dec 849BC05F9C9FFDD83063C48897AD4DCF2E202308000000040000002A300000040000000A021100061A04
+ike 0:ipsec-ra-saml:314: responder received EAP msg
+ike 0:ipsec-ra-saml:314: send EAP message to FNBAM
+ike 0:ipsec-ra-saml: EAP 1320322359 pending
+[1308] freeze_auth_session-
+[2459] handle_req-Rcvd chal rsp for req 1320322359
+[1325] unfreeze_auth_session-
+[342] fnbamd_create_radius_socket-Opened radius socket 10
+[342] fnbamd_create_radius_socket-Opened radius socket 11
+[1456] fnbamd_radius_auth_send-Compose RADIUS request
+fnbamd_dbg_hex_pnt[48] EAP msg from client (6)-02 11 00 06 1A 04
+RADIUS SRV: Received 186 bytes from 127.0.0.1:21439
+RADIUS SRV: Received data - hexdump(len=186):
+ 01 14 00 ba a2 c9 b6 5a 08 28 2e 8b fa 5a 0d 34 c5 fd e6 df 20 06 46 47 54 36 18 06 00 00 00 06
+ 01 22 34 34 38 38 30 34 31 38 36 36 34 30 34 32 38 42 39 34 31 42 31 45 30 37 34 38 35 36 37 37
+ 32 33 4f 08 02 11 00 06 1a 04 08 06 0a 15 08 b5 3d 06 00 00 00 05 1f 0d 31 30 2e 32 31 2e 38 2e
+ 31 38 31 1a 0c 00 00 30 44 02 06 0a 15 08 b5 2c 0a 34 65 62 32 38 35 33 37 4d 0b 76 70 6e 2d 69
+ 6b 65 76 32 1a 0c 00 00 30 44 03 06 72 6f 6f 74 1a 18 00 00 30 44 01 12 69 70 73 65 63 2d 73 61
+ 6d 6c 2d 67 72 6f 75 70 50 12 86 b1 5e 51 10 d9 ae 9c 3f 6b e3 2a e5 c6 8f 90
+
+RADIUS SRV: Request for session 0x6
+RADIUS SRV: Received EAP data - hexdump(len=6):
+ 02 11 00 06 1a 04
+
+EAP: EAP entering state RECEIVED
+EAP: parseEapResp: rxResp=1 respId=17 respMethod=26 respVendor=0 respVendorMethod=0
+EAP: EAP entering state INTEGRITY_CHECK
+EAP: EAP entering state METHOD_RESPONSE
+EAP-MSCHAPV2: Received Failure Response - authentication failed
+EAP: EAP entering state SELECT_ACTION
+EAP: getDecision: method failed -> FAILURE
+EAP: EAP entering state FAILURE
+EAP: Building EAP-Failure (id=17)
+CTRL-EVENT-EAP-FAILURE 00:00:00:00:00:00
+RADIUS SRV: EAP data from the state machine - hexdump(len=4):
+ 04 11 00 04
+
+RADIUS SRV: Reply to 127.0.0.1:21439
+[1523] fnbamd_auth_handle_radius_result-Timer of rad 'eap_proxy' is deleted
+[1888] fnbamd_radius_auth_validate_pkt-RADIUS resp code 3
+fnbamd_dbg_hex_pnt[48] EAP msg from server (4)-04 11 00 04
+[1549] fnbamd_auth_handle_radius_result-->Result for radius svr 'eap_proxy' 127.0.0.1(1) is 1
+[209] fnbamd_comm_send_result-Sending result 1 (nid 0) for req 1320322359, len=2540
+ike 0:ipsec-ra-saml:314 EAP 1320322359 result FNBAM_DENIED
+ike 0:ipsec-ra-saml: EAP failed for user "448804186640428B941B1E0748567723"
+ike 0:ipsec-ra-saml:314: responder preparing EAP pass through message
+ike 0:ipsec-ra-saml:314: enc 00000008041100040706050403020107
+ike 0:ipsec-ra-saml:314: out 849BC05F9C9FFDD83063C48897AD4DCF2E2023200000000400000050300000344BABCD730D909C6123B4F478A5FC135E9BC8E72CC97FD757C8AA5A52C67
+21ED7AB9AB7478BE355752EC6A596646535D4
+ike 0:ipsec-ra-saml:314: sent IKE msg (AUTH_RESPONSE): 172.16.254.1:500->10.21.8.181:500, len=80, vrf=0, id=849bc05f9c9ffdd8/3063c48897ad4dcf:00000004
+ike 0:ipsec-ra-saml: connection expiring due to EAP failure
+ike 0:ipsec-ra-saml: deleting
+ike 0:ipsec-ra-saml: deleted
+[808] destroy_auth_session-delete session 1320322359
+[1086] fnbamd_ext_idps_destroy-
+[2485] handle_req-Rcvd abort req for 1320322359
+[2500] handle_req-Can't abort, no active req 1320322359
+fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 244455
+authd_epoll_work: timeout 19390
+ike shrank heap by 335872 bytes
+RADIUS SRV: Removing completed session 0x6
+EAP: Server state machine removed
+fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 244457
+authd_epoll_work: timeout 9240
+
+FGT6 #
+FGT6 #
+FGT6 # di de di
+
+FGT6 #
