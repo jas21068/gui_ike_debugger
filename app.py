@@ -822,7 +822,7 @@ def saml_parser(text):
             if 'fsv_saml_login_response' in line and 'No user name info in SAML response' in line:
                 analysis_output.append(f'<span style="color: red;">[{str(i+1)}] No user in SAML reponse Detected. Please check the IDP for user availaibility .Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
             if '__samld_sp_login_resp' in line and 'Clock skew issue' in line:
-                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Clock Skey Issue Detected. To fix the issue, make sure that time is in sync on both the SP and IdP sides. .Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Clock Skew Issue Detected. To fix the issue, make sure that time is in sync on both the SP and IdP sides. .Please refer to: </span> \n https://community.fortinet.com/t5/FortiGate/Troubleshooting-Tip-Companion-for-troubleshooting-SSL-VPN-with/ta-p/217719')
 
 # ENDS the business logic
 # '========================================================================================================================================'
