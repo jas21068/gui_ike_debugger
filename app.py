@@ -3,6 +3,8 @@ from flask import Flask, request, render_template, redirect, url_for
 import pandas as pd
 from tabulate import tabulate
 import re
+import requests
+import json
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -844,6 +846,15 @@ def index():
         if logfile.filename == '':
             return "No file selected", 400
         
+        log_dir = '/Users/jamangat/Desktop/forti/gui_project/gui_ike_debugger/uploads'
+        def remove_files_in_folder(folder_path):
+            # Loop through all files in the directory and remove them
+            for filename in os.listdir(folder_path):
+                file_path = os.path.join(folder_path, filename)
+                if os.path.isfile(file_path):
+                    os.remove(file_path)
+                    print(f"Removed: {file_path}")
+        remove_files_in_folder(log_dir)
         # Save the uploaded file
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], logfile.filename)
         logfile.save(filepath)
@@ -877,6 +888,71 @@ def index():
         return render_template("result.html", results=deduplicate_array(analysis_output))
     
     return render_template("index.html")
+
+@app.route("/run_script", methods=["GET"])
+def run_script():
+
+
+    # Reprocess the original log file
+    log_files = os.listdir(app.config['UPLOAD_FOLDER'])
+    if not log_files:
+        return "No log file found", 500
+    
+    latest_log = os.path.join(app.config['UPLOAD_FOLDER'], log_files[-1])  # Get the last uploaded file
+
+    ike_log = read_file(latest_log)
+    if ike_log is None:
+        return "Error reading file", 500
+
+    # Clear previous analysis output
+    global analysis_output
+    global Incoming_conn
+    global SAML
+    analysis_output = []
+    Incoming_conn = []
+    SAML = False
+
+    if re.search(r'samld', ike_log):
+        SAML = True
+    ike_parser(ike_log)
+    if SAML == True:
+        saml_parser(ike_log)
+
+    unique_elements = []
+    for item in analysis_output:
+        if item not in unique_elements:
+            unique_elements.append(item)
+    solutions = []
+    pattern = r'<span style="color: (red|orange);">(.*?)</span>'
+
+    # Loop through each element and extract the solution text
+    for text in unique_elements:
+        matches = re.findall(pattern, text)
+        for match in matches:
+            solution_text = f"What is the solution for: {match[1]}"
+            solutions.append(solution_text)
+    question = "\n".join(solutions)
+    url = "http://localhost:11434/api/generate"
+    data = {
+        "model": "llama3:latest",
+        "prompt": f"Answer in less than 250 words in respect to Fortigate error as shown below for an IPSEC Connection: \n {question}"
+    }
+    response = requests.post(url, json=data)
+    print(response)
+    result = response.text
+    lines = result.split("\n")
+    responses = []
+    for line in lines:
+        try:
+            data = json.loads(line)
+            responses.append(data["response"])
+        except json.JSONDecodeError:
+            pass  # Skip any invalid JSON lines
+
+    # Combine the responses into a full sentence
+    final_sentence = "".join(responses)
+    
+    return final_sentence  # Return output as HTML
 
 @app.route("/about")
 def about():

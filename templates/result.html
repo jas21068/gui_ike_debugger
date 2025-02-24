@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analysis Result</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
             font-family: "Courier New", Courier, monospace;
@@ -33,5 +34,114 @@
 {% endfor %}
     </pre>
     <a href="/">Go Back</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button id="rerun-script">Click for AI-analysis</button>
+    <h2>AI-analysis Output:</h2>
+    <div id="new-script-output"></div>
+
+    <script>
+        $(document).ready(function() {
+            $("#rerun-script").click(function() {
+                // Show the loading indicator
+                $("#new-script-output").html('<div class="loading">Loading...</div>');
+
+                $.ajax({
+                    url: "/run_script",
+                    type: "GET",
+                    success: function(response) {
+                        // Format the response for better readability
+                        var formattedResponse = '<div class="output-box">' +
+                            '<h3>AI Response</h3>' +
+                            '<p>' + response + '</p>' +
+                            '</div>';
+                        
+                        // Update the content with the formatted response
+                        $("#new-script-output").html(formattedResponse);
+                    },
+                    error: function() {
+                        // In case of error, display a message
+                        $("#new-script-output").html('<div class="error">Error running AI.</div>');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <style>
+        body {
+            background-color: #1e1e1e; /* Dark background */
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        button#rerun-script {
+            background-color: #444;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button#rerun-script:hover {
+            background-color: #666;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .loading {
+            font-size: 18px;
+            color: #bbb;
+            font-style: italic;
+        }
+
+        .output-box {
+            padding: 20px;
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .output-box h3 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #f1f1f1;
+        }
+
+        .output-box p {
+            font-size: 16px;
+            color: #ddd;
+            line-height: 1.5;
+        }
+
+        .error {
+            color: #ff4d4d;
+            font-size: 18px;
+            background-color: #3a3a3a;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ff4d4d;
+        }
+
+        /* Subtle hover effect on output box */
+        .output-box:hover {
+            background-color: #333;
+            border-color: #555;
+        }
+
+    </style>
 </body>
 </html>
