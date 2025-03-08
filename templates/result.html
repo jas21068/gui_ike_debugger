@@ -55,7 +55,7 @@
                         // Format the response for better readability
                         var formattedResponse = '<div class="output-box">' +
                             '<h3>AI Response</h3>' +
-                            '<p>' + response + '</p>' +
+                            '<p>' + response.replace(/\n/g, '<br>')  + '</p>' +
                             '</div>';
                         
                         // Update the content with the formatted response
