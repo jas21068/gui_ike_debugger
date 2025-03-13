@@ -511,6 +511,43 @@ def ike_parser(text):
             analysis_output.append(f'<span style="color: red;">[{str(i+1)}]IKE negotiation failure observed, due to a possible certificate authentication failure.')
             analysis_output.append(f'<span style="color: yellow;">Please Check:\n CA signed bt valid CA or the root CA istalled in FGT \n Bad PKI user \n Re-check cert auth settings: {issuer} ')
 
+# tunnel flap 1
+        if 'ike' in line and 'ISAKMP SA DELETE-NOTIFY' in line:
+            pattern = r"(\d+\.\d+\.\d+\.\d+:\d+->\d+\.\d+\.\d+\.\d+:\d+)"
+            match = re.search(pattern, line)
+
+            if match:
+                extracted_value = match.group(1)
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Tunnel going down for connection {extracted_value}.</span>')
+            else:
+                analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Tunnel going down for connection {line}.</span>')
+
+# tunnel flap 2
+        if 'ike' in line and 'deleting IPsec SA with SPI' in line:
+            analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Tunnel going down for VPN with SPI as:  {line}.</span>')
+
+# tunnel flap 3
+        if 'ike' in line and 'del route' in line:
+            del_route_pattern = re.compile(r"del route (\d+\.\d+\.\d+\.\d+/\d+\.\d+\.\d+\.\d+)")
+            moving_route_pattern = re.compile(r"moving route (\d+\.\d+\.\d+\.\d+/\d+\.\d+\.\d+\.\d+)")
+            del_match = del_route_pattern.search(line)
+            if del_match:
+                subnet = del_match.group(1)
+                analysis_output.append(f'<span style="color: yellow;">[{str(i+1)}] deleting a route with IKE add-route detected for route: {subnet}.</span>')
+                search_range = range(max(0, i - 5), min(len(lines), i + 6))
+                for j in search_range:
+                    if i != j and "moving route" in lines[j]:
+                        move_match = moving_route_pattern.search(lines[j])
+                        if move_match and move_match.group(1) == subnet:
+                            analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Matching del and moving route found for subnet: {subnet}. Possible flapping.</span>')
+
+# twin connection detected
+
+        if 'ike' in line and 'twin connection detected' in line:
+            analysis_output.append(f'<span style="color: red;">[{str(i+1)}] twin IPSEC connection detected. Refer to \n https://community.fortinet.com/t5/FortiGate/Technical-Tip-NAT-traversal-and-twin-connections-in-IPsec-Tunnel/ta-p/191885.</span>')
+
+
+
 
 def _extract_lines(lines, start_line, end_line):
     input_string = "\n".join(lines[start_line-1:end_line])
@@ -848,7 +885,7 @@ def index():
         if logfile.filename == '':
             return "No file selected", 400
         
-        log_dir = '/Users/jaskiratmangat/Desktop/forti/gui_ike_debugger/uploads'
+        log_dir = '/home/jaskirat/gui_project/gui_ike_debugger/uploads'
         def remove_files_in_folder(folder_path):
             # Loop through all files in the directory and remove them
             for filename in os.listdir(folder_path):
