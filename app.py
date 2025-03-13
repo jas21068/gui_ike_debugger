@@ -539,12 +539,12 @@ def ike_parser(text):
                     if i != j and "moving route" in lines[j]:
                         move_match = moving_route_pattern.search(lines[j])
                         if move_match and move_match.group(1) == subnet:
-                            analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Matching del and moving route found for subnet: {subnet}. Possible flapping.</span>')
+                            analysis_output.append(f'<span style="color: red;">[{str(i+1)}] Possible flapping: Matching del and moving route found for subnet: {subnet}.</span>')
 
 # twin connection detected
 
         if 'ike' in line and 'twin connection detected' in line:
-            analysis_output.append(f'<span style="color: red;">[{str(i+1)}] twin IPSEC connection detected. Refer to \n https://community.fortinet.com/t5/FortiGate/Technical-Tip-NAT-traversal-and-twin-connections-in-IPsec-Tunnel/ta-p/191885.</span>')
+            analysis_output.append(f'<span style="color: red;">[{str(i+1)}] twin IPSEC connection detected. </span>')
 
 
 
