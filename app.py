@@ -661,7 +661,8 @@ def _phase_1_psk_fail(i,line,comes_line_phase_1,ike_phase_1_type):
         analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' Preshared key (PSK) mismatch for '+f'{Ike_type}'+ ' negotiation '+failure_message.split()[1]+' Please check PSK</span> ')
 
 def _notify_no_proposal_chosen(i,line,comes_line_phase_1):
-    analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' IKE negotiation: '+comes_line_phase_1+ ' - no proposal chosen or negotiation mismatch</span>')
+    analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' IKE negotiation: '+comes_line_phase_1+ '</span>')
+    analysis_output.append(f'<span style="color: red;">[{str(i+1)}]no proposal chosen or negotiation mismatch </span>')
     analysis_output.append(f'<span style="color: red;">[{str(i+1)}]{line.strip()}</span>')
 
 def _gw_validation_fail(i,line,comes_line_phase_1,ike_phase_1_type):
