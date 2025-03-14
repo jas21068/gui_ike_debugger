@@ -302,13 +302,13 @@ def ike_parser(text):
                     if match:
                         eap_id = match.group(1)
             if user and group==None  and eap_id==None:
-                analysis_output.append(f'<span style="color: yellow;">   The auth log anlysis for the above connection </span>\n    user: {user} group: Unknown   Fnbamd-ID: Unknown')
+                analysis_output.append(f'<span style="color: yellow;">   The auth log anlaysis for the above connection </span>\n    user: {user} group: Unknown   Fnbamd-ID: Unknown')
             if user and group  and eap_id:
-                analysis_output.append(f'<span style="color: yellow;">   The auth log anlysis for the above connection </span>\n    user: {user} group: {group}   Fnbamd-ID: {eap_id}')
+                analysis_output.append(f'<span style="color: yellow;">   The auth log anlasis for the above connection </span>\n    user: {user} group: {group}   Fnbamd-ID: {eap_id}')
             if user and eap_id:
-                analysis_output.append(f'<span style="color: yellow;">   The auth log anlysis for the above connection </span>\n    user: {user} group: Unknown   Fnbamd-ID: {eap_id}')
+                analysis_output.append(f'<span style="color: yellow;">   The auth log anlaysis for the above connection </span>\n    user: {user} group: Unknown   Fnbamd-ID: {eap_id}')
             if group  and eap_id:
-                analysis_output.append(f'<span style="color: yellow;">   The auth log anlysis for the above connection </span>\n    user: Unknown group: {group}   Fnbamd-ID: {eap_id}')                            
+                analysis_output.append(f'<span style="color: yellow;">   The auth log anlaysis for the above connection </span>\n    user: Unknown group: {group}   Fnbamd-ID: {eap_id}')                            
             if eap_id:
                 rest_lines = lines[i:]
                 for k,remaining_line in enumerate(rest_lines):
@@ -401,13 +401,13 @@ def ike_parser(text):
                     if match:
                         eap_id = match.group(1)
             if user and group==None  and eap_id==None:
-                analysis_output.append(f'<span style="color: yellow;">   The auth log anlysis for the above connection \n    user: {user} group: Unknown   Fnbamd-ID: Unknown</span>')
+                analysis_output.append(f'<span style="color: yellow;">   The auth log anlaysis for the above connection \n    user: {user} group: Unknown   Fnbamd-ID: Unknown</span>')
             if user and group  and eap_id:
-                analysis_output.append(f'<span style="color: yellow;">   The auth log anlysis for the above connection \n    user: {user} group: {group}   Fnbamd-ID: {eap_id}</span>')
+                analysis_output.append(f'<span style="color: yellow;">   The auth log anlaysis for the above connection \n    user: {user} group: {group}   Fnbamd-ID: {eap_id}</span>')
             if user and eap_id and group==None:
-                analysis_output.append(f'<span style="color: yellow;">   The auth log anlysis for the above connection \n    user: {user} group: Unknown   Fnbamd-ID: {eap_id}</span>')
+                analysis_output.append(f'<span style="color: yellow;">   The auth log anlaysis for the above connection \n    user: {user} group: Unknown   Fnbamd-ID: {eap_id}</span>')
             if group  and eap_id and user==None:
-                analysis_output.append(f'<span style="color: yellow;">   The auth log anlysis for the above connection \n    user: Unknown group: {group}   Fnbamd-ID: {eap_id}</span>')                            
+                analysis_output.append(f'<span style="color: yellow;">   The auth log anlaysis for the above connection \n    user: Unknown group: {group}   Fnbamd-ID: {eap_id}</span>')                            
             if eap_id:
                 rest_lines = lines[i:]
                 for k,remaining_line in enumerate(rest_lines):
@@ -468,7 +468,7 @@ def ike_parser(text):
                         context = rest_lines[k:k + 7]
                         for info in context:
                             if 'EAP' in info and 'result' not in info:
-                                analysis_output.append(f'       [{str(i+k+1)}]{info.strip()}')
+                                analysis_output.append(f'[{str(i+k+1)}]{info.strip()}')
 
 # Adding known issue
         if 'compute DH shared secret request queued' in line:
@@ -662,6 +662,7 @@ def _phase_1_psk_fail(i,line,comes_line_phase_1,ike_phase_1_type):
 
 def _notify_no_proposal_chosen(i,line,comes_line_phase_1):
     analysis_output.append(f'<span style="color: red;">[{str(i+1)}]::'+' IKE negotiation: '+comes_line_phase_1+ ' - no proposal chosen or negotiation mismatch</span>')
+    analysis_output.append(f'<span style="color: red;">[{str(i+1)}]{line.strip()}</span>')
 
 def _gw_validation_fail(i,line,comes_line_phase_1,ike_phase_1_type):
     Ike_type = ''
