@@ -1,0 +1,741 @@
+2024-01-31 12:55:10.965344 ike shrank heap by 159744 bytes
+2024-01-31 12:55:11 [authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 authd_http: change state from 0 to 1
+2024-01-31 12:55:11 [authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 authd_http: change state from 1 to 2
+2024-01-31 12:55:11 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 authd_http: change state from 2 to 6
+2024-01-31 12:55:11 [authd_http_done:2780]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 authd_epoll_work: timeout 11510
+2024-01-31 12:55:11 [authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 authd_http: change state from 0 to 1
+2024-01-31 12:55:11 [authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 authd_http: change state from 1 to 2
+2024-01-31 12:55:11 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:55:11 authd_epoll_work: timeout 11090
+2024-01-31 12:55:11 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 authd_http: change state from 2 to 3
+2024-01-31 12:55:11 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 [authd_http_read_http_message:493]: called
+2024-01-31 12:55:11 authd_epoll_work: timeout 11060
+2024-01-31 12:55:11 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:11 [authd_http_read_http_message:493]: called
+2024-01-31 12:55:11 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:55:11 authd_epoll_work: timeout 11050
+2024-01-31 12:55:12 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_http_read_http_message:493]: called
+2024-01-31 12:55:12 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:55:12 [authd_http_on_method_post:5240]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_local_saml_auth:5696]: SAML login with UID '448804186640428B941B1E0748567723'.
+2024-01-31 12:55:12 [authd_http_prepare_javascript_redir:3909]: https://fgt3.vis.com:9443/saml?0606048f9e9b1555
+2024-01-31 12:55:12 [authd_http_send:1268]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 authd_http: change state from 3 to 5
+2024-01-31 12:55:12 [authd_http_disconnect:2735]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 authd_http: change state from 5 to 6
+2024-01-31 12:55:12 [authd_http_done:2780]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 [authd_local_saml_auth:5719]
+2024-01-31 12:55:12 authd_epoll_work: timeout 10660
+2024-01-31 12:55:12 [authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 authd_http: change state from 0 to 1
+2024-01-31 12:55:12 [authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 authd_http: change state from 1 to 2
+2024-01-31 12:55:12 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:55:12 authd_epoll_work: timeout 10170
+2024-01-31 12:55:12 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:55:12 authd_epoll_work: timeout 10150
+2024-01-31 12:55:12 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 authd_http: change state from 2 to 3
+2024-01-31 12:55:12 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_http_read_http_message:493]: called
+2024-01-31 12:55:12 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:55:12 [authd_http_on_method_get:5734]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_http_check_local_portal:1835]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:12 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 authd_http: change state from 3 to 106
+2024-01-31 12:55:12 [authd_http_wait_saml_msg:4621]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 [authd_saml_login_req:31]: SAML login req. ID:563477, relayState:magic=0606048f9e9b1555
+samld_process_request [145]: len=228, cmd=0, pid=2060, job_id=563477
+samld_process_request [162]: Received 228, 0x153dea0
+__update_sp_sig_opt [256]: SP no sig is required.
+__samld_sp_create_auth_req [429]: SAML SP algo: 1 -> lasso=4. Binding Method: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST
+
+__samld_sp_create_auth_req [449]:
+**** AuthnRequest URL ****
+https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeEklJtkXYBvyIEQNpK8RuFtkEDDVyCEikw6Hc9u9LyX2ki
+yZLDudg5lzMHGXXnsWq9y%2FmHl57QB9971qDYvxYkN4ZYSVqFEZ2gMIrcVh9uhM8oeLsrLfKtuQN8j4hEcF5bQ2J9tsFeVrTWVFytqG04NvpzY6tZ6tpOWF0l99MaLYh0QM4DP0LEvAAIfawN%2Bil8
+aFEeR5TFmfsSKkoCsH4I4m2wUEb6UfqxfszijRt7UmbpNPKWbSNt6bVBhJlu5RDPnvOmYohUxDnZSljOW14LOtcgpywsuCTdDDjJNpZp2DMakEa2SIMG1VBSl%2FgT6X6lcpam1qb0%2FuBPF%2BbUNw
+ej1VcfTkcSbT6HdLGGuw7cAdwF63g6%2F3dX6Hm5LPkonFwEGWeZ6mDznoYV73qkuV8eIgxNLccyA%2FBDryspZfpPH3Lzq9n8jnsv99WttXqxxBGJ%2F3%2F9VjCxoqu42ZsFb3BMyjdaKiDZdvabxs
+H0ofovOuBpMvr0H%2FPcfkT&RelayState=magic%3D0606048f9e9b1555
+***********************
+__samld_sp_create_auth_req [463]:
+**** AuthnRequest ****
+<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="_B085921C0052D7EF1B8A79610
+F4E603C" Version="2.0" IssueInstant="2024-01-31T00:55:12Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2" Si
+gnType="0" SignMethod="0" ForceAuthn="false" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerService
+URL="https://fgt3.vis.com:9443/remote/saml/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy Format="u
+rn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" AllowCreate="true"/></samlp:AuthnRequest>
+***********************
+__samld_sp_create_auth_req [468]:
+**** SP Login Dump ****
+<lasso:Login xmlns:lasso="http://www.entrouvert.org/namespaces/lasso/0.0" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names
+:tc:SAML:2.0:assertion" LoginDumpVersion="2"><lasso:Request><samlp:AuthnRequest ID="_B085921C0052D7EF1B8A79610F4E603C" Version="2.0" IssueInstant="2024-
+01-31T00:55:12Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2" SignType="0" SignMethod="0" ForceAuthn="fals
+e" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerServiceURL="https://fgt3.vis.com:9443/remote/saml
+/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy Format="urn:oasis:names:tc:SAML:1.1:nameid-format:u
+nspecified" AllowCreate="true"/></samlp:AuthnRequest></lasso:Request><lasso:RemoteProviderID>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea61952
+6/</lasso:RemoteProviderID><lasso:MsgUrl>https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeEklJ
+tkXYBvyIEQNpK8RuFtkEDDVyCEikw6Hc9u9LyX2kiyZLDudg5lzMHGXXnsWq9y%2FmHl57QB9971qDYvxYkN4ZYSVqFEZ2gMIrcVh9uhM8oeLsrLfKtuQN8j4hEcF5bQ2J9tsFeVrTWVFytqG04NvpzY
+6tZ6tpOWF0l99MaLYh0QM4DP0LEvAAIfawN%2Bil8aFEeR5TFmfsSKkoCsH4I4m2wUEb6UfqxfszijRt7UmbpNPKWbSNt6bVBhJlu5RDPnvOmYohUxDnZSljOW14LOtcgpywsuCTdDDjJNpZp2DMakEa
+2SIMG1VBSl%2FgT6X6lcpam1qb0%2FuBPF%2BbUNwej1VcfTkcSbT6HdLGGuw7cAdwF63g6%2F3dX6Hm5LPkonFwEGWeZ6mDznoYV73qkuV8eIgxNLccyA%2FBDryspZfpPH3Lzq9n8jnsv99WttXqxx
+BGJ%2F3%2F9VjCxoqu42ZsFb3BMyjdaKiDZdvabxsH0ofovOuBpMvr0H%2FPcfkT&amp;RelayState=magic%3D0606048f9e9b1555</lasso:MsgUrl><lasso:MsgRelayState>magic=060604
+8f9e9b1555</lasso:MsgRelayState><lasso:HttpRequestMethod>4</lasso:HttpRequestMethod><lasso:RequestID>_B085921C0052D7EF1B8A79610F4E603C</lasso:RequestID>
+</lasso:Login>
+***********************
+samld_send_common_reply [91]: Code: 0, id: 563477, pid: 2060, len: 2539, data_len 2523
+samld_send_common_reply [99]:     Attr: 14, 1847, <lasso:Login xmlns:lasso="http://www.entrouvert.org/namespaces/lasso/0.0" xmlns:samlp="urn:oasis:names
+:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" LoginDumpVersion="2"><lasso:Request><samlp:AuthnRequest ID="_B085921C0052D7EF1
+B8A79610F4E603C" Version="2.0" IssueInstant="2024-01-31T00:55:12Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/s
+aml2" SignType="0" SignMethod="0" ForceAuthn="false" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsume
+rServiceURL="https://fgt3.vis.com:9443/remote/saml/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy F
+ormat="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" AllowCreate="true"/></samlp:AuthnRequest></lasso:Request><lasso:RemoteProviderID>https://s
+ts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</lasso:RemoteProviderID><lasso:MsgUrl>https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4
+aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeEklJtkXYBvyIEQNpK8RuFtkEDDVyCEikw6Hc9u9LyX2kiyZLDudg5lzMHGXXnsWq9y%2FmHl57QB9971qDYvxYkN4ZYSVqFEZ2gMIrcVh9
+uhM8oeLsrLfKtuQN8j4hEcF5bQ2J9tsFeVrTWVFytqG04NvpzY6tZ6tpOWF0l99MaLYh0QM4DP0LEvAAIfawN%2Bil8aFEeR5TFmfsSKkoCsH4I4m2wUEb6UfqxfszijRt7UmbpNPKWbSNt6bVBhJlu5
+RDPnvOmYohUxDnZSljOW14LOtcgpywsuCTdDDjJNpZp2DMakEa2SIMG1VBSl%2FgT6X6lcpam1qb0%2FuBPF%2BbUNwej1VcfTkcSbT6HdLGGuw7cAdwF63g6%2F3dX6Hm5LPkonFwEGWeZ6mDznoYV7
+3qkuV8eIgxNLccyA%2FBDryspZfpPH3Lzq9n8jnsv99WttXqxxBGJ%2F3%2F9VjCxoqu42ZsFb3BMyjdaKiDZdvabxsH0ofovOuBpMvr0H%2FPcfkT&amp;RelayState=magic%3D0606048f9e9b15
+55</lasso:MsgUrl><lasso:MsgRelayState>magic=0606048f9e9b1555</lasso:MsgRelayState><lasso:HttpRequestMethod>4</lasso:HttpRequestMethod><lasso:RequestID>_
+B085921C0052D7EF1B8A79610F4E603C</lasso:RequestID></lasso:Login>
+samld_send_common_reply [99]:     Attr: 11, 676, https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2F
+ReBeEklJtkXYBvyIEQNpK8RuFtkEDDVyCEikw6Hc9u9LyX2kiyZLDudg5lzMHGXXnsWq9y%2FmHl57QB9971qDYvxYkN4ZYSVqFEZ2gMIrcVh9uhM8oeLsrLfKtuQN8j4hEcF5bQ2J9tsFeVrTWVFytq
+G04NvpzY6tZ6tpOWF0l99MaLYh0QM4DP0LEvAAIfawN%2Bil8aFEeR5TFmfsSKkoCsH4I4m2wUEb6UfqxfszijRt7UmbpNPKWbSNt6bVBhJlu5RDPnvOmYohUxDnZSljOW14LOtcgpywsuCTdDDjJNpZ
+p2DMakEa2SIMG1VBSl%2FgT6X6lcpam1qb0%2FuBPF%2BbUNwej1VcfTkcSbT6HdLGGuw7cAdwF63g6%2F3dX6Hm5LPkonFwEGWeZ6mDznoYV73qkuV8eIgxNLccyA%2FBDryspZfpPH3Lzq9n8jnsv9
+9WttXqxxBGJ%2F3%2F9VjCxoqu42ZsFb3BMyjdaKiDZdvabxsH0ofovOuBpMvr0H%2FPcfkT&RelayState=magic%3D0606048f9e9b1555
+2024-01-31 12:55:12 [authd_saml_read:120]: Resp len 2539 bytes
+2024-01-31 12:55:12 [authd_saml_read:131]: Rcvd 2539 bytes
+2024-01-31 12:55:12 [authd_http_on_saml_msg:4450]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 samld_send_common_reply [119]: Sent resp: 2539, pid=2060, job_id=563477.
+2024-01-31 12:55:12 [authd_http_prepare_javascript_redir:3909]: https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest
+=hZLLbtswEEV%2FReBeEklJtkXYBvyIEQNpK8RuFtkEDDVyCEikw6Hc9u9LyX2kiyZLDudg5lzMHGXXnsWq9y%2FmHl57QB9971qDYvxYkN4ZYSVqFEZ2gMIrcVh9uhM8oeLsrLfKtuQN8j4hEcF5bQ2
+J9tsFeVrTWVFytqG04NvpzY6tZ6tpOWF0l99MaLYh0QM4DP0LEvAAIfawN%2Bil8aFEeR5TFmfsSKkoCsH4I4m2wUEb6UfqxfszijRt7UmbpNPKWbSNt6bVBhJlu5RDPnvOmYohUxDnZSljOW14LOtcg
+pywsuCTdDDjJNpZp2DMakEa2SIMG1VBSl%2FgT6X6lcpam1qb0%2FuBPF%2BbUNwej1VcfTkcSbT6HdLGGuw7cAdwF63g6%2F3dX6Hm5LPkonFwEGWeZ6mDznoYV73qkuV8eIgxNLccyA%2FBDryspZf
+pPH3Lzq9n8jnsv99WttXqxxBGJ%2F3%2F9VjCxoqu42ZsFb3BMyjdaKiDZdvabxsH0ofovOuBpMvr0H%2FPcfkT&RelayState=magic%3D0606048f9e9b1555
+2024-01-31 12:55:12 [authd_http_send:1268]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 authd_http: change state from 106 to 5
+2024-01-31 12:55:12 [authd_http_disconnect:2735]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 authd_http: change state from 5 to 6
+2024-01-31 12:55:12 [authd_http_done:2780]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:12 authd_epoll_work: timeout 9970
+2024-01-31 12:55:13 fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 245401
+2024-01-31 12:55:13 authd_epoll_work: timeout 8980
+2024-01-31 12:55:22 authd_timer_run: 1 expired
+2024-01-31 12:55:22 authd_epoll_work: timeout 2990
+2024-01-31 12:55:23 fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 245403
+2024-01-31 12:55:23 authd_epoll_work: timeout 1820
+2024-01-31 12:55:25 authd_timer_run: 4 expired
+2024-01-31 12:55:25 authd_epoll_work: timeout 56000
+2024-01-31 12:55:34 fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 245405
+2024-01-31 12:55:34 authd_epoll_work: timeout 47660
+2024-01-31 12:55:42 [authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 authd_http: change state from 0 to 1
+2024-01-31 12:55:42 [authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 authd_http: change state from 1 to 2
+2024-01-31 12:55:42 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:55:42 authd_epoll_work: timeout 39250
+2024-01-31 12:55:42 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:55:42 authd_epoll_work: timeout 39230
+2024-01-31 12:55:42 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 authd_http: change state from 2 to 3
+2024-01-31 12:55:42 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 [authd_http_read_http_message:493]: called
+2024-01-31 12:55:42 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:55:42 authd_epoll_work: timeout 39200
+2024-01-31 12:55:42 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 [authd_http_read_http_message:493]: called
+2024-01-31 12:55:42 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:55:42 [authd_http_on_method_post:5240]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:42 [authd_local_saml_auth:5680]
+2024-01-31 12:55:42 [authd_saml_login_resp:63]: SAML login resp. ID:563477
+samld_process_request [145]: len=11873, cmd=2, pid=2060, job_id=563477
+samld_process_request [162]: Received 11873, 0x153dea0
+2024-01-31 12:55:42 __update_sp_sig_opt [256]: SP no sig is required.
+__samld_sp_login_resp [815]:
+SP Login Response Msg Body (9888)
+authd_epoll_work: timeout 39170
+<samlp:Response ID="_a8fb047a-7ce3-4c12-8099-71599fba31e5" Version="2.0" IssueInstant="2025-01-31T00:56:04.057Z" Destination="https://fgt3.vis.com:9443/
+remote/saml/login" InResponseTo="_B085921C0052D7EF1B8A79610F4E603C" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"><Issuer xmlns="urn:oasis:names:tc
+:SAML:2.0:assertion">https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><Signed
+Info><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa
+-sha256"/><Reference URI="#_a8fb047a-7ce3-4c12-8099-71599fba31e5"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signatur
+e"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><Dig
+estValue>xOQ3ND7hrmYOQ5GMVxex/zWB6dHpyEbwAnomVBIlTWQ=</DigestValue></Reference></SignedInfo><SignatureValue>u0grSekheVlz/kIKSEEzMT1LqBkTeAvF3UQOx6iHRH8C
+BUoLE4PSVDS7xu1LIl2PE7iJ1qdIsIgQAgLB3PY9n0LgoC54pc6xDb30X6MwnTc8VEd03xPUt36deTiPC4chr6ylO8acgR3XoKzA7vMioPvIpdlJqNX/8KbBJsy5J9kGaf6g6Z2oUuraYqEhNswxNEqB
+YblKfQHF7dSLfA7I1tMQ9FQ+s89Za07JPY3dlQkCSQtd4bpoVZAbKJvv8avvIc48OXKflUiPi/8o/fcHzypw+IXb49HaHOPA8T6Pb8dcF2G+NDcILEWiLWTzSjR3MT9V21519ejB+v4KQmw+CQ==</Si
+gnatureValue><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgkq
+hkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3Jv
+c29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBSk
+yoBDqR8wXb8nGARILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp+
+7wAjh2teoUL5xVTslGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQEB
+CwUAA4IBAQDTsnE2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzdk
+YexiiBBEDx5plvfNroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz5
+NVxNJ7ECDDjBJn6WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</ds:X509Certificate></ds:X509Data></ds:KeyInfo></Signature><samlp:Status><samlp:StatusCode Value="urn:o
+asis:names:tc:SAML:2.0:status:Success"/></samlp:Status><Assertion ID="_e487e4d5-fcdd-4923-b5d9-2d96c7558a00" IssueInstant="2025-01-31T00:56:04.053Z" Ver
+sion="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"><Issuer>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Signature xmlns=
+"http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm
+="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_e487e4d5-fcdd-4923-b5d9-2d96c7558a00"><Transforms><Transform Algorithm="http://w
+ww.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="ht
+tp://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>GZFtEChUih3jJ3JiGVTMNsqo6bK0dblSmf+Mz9SWYA4=</DigestValue></Reference></SignedInfo><SignatureValue>
+xNaMJPo7oxmv/28Q0bZiDyGPldfu3Mw/0mcd4xint3PDaH2bngZszHXSxgqX04hlYzW1SRZ/BjFcvYtBbk9T/BNpoiK3o7/4zg4ekF1vThpIFpukaTwxf5oSkFL6fszxncX2qW7YwqmGid4+6cFMC0T3
+EzDJv5XRJ81p+eaAdlFX4/Ee8B0i7P94KbvfIvsPzdF/LX/jn+7dM24e5gYJszncBrCs+JK7CFDQ1L+JvSY13TwnvYN/3HgcZ5zEgOAH/deTAiErCmmsjRrRuNA1y8sqfKJ2j1BGMfu+lWAskIfLPPxf
+cVStS3WuAHyTnoga8V75ek3C0Qfq6UvkMSyAsA==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgkqhkiG9w0BAQs
+FADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenV
+yZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBSkyoBDqR8wXb8
+nGARILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp+7wAjh2teoUL
+5xVTslGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQD
+TsnE2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzdkYexiiBBEDx5
+plvfNroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz5NVxNJ7ECDDj
+BJn6WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</X509Certificate></X509Data></KeyInfo></Signature><Subject><NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-form
+at:emailAddress">vito@svishal.onmicrosoft.com</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"><SubjectConfirmationData InRes
+ponseTo="_B085921C0052D7EF1B8A79610F4E603C" NotOnOrAfter="2025-01-31T01:56:03.969Z" Recipient="https://fgt3.vis.com:9443/remote/saml/login"/></SubjectCo
+nfirmation></Subject><Conditions NotBefore="2025-01-31T00:51:03.969Z" NotOnOrAfter="2025-01-31T01:56:03.969Z"><AudienceRestriction><Audience>http://fgt3
+.vis.com:9443/remote/saml/metadata/</Audience></AudienceRestriction></Conditions><AttributeStatement><Attribute Name="http://schemas.microsoft.com/ident
+ity/claims/tenantid"><AttributeValue>2e48b41c-e3ce-499a-a7f2-ad4aea619526</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com/iden
+tity/claims/objectidentifier"><AttributeValue>b0d68efc-87df-41fd-802c-d9caa63f854a</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft
+.com/identity/claims/identityprovider"><AttributeValue>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</AttributeValue></Attribute><Attrib
+ute Name="http://schemas.microsoft.com/claims/authnmethodsreferences"><AttributeValue>http://schemas.microsoft.com/ws/2008/06/identity/authenticationmet
+hod/password</AttributeValue><AttributeValue>http://schemas.microsoft.com/claims/multipleauthn</AttributeValue></Attribute><Attribute Name="http://schem
+as.microsoft.com/ws/2008/06/identity/claims/wids"><AttributeValue>62e90394-69f5-4237-9190-012177145e10</AttributeValue><AttributeValue>b79fbf4d-3ef9-468
+9-8143-76b194e85509</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"><AttributeValue>Vishal
+</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"><AttributeValue>Singh</AttributeValue></Att
+ribute><Attribute Name="name"><AttributeValue>vito@svishal.onmicrosoft.com</AttributeValue></Attribute><Attribute Name="group"><AttributeValue>f1c4e338-
+e6b7-4d16-8290-06559a741274</AttributeValue><AttributeValue>dd9fb092-8e2f-48e2-9ce8-63f27c1b84b9</AttributeValue></Attribute></AttributeStatement><Authn
+Statement AuthnInstant="2025-01-31T00:56:01.343Z" SessionIndex="_e487e4d5-fcdd-4923-b5d9-2d96c7558a00"><AuthnContext><AuthnContextClassRef>urn:oasis:nam
+es:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion></samlp:Response>
+__samld_sp_login_resp [836]:
+**** Assertion Dump ****
+<Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" ID="_e487e4d5-fcdd-4923-b5d9-2d96c7558a00" I
+ssueInstant="2025-01-31T00:56:04.053Z" Version="2.0"><Issuer>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Signature xmlns="htt
+p://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="ht
+tp://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_e487e4d5-fcdd-4923-b5d9-2d96c7558a00"><Transforms><Transform Algorithm="http://www.w
+3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http:/
+/www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>GZFtEChUih3jJ3JiGVTMNsqo6bK0dblSmf+Mz9SWYA4=</DigestValue></Reference></SignedInfo><SignatureValue>xNaM
+JPo7oxmv/28Q0bZiDyGPldfu3Mw/0mcd4xint3PDaH2bngZszHXSxgqX04hlYzW1SRZ/BjFcvYtBbk9T/BNpoiK3o7/4zg4ekF1vThpIFpukaTwxf5oSkFL6fszxncX2qW7YwqmGid4+6cFMC0T3EzDJ
+v5XRJ81p+eaAdlFX4/Ee8B0i7P94KbvfIvsPzdF/LX/jn+7dM24e5gYJszncBrCs+JK7CFDQ1L+JvSY13TwnvYN/3HgcZ5zEgOAH/deTAiErCmmsjRrRuNA1y8sqfKJ2j1BGMfu+lWAskIfLPPxfcVSt
+S3WuAHyTnoga8V75ek3C0Qfq6UvkMSyAsA==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgkqhkiG9w0BAQsFADA
+0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSB
+GZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBSkyoBDqR8wXb8nGAR
+ILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp+7wAjh2teoUL5xVT
+slGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQDTsnE
+2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzdkYexiiBBEDx5plvf
+NroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz5NVxNJ7ECDDjBJn6
+WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</X509Certificate></X509Data></KeyInfo></Signature><Subject><NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:e
+mailAddress">vito@svishal.onmicrosoft.com</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"><SubjectConfirmationData InRespons
+eTo="_B085921C0052D7EF1B8A79610F4E603C" NotOnOrAfter="2025-01-31T01:56:03.969Z" Recipient="https://fgt3.vis.com:9443/remote/saml/login"/></SubjectConfir
+mation></Subject><Conditions NotBefore="2025-01-31T00:51:03.969Z" NotOnOrAfter="2025-01-31T01:56:03.969Z"><AudienceRestriction><Audience>http://fgt3.vis
+.com:9443/remote/saml/metadata/</Audience></AudienceRestriction></Conditions><AttributeStatement><Attribute Name="http://schemas.microsoft.com/identity/
+claims/tenantid"><AttributeValue>2e48b41c-e3ce-499a-a7f2-ad4aea619526</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com/identity
+/claims/objectidentifier"><AttributeValue>b0d68efc-87df-41fd-802c-d9caa63f854a</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com
+/identity/claims/identityprovider"><AttributeValue>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</AttributeValue></Attribute><Attribute
+Name="http://schemas.microsoft.com/claims/authnmethodsreferences"><AttributeValue>http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/
+password</AttributeValue><AttributeValue>http://schemas.microsoft.com/claims/multipleauthn</AttributeValue></Attribute><Attribute Name="http://schemas.m
+icrosoft.com/ws/2008/06/identity/claims/wids"><AttributeValue>62e90394-69f5-4237-9190-012177145e10</AttributeValue><AttributeValue>b79fbf4d-3ef9-4689-81
+43-76b194e85509</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"><AttributeValue>Vishal</At
+tributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"><AttributeValue>Singh</AttributeValue></Attribu
+te><Attribute Name="name"><AttributeValue>vito@svishal.onmicrosoft.com</AttributeValue></Attribute><Attribute Name="group"><AttributeValue>f1c4e338-e6b7
+-4d16-8290-06559a741274</AttributeValue><AttributeValue>dd9fb092-8e2f-48e2-9ce8-63f27c1b84b9</AttributeValue></Attribute></AttributeStatement><AuthnStat
+ement AuthnInstant="2025-01-31T00:56:01.343Z" SessionIndex="_e487e4d5-fcdd-4923-b5d9-2d96c7558a00"><AuthnContext><AuthnContextClassRef>urn:oasis:names:t
+c:SAML:2.0:ac:classes:Password</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion>
+***********************
+__samld_sp_login_resp [843]: Clock skew tolerance: 15
+
+__samld_sp_login_resp [848]: Clock skew issue.
+samld_send_common_reply [91]: Code: 5, id: 563477, pid: 2060, len: 53, data_len 37
+samld_send_common_reply [99]:     Attr: 22, 12,
+samld_send_common_reply [99]:     Attr: 23, 25, Undefined error.
+2024-01-31 12:55:42 [authd_saml_read:120]: Resp len 53 bytes
+2024-01-31 12:55:42 [authd_saml_read:131]: Rcvd 53 bytes
+2024-01-31 12:55:42 [authd_http_on_saml_msg:4450]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:42 [authd_http_on_saml_msg:4459]: cmd 2, code 5.
+2024-01-31 12:55:42 [authd_http_send:1268]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:42 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:42 authd_http: change state from 3 to 5
+2024-01-31 12:55:42 [authd_http_disconnect:2735]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:42 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:42 authd_http: change state from 5 to 6
+2024-01-31 12:55:42 [authd_http_done:2780]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:42 authd_epoll_work: timeout 39000
+2024-01-31 12:55:43 [authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 authd_http: change state from 0 to 1
+2024-01-31 12:55:43 [authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 authd_http: change state from 1 to 2
+2024-01-31 12:55:43 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:55:43 authd_epoll_work: timeout 38350
+2024-01-31 12:55:43 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 authd_http: change state from 2 to 3
+2024-01-31 12:55:43 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 [authd_http_read_http_message:493]: called
+2024-01-31 12:55:43 authd_epoll_work: timeout 38330
+2024-01-31 12:55:43 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 [authd_http_read_http_message:493]: called
+2024-01-31 12:55:43 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:55:43 authd_epoll_work: timeout 38310
+2024-01-31 12:55:43 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 [authd_http_read_http_message:493]: called
+2024-01-31 12:55:43 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:55:43 [authd_http_on_method_post:5240]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:43 [authd_local_saml_auth:5696]: SAML login with UID '448804186640428B941B1E0748567723'.
+2024-01-31 12:55:43 [authd_http_prepare_javascript_redir:3909]: https://fgt3.vis.com:9443/saml?06080e829895148d
+2024-01-31 12:55:43 [authd_http_send:1268]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:43 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:43 authd_http: change state from 3 to 5
+2024-01-31 12:55:43 [authd_http_disconnect:2735]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:43 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:43 authd_http: change state from 5 to 6
+2024-01-31 12:55:43 [authd_http_done:2780]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:43 [authd_local_saml_auth:5719]
+2024-01-31 12:55:43 authd_epoll_work: timeout 29920
+2024-01-31 12:55:44 [authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 authd_http: change state from 0 to 1
+2024-01-31 12:55:44 [authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 authd_http: change state from 1 to 2
+2024-01-31 12:55:44 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 authd_epoll_work: timeout 29550
+2024-01-31 12:55:44 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:55:44 authd_epoll_work: timeout 29540
+2024-01-31 12:55:44 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:55:44 authd_epoll_work: timeout 29520
+2024-01-31 12:55:44 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 authd_http: change state from 2 to 3
+2024-01-31 12:55:44 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 [authd_http_read_http_message:493]: called
+2024-01-31 12:55:44 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:55:44 [authd_http_on_method_get:5734]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 [authd_http_check_local_portal:1835]: src 10.21.8.181 flag 10208000
+2024-01-31 12:55:44 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:44 authd_http: change state from 3 to 106
+2024-01-31 12:55:44 [authd_http_wait_saml_msg:4621]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:44 [authd_saml_login_req:31]: SAML login req. ID:563480, relayState:magic=06080e829895148d
+samld_process_request [145]: len=228, cmd=0, pid=2060, job_id=563480
+samld_process_request [162]: Received 228, 0x153dea0
+__update_sp_sig_opt [256]: SP no sig is required.
+__samld_sp_create_auth_req [429]: SAML SP algo: 1 -> lasso=4. Binding Method: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST
+
+2024-01-31 12:55:44 __samld_sp_create_auth_req [449]:
+**** AuthnRequest URL ****
+https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeD0pUXBG2AdluUANpK8RuFt0UDDVyCPDhcii3%2FftSch%
+2FposmSwzmYORezRGH0mbdjeLL38HUEDMl3oy3y%2BWNFRm%2B5E6iQW2EAeZD80L6%2F42VW8LN3wUmnyTPkZUIggg%2FKWZLsdyvyhdF2Wy82VV3Tt9u6bemC7jasapu6oG1z25DkATzG%2FhWJeIQ
+QR9hbDMKGWCpKlhY0reixKHhdc8Y%2Bk2QXHZQVYaaeQjgjz3PtTspmRknv0A3BWa0sZNKZvAT25pFRmUIlIWVNI1KxGMpU9EyAuKFNXd7kk1lJklvnJcxZrcggNMK0URel1AX%2BVLpfqWyU7ZU9vRz
+I47UJ%2BbvjsUu7j4cjSdrfIW2dxdGAP4C%2FKAmf7u%2F%2BCg2nUGUXhZMDbxircg%2FGBZhXveqS9XJ68Dk0v57IV0EDQfQiiHyZP2eX1zP5EPff7zqnlfwxhWFE%2BL8ezehcUX06zK18tHgGqQY
+FfbTU2n3behAhRhf8CCRfX4f%2Be47rnw%3D%3D&RelayState=magic%3D06080e829895148d
+***********************
+__samld_sp_create_auth_req [463]:
+**** AuthnRequest ****
+<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="_41AC57B3551EC5AA171DB43A9
+501A9F9" Version="2.0" IssueInstant="2024-01-31T00:55:44Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2" Si
+gnType="0" SignMethod="0" ForceAuthn="false" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerService
+URL="https://fgt3.vis.com:9443/remote/saml/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy Format="u
+rn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" AllowCreate="true"/></samlp:AuthnRequest>
+***********************
+__samld_sp_create_auth_req [468]:
+**** SP Login Dump ****
+<lasso:Login xmlns:lasso="http://www.entrouvert.org/namespaces/lasso/0.0" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names
+:tc:SAML:2.0:assertion" LoginDumpVersion="2"><lasso:Request><samlp:AuthnRequest ID="_41AC57B3551EC5AA171DB43A9501A9F9" Version="2.0" IssueInstant="2024-
+01-31T00:55:44Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2" SignType="0" SignMethod="0" ForceAuthn="fals
+e" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerServiceURL="https://fgt3.vis.com:9443/remote/saml
+/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy Format="urn:oasis:names:tc:SAML:1.1:nameid-format:u
+nspecified" AllowCreate="true"/></samlp:AuthnRequest></lasso:Request><lasso:RemoteProviderID>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea61952
+6/</lasso:RemoteProviderID><lasso:MsgUrl>https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeD0pU
+XBG2AdluUANpK8RuFt0UDDVyCPDhcii3%2FftSch%2FposmSwzmYORezRGH0mbdjeLL38HUEDMl3oy3y%2BWNFRm%2B5E6iQW2EAeZD80L6%2F42VW8LN3wUmnyTPkZUIggg%2FKWZLsdyvyhdF2Wy82
+VV3Tt9u6bemC7jasapu6oG1z25DkATzG%2FhWJeIQQR9hbDMKGWCpKlhY0reixKHhdc8Y%2Bk2QXHZQVYaaeQjgjz3PtTspmRknv0A3BWa0sZNKZvAT25pFRmUIlIWVNI1KxGMpU9EyAuKFNXd7kk1lJ
+klvnJcxZrcggNMK0URel1AX%2BVLpfqWyU7ZU9vRzI47UJ%2BbvjsUu7j4cjSdrfIW2dxdGAP4C%2FKAmf7u%2F%2BCg2nUGUXhZMDbxircg%2FGBZhXveqS9XJ68Dk0v57IV0EDQfQiiHyZP2eX1zP5
+EPff7zqnlfwxhWFE%2BL8ezehcUX06zK18tHgGqQYFfbTU2n3behAhRhf8CCRfX4f%2Be47rnw%3D%3D&amp;RelayState=magic%3D06080e829895148d</lasso:MsgUrl><lasso:MsgRelaySt
+ate>magic=06080e829895148d</lasso:MsgRelayState><lasso:HttpRequestMethod>4</lasso:HttpRequestMethod><lasso:RequestID>_41AC57B3551EC5AA171DB43A9501A9F9</
+lasso:RequestID></lasso:Login>
+***********************
+samld_send_common_reply [91]: Code: 0, id: 563480, pid: 2060, len: 2571, data_len 2555
+samld_send_common_reply [99]:     Attr: 14, 1863, <lasso:Login xmlns:lasso="http://www.entrouvert.org/namespaces/lasso/0.0" xmlns:samlp="urn:oasis:names
+:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" LoginDumpVersion="2"><lasso:Request><samlp:AuthnRequest ID="_41AC57B3551EC5AA1
+71DB43A9501A9F9" Version="2.0" IssueInstant="2024-01-31T00:55:44Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/s
+aml2" SignType="0" SignMethod="0" ForceAuthn="false" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsume
+rServiceURL="https://fgt3.vis.com:9443/remote/saml/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy F
+ormat="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" AllowCreate="true"/></samlp:AuthnRequest></lasso:Request><lasso:RemoteProviderID>https://s
+ts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</lasso:RemoteProviderID><lasso:MsgUrl>https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4
+aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeD0pUXBG2AdluUANpK8RuFt0UDDVyCPDhcii3%2FftSch%2FposmSwzmYORezRGH0mbdjeLL38HUEDMl3oy3y%2BWNFRm%2B5E6iQW2EAeZ
+D80L6%2F42VW8LN3wUmnyTPkZUIggg%2FKWZLsdyvyhdF2Wy82VV3Tt9u6bemC7jasapu6oG1z25DkATzG%2FhWJeIQQR9hbDMKGWCpKlhY0reixKHhdc8Y%2Bk2QXHZQVYaaeQjgjz3PtTspmRknv0A
+3BWa0sZNKZvAT25pFRmUIlIWVNI1KxGMpU9EyAuKFNXd7kk1lJklvnJcxZrcggNMK0URel1AX%2BVLpfqWyU7ZU9vRzI47UJ%2BbvjsUu7j4cjSdrfIW2dxdGAP4C%2FKAmf7u%2F%2BCg2nUGUXhZMD
+bxircg%2FGBZhXveqS9XJ68Dk0v57IV0EDQfQiiHyZP2eX1zP5EPff7zqnlfwxhWFE%2BL8ezehcUX06zK18tHgGqQYFfbTU2n3behAhRhf8CCRfX4f%2Be47rnw%3D%3D&amp;RelayState=magic%
+3D06080e829895148d</lasso:MsgUrl><lasso:MsgRelayState>magic=06080e829895148d</lasso:MsgRelayState><lasso:HttpRequestMethod>4</lasso:HttpRequestMethod><l
+asso:RequestID>_41AC57B3551EC5AA171DB43A9501A9F9</lasso:RequestID></lasso:Login>
+samld_send_common_reply [99]:     Attr: 11, 692, https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2F
+ReBeD0pUXBG2AdluUANpK8RuFt0UDDVyCPDhcii3%2FftSch%2FposmSwzmYORezRGH0mbdjeLL38HUEDMl3oy3y%2BWNFRm%2B5E6iQW2EAeZD80L6%2F42VW8LN3wUmnyTPkZUIggg%2FKWZLsdyvy
+hdF2Wy82VV3Tt9u6bemC7jasapu6oG1z25DkATzG%2FhWJeIQQR9hbDMKGWCpKlhY0reixKHhdc8Y%2Bk2QXHZQVYaaeQjgjz3PtTspmRknv0A3BWa0sZNKZvAT25pFRmUIlIWVNI1KxGMpU9EyAuKFN
+Xd7kk1lJklvnJcxZrcggNMK0URel1AX%2BVLpfqWyU7ZU9vRzI47UJ%2BbvjsUu7j4cjSdrfIW2dxdGAP4C%2FKAmf7u%2F%2BCg2nUGUXhZMDbxircg%2FGBZhXveqS9XJ68Dk0v57IV0EDQfQiiHyZ
+P2eX1zP5EPff7zqnlfwxhWFE%2BL8ezehcUX06zK18tHgGqQYFfbTU2n3behAhRhf8CCRfX4f%2Be47rnw%3D%3D&RelayState=magic%3D06080e829895148d
+samld_send_common_reply [119]: Sent resp: 2571, pid=2060, job_id=563480.
+2024-01-31 12:55:44 [authd_saml_read:120]: Resp len 2571 bytes
+2024-01-31 12:55:44 [authd_saml_read:131]: Rcvd 2571 bytes
+2024-01-31 12:55:44 [authd_http_on_saml_msg:4450]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:44 [authd_http_on_saml_msg:4459]: cmd 0, code 0.
+2024-01-31 12:55:44 [authd_http_prepare_javascript_redir:3909]: https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest
+=hZLLbtswEEV%2FReBeD0pUXBG2AdluUANpK8RuFt0UDDVyCPDhcii3%2FftSch%2FposmSwzmYORezRGH0mbdjeLL38HUEDMl3oy3y%2BWNFRm%2B5E6iQW2EAeZD80L6%2F42VW8LN3wUmnyTPkZUI
+ggg%2FKWZLsdyvyhdF2Wy82VV3Tt9u6bemC7jasapu6oG1z25DkATzG%2FhWJeIQQR9hbDMKGWCpKlhY0reixKHhdc8Y%2Bk2QXHZQVYaaeQjgjz3PtTspmRknv0A3BWa0sZNKZvAT25pFRmUIlIWVNI
+1KxGMpU9EyAuKFNXd7kk1lJklvnJcxZrcggNMK0URel1AX%2BVLpfqWyU7ZU9vRzI47UJ%2BbvjsUu7j4cjSdrfIW2dxdGAP4C%2FKAmf7u%2F%2BCg2nUGUXhZMDbxircg%2FGBZhXveqS9XJ68Dk0v
+57IV0EDQfQiiHyZP2eX1zP5EPff7zqnlfwxhWFE%2BL8ezehcUX06zK18tHgGqQYFfbTU2n3behAhRhf8CCRfX4f%2Be47rnw%3D%3D&RelayState=magic%3D06080e829895148d
+2024-01-31 12:55:44 [authd_http_send:1268]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:44 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:44 authd_http: change state from 106 to 5
+2024-01-31 12:55:44 [authd_http_disconnect:2735]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:44 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:44 authd_http: change state from 5 to 6
+2024-01-31 12:55:44 [authd_http_done:2780]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:55:44 authd_epoll_work: timeout 29330
+2024-01-31 12:55:54 fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 245409
+2024-01-31 12:55:54 authd_epoll_work: timeout 19350
+2024-01-31 12:56:04 fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 245411
+2024-01-31 12:56:04 authd_epoll_work: timeout 9200
+2024-01-31 12:56:13 authd_epoll_work: timeout 7980
+2024-01-31 12:56:14 fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 245413
+2024-01-31 12:56:14 authd_epoll_work: timeout 7040
+2024-01-31 12:56:21 authd_timer_run: 2 expired
+2024-01-31 12:56:21 authd_epoll_work: timeout 3990
+2024-01-31 12:56:24 fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 245415
+2024-01-31 12:56:24 authd_epoll_work: timeout 880
+2024-01-31 12:56:25 authd_timer_run: 2 expired
+2024-01-31 12:56:25 authd_epoll_work: timeout 7000
+2024-01-31 12:56:32 authd_timer_run: 1 expired
+2024-01-31 12:56:32 authd_epoll_work: timeout 20990
+2024-01-31 12:56:34 [2570] peer_user_cn_dns_refresh-
+2024-01-31 12:56:34 [3391] __peer_user_cn_dns_refresh-Refresh in 1800 secs
+2024-01-31 12:56:35 fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 245417
+2024-01-31 12:56:35 authd_epoll_work: timeout 18730
+2024-01-31 12:56:45 fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 245419
+2024-01-31 12:56:45 authd_epoll_work: timeout 8570
+2024-01-31 12:56:47 [authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 authd_http: change state from 0 to 1
+2024-01-31 12:56:47 [authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 authd_http: change state from 1 to 2
+2024-01-31 12:56:47 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:56:47 authd_epoll_work: timeout 5880
+2024-01-31 12:56:47 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:56:47 authd_epoll_work: timeout 5860
+2024-01-31 12:56:47 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 authd_http: change state from 2 to 3
+2024-01-31 12:56:47 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 [authd_http_read_http_message:493]: called
+2024-01-31 12:56:47 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:56:47 authd_epoll_work: timeout 5830
+2024-01-31 12:56:47 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 [authd_http_read_http_message:493]: called
+2024-01-31 12:56:47 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:56:47 [authd_http_on_method_post:5240]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:47 [authd_local_saml_auth:5680]
+2024-01-31 12:56:47 [authd_saml_login_resp:63]: SAML login resp. ID:563480
+samld_process_request [145]: len=11889, cmd=2, pid=2060, job_id=563480
+samld_process_request [162]: Received 11889, 0x153dea0
+__update_sp_sig_opt [256]: SP no sig is required.
+__samld_sp_login_resp [815]:
+SP Login Response Msg Body (9888)
+2024-01-31 12:56:47 authd_epoll_work: timeout 5790
+<samlp:Response ID="_05ac3c6f-e858-4a42-b08f-52f005b13cc9" Version="2.0" IssueInstant="2025-01-31T00:57:09.405Z" Destination="https://fgt3.vis.com:9443/
+remote/saml/login" InResponseTo="_41AC57B3551EC5AA171DB43A9501A9F9" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"><Issuer xmlns="urn:oasis:names:tc
+:SAML:2.0:assertion">https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><Signed
+Info><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa
+-sha256"/><Reference URI="#_05ac3c6f-e858-4a42-b08f-52f005b13cc9"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signatur
+e"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><Dig
+estValue>l2mZvXuVkbhb8ZFDs2frE0dQPVRwJH5bz42y0IfB2cE=</DigestValue></Reference></SignedInfo><SignatureValue>jRk1/Tbjjoa2p0BvVV/TJvnkOd9V+fDewIM5GnIIUrYq
+OePI9bqxMWFqpRQ1FO64UZIVO5I5BnS/1ahIejoSqaUdmEMLABfLN2kEn/diQwW8xPTxDDUkRlgRYqiPfdD/z2/AeSoPOSRvsiirv9FpbMub2c8zM/fTAu0KLunroMwOHtde0hHmeYCSAm5sumIV60Bs
+FhQe7NDfBQvB7EIn8E5KB4CElYdLXMJb/1nBfDz/rWyXXic+FurSrUuX+6dJlmir+YDONVuq1tdlZwk+B4b8c3CfvMHMicr2VULrlUPHfEfeT1ZRU3HpHjXPaff7VG7iNpkx8Wc4mP1Nup7M4Q==</Si
+gnatureValue><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgkq
+hkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3Jv
+c29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBSk
+yoBDqR8wXb8nGARILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp+
+7wAjh2teoUL5xVTslGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQEB
+CwUAA4IBAQDTsnE2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzdk
+YexiiBBEDx5plvfNroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz5
+NVxNJ7ECDDjBJn6WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</ds:X509Certificate></ds:X509Data></ds:KeyInfo></Signature><samlp:Status><samlp:StatusCode Value="urn:o
+asis:names:tc:SAML:2.0:status:Success"/></samlp:Status><Assertion ID="_2ec9ac5e-c4a0-446f-a336-0024c71ebc00" IssueInstant="2025-01-31T00:57:09.403Z" Ver
+sion="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"><Issuer>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Signature xmlns=
+"http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm
+="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_2ec9ac5e-c4a0-446f-a336-0024c71ebc00"><Transforms><Transform Algorithm="http://w
+ww.w3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="ht
+tp://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>PU5qhyxjAIgrNChK0T1joSRCPHVuAxOhg3aHes27Lgg=</DigestValue></Reference></SignedInfo><SignatureValue>
+rCyGT0rtEi4dob+vKEFwmP6jiYm1MgxEiMqlR3K0bTpf7QFM9QTW8c+FRjzwXL7zitvBJ9P1Ub5Dijo1EcCTEOEnWmXrbqepgq0X//nqw/BI7tLFKy7s+ZrvXO8aseqIDFAhTgFrDn/LZtw0X8bNDQ+k
+8PS2zgg+SPE1boh2Htlb7J0HuXl+Mi3c5aWgsThigbC2SeV7EXXayqgQ6n/Z5nye8jmB9QsSGpAxfqzzkZxEFc8G8wO89SucwQ0ZFMVuEAnJQbCsXouoiqUWBxoLIR678FkNxg7Ao855P51OzEcAB1rs
+OLMwQew1qfV5I7f8KOh/l66VWP2i+Sp0QR3x8w==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgkqhkiG9w0BAQs
+FADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenV
+yZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBSkyoBDqR8wXb8
+nGARILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp+7wAjh2teoUL
+5xVTslGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQD
+TsnE2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzdkYexiiBBEDx5
+plvfNroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz5NVxNJ7ECDDj
+BJn6WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</X509Certificate></X509Data></KeyInfo></Signature><Subject><NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-form
+at:emailAddress">vito@svishal.onmicrosoft.com</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"><SubjectConfirmationData InRes
+ponseTo="_41AC57B3551EC5AA171DB43A9501A9F9" NotOnOrAfter="2025-01-31T01:57:09.308Z" Recipient="https://fgt3.vis.com:9443/remote/saml/login"/></SubjectCo
+nfirmation></Subject><Conditions NotBefore="2025-01-31T00:52:09.308Z" NotOnOrAfter="2025-01-31T01:57:09.308Z"><AudienceRestriction><Audience>http://fgt3
+.vis.com:9443/remote/saml/metadata/</Audience></AudienceRestriction></Conditions><AttributeStatement><Attribute Name="http://schemas.microsoft.com/ident
+ity/claims/tenantid"><AttributeValue>2e48b41c-e3ce-499a-a7f2-ad4aea619526</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com/iden
+tity/claims/objectidentifier"><AttributeValue>b0d68efc-87df-41fd-802c-d9caa63f854a</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft
+.com/identity/claims/identityprovider"><AttributeValue>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</AttributeValue></Attribute><Attrib
+ute Name="http://schemas.microsoft.com/claims/authnmethodsreferences"><AttributeValue>http://schemas.microsoft.com/ws/2008/06/identity/authenticationmet
+hod/password</AttributeValue><AttributeValue>http://schemas.microsoft.com/claims/multipleauthn</AttributeValue></Attribute><Attribute Name="http://schem
+as.microsoft.com/ws/2008/06/identity/claims/wids"><AttributeValue>62e90394-69f5-4237-9190-012177145e10</AttributeValue><AttributeValue>b79fbf4d-3ef9-468
+9-8143-76b194e85509</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"><AttributeValue>Vishal
+</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"><AttributeValue>Singh</AttributeValue></Att
+ribute><Attribute Name="name"><AttributeValue>vito@svishal.onmicrosoft.com</AttributeValue></Attribute><Attribute Name="group"><AttributeValue>f1c4e338-
+e6b7-4d16-8290-06559a741274</AttributeValue><AttributeValue>dd9fb092-8e2f-48e2-9ce8-63f27c1b84b9</AttributeValue></Attribute></AttributeStatement><Authn
+Statement AuthnInstant="2025-01-31T00:57:05.251Z" SessionIndex="_2ec9ac5e-c4a0-446f-a336-0024c71ebc00"><AuthnContext><AuthnContextClassRef>urn:oasis:nam
+es:tc:SAML:2.0:ac:classes:Password</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion></samlp:Response>
+__samld_sp_login_resp [836]:
+**** Assertion Dump ****
+<Assertion xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" ID="_2ec9ac5e-c4a0-446f-a336-0024c71ebc00" I
+ssueInstant="2025-01-31T00:57:09.403Z" Version="2.0"><Issuer>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</Issuer><Signature xmlns="htt
+p://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="ht
+tp://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI="#_2ec9ac5e-c4a0-446f-a336-0024c71ebc00"><Transforms><Transform Algorithm="http://www.w
+3.org/2000/09/xmldsig#enveloped-signature"/><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http:/
+/www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>PU5qhyxjAIgrNChK0T1joSRCPHVuAxOhg3aHes27Lgg=</DigestValue></Reference></SignedInfo><SignatureValue>rCyG
+T0rtEi4dob+vKEFwmP6jiYm1MgxEiMqlR3K0bTpf7QFM9QTW8c+FRjzwXL7zitvBJ9P1Ub5Dijo1EcCTEOEnWmXrbqepgq0X//nqw/BI7tLFKy7s+ZrvXO8aseqIDFAhTgFrDn/LZtw0X8bNDQ+k8PS2
+zgg+SPE1boh2Htlb7J0HuXl+Mi3c5aWgsThigbC2SeV7EXXayqgQ6n/Z5nye8jmB9QsSGpAxfqzzkZxEFc8G8wO89SucwQ0ZFMVuEAnJQbCsXouoiqUWBxoLIR678FkNxg7Ao855P51OzEcAB1rsOLMw
+Qew1qfV5I7f8KOh/l66VWP2i+Sp0QR3x8w==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIC8DCCAdigAwIBAgIQGl42Ygx425pK4JBzDNbBSjANBgkqhkiG9w0BAQsFADA
+0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yNTAxMjUxNzUxMjJaFw0yODAxMjUxNzUxMjJaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSB
+GZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3dDgQ8BxMQuPyMHgFCez/v4z3v4YFqXcjg9lpRt8GSO3KbJCArrIrTiJrBSkyoBDqR8wXb8nGAR
+ILV2Wyyug1DMrvV7Z4oFEG2BfY6YfjnxUw+v9jUqx9r9ms/gYNRbkFNvkQVWTxSKPMJz/sTwsaIAQ4clLvbRFjjhq05X6Rkuf4EZ8fX7edex7Us6PzpbT6MYUV+QUm6wL5nHaQKp+7wAjh2teoUL5xVT
+slGlp4zq5qYXzo5B1lNdYzzbvZjodS50i5T8FoDDSB/8lrHS32yxzHhpW8+SL5PqszmElWCmT4f3dba+jzlE7ROGWJMUw+xeIFeiHVLnnBWABzJzXBQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQDTsnE
+2zlJPHlUke0Urc54nCxS79U10+estMd0nWu7atfmCv0syLsx2UYeuORe45sR8MRerzVkagN7r7KapnpievohNVsjQCru3ctBkmZfN6wXCylsEBvLPeeQCK25Onag3sVyIwCkptzdkYexiiBBEDx5plvf
+NroPJF9uVxSkCSaPh9ou5qP1aHUoPGZiWSUF9dyEx+46npi5uwG7EhQMJZscdUqZwXyx/dy/3WN5/WoDn6wbib8iwcvQnpR/xF4AO2WSisIkqqEaK1wazCDzi7SpfX2oGQznSIKz5NVxNJ7ECDDjBJn6
+WJDxyMq0408IdPuiOE8AkUitDQZAp3a0Q</X509Certificate></X509Data></KeyInfo></Signature><Subject><NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:e
+mailAddress">vito@svishal.onmicrosoft.com</NameID><SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"><SubjectConfirmationData InRespons
+eTo="_41AC57B3551EC5AA171DB43A9501A9F9" NotOnOrAfter="2025-01-31T01:57:09.308Z" Recipient="https://fgt3.vis.com:9443/remote/saml/login"/></SubjectConfir
+mation></Subject><Conditions NotBefore="2025-01-31T00:52:09.308Z" NotOnOrAfter="2025-01-31T01:57:09.308Z"><AudienceRestriction><Audience>http://fgt3.vis
+.com:9443/remote/saml/metadata/</Audience></AudienceRestriction></Conditions><AttributeStatement><Attribute Name="http://schemas.microsoft.com/identity/
+claims/tenantid"><AttributeValue>2e48b41c-e3ce-499a-a7f2-ad4aea619526</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com/identity
+/claims/objectidentifier"><AttributeValue>b0d68efc-87df-41fd-802c-d9caa63f854a</AttributeValue></Attribute><Attribute Name="http://schemas.microsoft.com
+/identity/claims/identityprovider"><AttributeValue>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</AttributeValue></Attribute><Attribute
+Name="http://schemas.microsoft.com/claims/authnmethodsreferences"><AttributeValue>http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/
+password</AttributeValue><AttributeValue>http://schemas.microsoft.com/claims/multipleauthn</AttributeValue></Attribute><Attribute Name="http://schemas.m
+icrosoft.com/ws/2008/06/identity/claims/wids"><AttributeValue>62e90394-69f5-4237-9190-012177145e10</AttributeValue><AttributeValue>b79fbf4d-3ef9-4689-81
+43-76b194e85509</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"><AttributeValue>Vishal</At
+tributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"><AttributeValue>Singh</AttributeValue></Attribu
+te><Attribute Name="name"><AttributeValue>vito@svishal.onmicrosoft.com</AttributeValue></Attribute><Attribute Name="group"><AttributeValue>f1c4e338-e6b7
+-4d16-8290-06559a741274</AttributeValue><AttributeValue>dd9fb092-8e2f-48e2-9ce8-63f27c1b84b9</AttributeValue></Attribute></AttributeStatement><AuthnStat
+ement AuthnInstant="2025-01-31T00:57:05.251Z" SessionIndex="_2ec9ac5e-c4a0-446f-a336-0024c71ebc00"><AuthnContext><AuthnContextClassRef>urn:oasis:names:t
+c:SAML:2.0:ac:classes:Password</AuthnContextClassRef></AuthnContext></AuthnStatement></Assertion>
+***********************
+__samld_sp_login_resp [843]: Clock skew tolerance: 15
+
+__samld_sp_login_resp [848]: Clock skew issue.
+samld_send_common_reply [91]: Code: 5, id: 563480, pid: 2060, len: 53, data_len 37
+samld_send_common_reply [99]:     Attr: 22, 12,
+samld_send_common_reply [99]:     Attr: 23, 25, Undefined error.
+2024-01-31 12:56:48 [authd_saml_read:120]: Resp len 53 bytes
+2024-01-31 12:56:48 [authd_saml_read:131]: Rcvd 53 bytes
+2024-01-31 12:56:48 [authd_http_on_saml_msg:4450]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:48 samld_send_common_reply [119]: Sent resp: 53, pid=2060, job_id=563480.
+[authd_http_on_saml_msg:4459]: cmd 2, code 5.
+2024-01-31 12:56:48 [authd_http_send:1268]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:48 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:48 authd_http: change state from 3 to 5
+2024-01-31 12:56:48 [authd_http_disconnect:2735]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:48 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:48 authd_http: change state from 5 to 6
+2024-01-31 12:56:48 [authd_http_done:2780]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:48 authd_epoll_work: timeout 5650
+2024-01-31 12:56:48 [authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:48 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:48 authd_http: change state from 0 to 1
+2024-01-31 12:56:48 [authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:48 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:48 authd_http: change state from 1 to 2
+2024-01-31 12:56:48 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:48 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:56:48 authd_epoll_work: timeout 4970
+2024-01-31 12:56:48 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:48 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:48 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:48 authd_http: change state from 2 to 3
+2024-01-31 12:56:48 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:48 [authd_http_read_http_message:493]: called
+2024-01-31 12:56:48 authd_epoll_work: timeout 4950
+2024-01-31 12:56:48 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:48 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:48 [authd_http_read_http_message:493]: called
+2024-01-31 12:56:48 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:56:48 authd_epoll_work: timeout 4930
+2024-01-31 12:56:49 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_read_http_message:493]: called
+2024-01-31 12:56:49 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:56:49 [authd_http_on_method_post:5240]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_local_saml_auth:5696]: SAML login with UID '448804186640428B941B1E0748567723'.
+2024-01-31 12:56:49 [authd_http_prepare_javascript_redir:3909]: https://fgt3.vis.com:9443/saml?050007859c9e13b2
+2024-01-31 12:56:49 [authd_http_send:1268]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:49 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:49 authd_http: change state from 3 to 5
+2024-01-31 12:56:49 [authd_http_disconnect:2735]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:49 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:49 authd_http: change state from 5 to 6
+2024-01-31 12:56:49 [authd_http_done:2780]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:49 [authd_local_saml_auth:5719]
+2024-01-31 12:56:49 authd_epoll_work: timeout 4540
+2024-01-31 12:56:49 [authd_http_accept_session:1112]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 authd_http: change state from 0 to 1
+2024-01-31 12:56:49 [authd_http_accepting:1191]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 authd_http: change state from 1 to 2
+2024-01-31 12:56:49 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:56:49 authd_epoll_work: timeout 4150
+2024-01-31 12:56:49 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_set_server_cert:820]: found fgt3.vis.com for fgt3.vis.com
+2024-01-31 12:56:49 authd_epoll_work: timeout 4120
+2024-01-31 12:56:49 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_connect:1696]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_change_state:2812]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 authd_http: change state from 2 to 3
+2024-01-31 12:56:49 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_read_http_message:493]: called
+2024-01-31 12:56:49 authd_epoll_work: timeout 4100
+2024-01-31 12:56:49 [authd_http_read:981]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_wait_req:2299]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_read_http_message:493]: called
+2024-01-31 12:56:49 [authd_http_is_full_http_message:443]: called
+2024-01-31 12:56:49 [authd_http_on_method_get:5734]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_check_local_portal:1835]: src 10.21.8.181 flag 10208000
+2024-01-31 12:56:49 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:49 authd_http: change state from 3 to 106
+2024-01-31 12:56:49 [authd_http_wait_saml_msg:4621]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:49 [authd_saml_login_req:31]: SAML login req. ID:563483, relayState:magic=050007859c9e13b2
+samld_process_request [145]: len=228, cmd=0, pid=2060, job_id=563483
+samld_process_request [162]: Received 228, 0x153dea0
+__update_sp_sig_opt [256]: SP no sig is required.
+__samld_sp_create_auth_req [429]: SAML SP algo: 1 -> lasso=4. Binding Method: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST
+
+__samld_sp_create_auth_req [449]:
+**** AuthnRequest URL ****
+https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeD8p6ErYBOWpQA2krxE4X3RQMNXII8OFyKLf9%2B0py2qS
+LpksO52DmXMwauVZn1oz%2BydzDtxHQBz%2B0MsiWjw0ZnWGWo0RmuAZkXrBD8%2BGOpVHCzs56K6wir5C3CY4IzktrSLBvN%2BRr1VRpW%2BVNSfOirOuizOmuSHc0rW%2FbMn9XkeAzOJz6N2TCJwh
+xhL1Bz42fSkmahQkNV%2FSYJCwvWFZ%2FIUE7OUjD%2FUI9eX9GFsfKnqSJtBTOoh28NUoaiITVcQpZ9ZhREcJKQJjVNQ95OaQh7zMOvKB1nhbxbJaS4NY6AUtWGzJwhTBv1E1S8gJ%2FKt1zKjtpeml
+ObwfyeG1C9v547MLu0%2BFIguZ3SDfW4KjBHcBdpICH%2B7sXoeHkV9FF4uzA6ixbxQ609bCsetUl2%2FX8YEtobjuT%2FwU1eN5zz%2BN1%2FJpdX8%2Fk47T%2Fvu2skuLnHIbm%2Ft96NKJLRfbhs
+LSy0eAZhBwk9JOlUvb7jQPup%2Bi8G4HE2%2BvQv89x%2Bws%3D&RelayState=magic%3D050007859c9e13b2
+***********************
+__samld_sp_create_auth_req [463]:
+**** AuthnRequest ****
+<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="_8A82D85A71567996751B62B12
+9FD75E8" Version="2.0" IssueInstant="2024-01-31T00:56:49Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2" Si
+gnType="0" SignMethod="0" ForceAuthn="false" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerService
+URL="https://fgt3.vis.com:9443/remote/saml/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy Format="u
+rn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" AllowCreate="true"/></samlp:AuthnRequest>
+***********************
+__samld_sp_create_auth_req [468]:
+**** SP Login Dump ****
+<lasso:Login xmlns:lasso="http://www.entrouvert.org/namespaces/lasso/0.0" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names
+:tc:SAML:2.0:assertion" LoginDumpVersion="2"><lasso:Request><samlp:AuthnRequest ID="_8A82D85A71567996751B62B129FD75E8" Version="2.0" IssueInstant="2024-
+01-31T00:56:49Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2" SignType="0" SignMethod="0" ForceAuthn="fals
+e" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerServiceURL="https://fgt3.vis.com:9443/remote/saml
+/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy Format="urn:oasis:names:tc:SAML:1.1:nameid-format:u
+nspecified" AllowCreate="true"/></samlp:AuthnRequest></lasso:Request><lasso:RemoteProviderID>https://sts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea61952
+6/</lasso:RemoteProviderID><lasso:MsgUrl>https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeD8p6
+ErYBOWpQA2krxE4X3RQMNXII8OFyKLf9%2B0py2qSLpksO52DmXMwauVZn1oz%2BydzDtxHQBz%2B0MsiWjw0ZnWGWo0RmuAZkXrBD8%2BGOpVHCzs56K6wir5C3CY4IzktrSLBvN%2BRr1VRpW%2BVN
+SfOirOuizOmuSHc0rW%2FbMn9XkeAzOJz6N2TCJwhxhL1Bz42fSkmahQkNV%2FSYJCwvWFZ%2FIUE7OUjD%2FUI9eX9GFsfKnqSJtBTOoh28NUoaiITVcQpZ9ZhREcJKQJjVNQ95OaQh7zMOvKB1nhbx
+bJaS4NY6AUtWGzJwhTBv1E1S8gJ%2FKt1zKjtpemlObwfyeG1C9v547MLu0%2BFIguZ3SDfW4KjBHcBdpICH%2B7sXoeHkV9FF4uzA6ixbxQ609bCsetUl2%2FX8YEtobjuT%2FwU1eN5zz%2BN1%2FJ
+pdX8%2Fk47T%2Fvu2skuLnHIbm%2Ft96NKJLRfbhsLSy0eAZhBwk9JOlUvb7jQPup%2Bi8G4HE2%2BvQv89x%2Bws%3D&amp;RelayState=magic%3D050007859c9e13b2</lasso:MsgUrl><lass
+o:MsgRelayState>magic=050007859c9e13b2</lasso:MsgRelayState><lasso:HttpRequestMethod>4</lasso:HttpRequestMethod><lasso:RequestID>_8A82D85A71567996751B62
+B129FD75E8</lasso:RequestID></lasso:Login>
+***********************
+samld_send_common_reply [91]: Code: 0, id: 563483, pid: 2060, len: 2595, data_len 2579
+samld_send_common_reply [99]:     Attr: 14, 1875, <lasso:Login xmlns:lasso="http://www.entrouvert.org/namespaces/lasso/0.0" xmlns:samlp="urn:oasis:names
+:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" LoginDumpVersion="2"><lasso:Request><samlp:AuthnRequest ID="_8A82D85A715679967
+51B62B129FD75E8" Version="2.0" IssueInstant="2024-01-31T00:56:49Z" Destination="https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/s
+aml2" SignType="0" SignMethod="0" ForceAuthn="false" IsPassive="false" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsume
+rServiceURL="https://fgt3.vis.com:9443/remote/saml/login"><saml:Issuer>http://fgt3.vis.com:9443/remote/saml/metadata/</saml:Issuer><samlp:NameIDPolicy F
+ormat="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" AllowCreate="true"/></samlp:AuthnRequest></lasso:Request><lasso:RemoteProviderID>https://s
+ts.windows.net/2e48b41c-e3ce-499a-a7f2-ad4aea619526/</lasso:RemoteProviderID><lasso:MsgUrl>https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4
+aea619526/saml2?SAMLRequest=hZLLbtswEEV%2FReBeD8p6ErYBOWpQA2krxE4X3RQMNXII8OFyKLf9%2B0py2qSLpksO52DmXMwauVZn1oz%2BydzDtxHQBz%2B0MsiWjw0ZnWGWo0RmuAZkXrBD
+8%2BGOpVHCzs56K6wir5C3CY4IzktrSLBvN%2BRr1VRpW%2BVNSfOirOuizOmuSHc0rW%2FbMn9XkeAzOJz6N2TCJwhxhL1Bz42fSkmahQkNV%2FSYJCwvWFZ%2FIUE7OUjD%2FUI9eX9GFsfKnqSJtB
+TOoh28NUoaiITVcQpZ9ZhREcJKQJjVNQ95OaQh7zMOvKB1nhbxbJaS4NY6AUtWGzJwhTBv1E1S8gJ%2FKt1zKjtpemlObwfyeG1C9v547MLu0%2BFIguZ3SDfW4KjBHcBdpICH%2B7sXoeHkV9FF4uzA
+6ixbxQ609bCsetUl2%2FX8YEtobjuT%2FwU1eN5zz%2BN1%2FJpdX8%2Fk47T%2Fvu2skuLnHIbm%2Ft96NKJLRfbhsLSy0eAZhBwk9JOlUvb7jQPup%2Bi8G4HE2%2BvQv89x%2Bws%3D&amp;Relay
+State=magic%3D050007859c9e13b2</lasso:MsgUrl><lasso:MsgRelayState>magic=050007859c9e13b2</lasso:MsgRelayState><lasso:HttpRequestMethod>4</lasso:HttpRequ
+estMethod><lasso:RequestID>_8A82D85A71567996751B62B129FD75E8</lasso:RequestID></lasso:Login>
+samld_send_common_reply [99]:     Attr: 11, 704, https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest=hZLLbtswEEV%2F
+ReBeD8p6ErYBOWpQA2krxE4X3RQMNXII8OFyKLf9%2B0py2qSLpksO52DmXMwauVZn1oz%2BydzDtxHQBz%2B0MsiWjw0ZnWGWo0RmuAZkXrBD8%2BGOpVHCzs56K6wir5C3CY4IzktrSLBvN%2BRr1V
+RpW%2BVNSfOirOuizOmuSHc0rW%2FbMn9XkeAzOJz6N2TCJwhxhL1Bz42fSkmahQkNV%2FSYJCwvWFZ%2FIUE7OUjD%2FUI9eX9GFsfKnqSJtBTOoh28NUoaiITVcQpZ9ZhREcJKQJjVNQ95OaQh7zMO
+vKB1nhbxbJaS4NY6AUtWGzJwhTBv1E1S8gJ%2FKt1zKjtpemlObwfyeG1C9v547MLu0%2BFIguZ3SDfW4KjBHcBdpICH%2B7sXoeHkV9FF4uzA6ixbxQ609bCsetUl2%2FX8YEtobjuT%2FwU1eN5zz%
+2BN1%2FJpdX8%2Fk47T%2Fvu2skuLnHIbm%2Ft96NKJLRfbhsLSy0eAZhBwk9JOlUvb7jQPup%2Bi8G4HE2%2BvQv89x%2Bws%3D&RelayState=magic%3D050007859c9e13b2
+2024-01-31 12:56:49 [authd_saml_read:120]: Resp len 2595 bytes
+2024-01-31 12:56:49 [authd_saml_read:131]: Rcvd 2595 bytes
+2024-01-31 12:56:49 samld_send_common_reply [119]: Sent resp: 2595, pid=2060, job_id=563483.
+2024-01-31 12:56:49 [authd_http_prepare_javascript_redir:3909]: https://login.microsoftonline.com/2e48b41c-e3ce-499a-a7f2-ad4aea619526/saml2?SAMLRequest
+=hZLLbtswEEV%2FReBeD8p6ErYBOWpQA2krxE4X3RQMNXII8OFyKLf9%2B0py2qSLpksO52DmXMwauVZn1oz%2BydzDtxHQBz%2B0MsiWjw0ZnWGWo0RmuAZkXrBD8%2BGOpVHCzs56K6wir5C3CY4Iz
+ktrSLBvN%2BRr1VRpW%2BVNSfOirOuizOmuSHc0rW%2FbMn9XkeAzOJz6N2TCJwhxhL1Bz42fSkmahQkNV%2FSYJCwvWFZ%2FIUE7OUjD%2FUI9eX9GFsfKnqSJtBTOoh28NUoaiITVcQpZ9ZhREcJKQ
+JjVNQ95OaQh7zMOvKB1nhbxbJaS4NY6AUtWGzJwhTBv1E1S8gJ%2FKt1zKjtpemlObwfyeG1C9v547MLu0%2BFIguZ3SDfW4KjBHcBdpICH%2B7sXoeHkV9FF4uzA6ixbxQ609bCsetUl2%2FX8YEtob
+juT%2FwU1eN5zz%2BN1%2FJpdX8%2Fk47T%2Fvu2skuLnHIbm%2Ft96NKJLRfbhsLSy0eAZhBwk9JOlUvb7jQPup%2Bi8G4HE2%2BvQv89x%2Bws%3D&RelayState=magic%3D050007859c9e13b2
+2024-01-31 12:56:49 [authd_http_send:1268]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:49 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:49 authd_http: change state from 106 to 5
+2024-01-31 12:56:49 [authd_http_disconnect:2735]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:49 [authd_http_change_state:2812]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:49 authd_http: change state from 5 to 6
+2024-01-31 12:56:49 [authd_http_done:2780]: src 10.21.8.181 flag 1020a000
+2024-01-31 12:56:49 authd_epoll_work: timeout 3920
+2024-01-31 12:56:53 authd_timer_run: 2 expired
+2024-01-31 12:56:53 authd_epoll_work: timeout 31990
+2024-01-31 12:56:55 fsae_io_ctx_process_msg[lab-fsso]: received heartbeat 245421
+2024-01-31 12:56:55 authd_epoll_work: timeout 30420
+
+FGT6 #
+FGT6 #
+FGT6 # di de di
+
+FGT6 #

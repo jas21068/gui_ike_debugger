@@ -881,11 +881,12 @@ def index():
             return "No file uploaded", 400
         
         logfile = request.files['logfile']
-        
+        debug_logs = request.form.get('debuglogs', 'false')
+
         if logfile.filename == '':
             return "No file selected", 400
         
-        log_dir = '/Users/tac/FortiMedic/IKE/gui_ike_debugger/uploads'
+        log_dir = '/Users/Vito/gui_project/gui_ike_debugger/uploads'
         def remove_files_in_folder(folder_path):
             # Loop through all files in the directory and remove them
             for filename in os.listdir(folder_path):

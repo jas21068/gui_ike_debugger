@@ -77,6 +77,11 @@
             border-color: #d32f2f; /* Fortinet red */
             outline: none;
         }
+        
+        input[type="checkbox"], label {
+            display: inline-block;
+            vertical-align: text-top;
+        }
 
         button {
             font-size: 1.2rem;
@@ -170,6 +175,8 @@
                 <label for="logfile">Upload Log File:</label>
                 <input type="file" name="logfile" id="logfile" required>
             </div>
+            <input type="checkbox" id="debuglogs" name="debuglogs" value="debuglogs">
+            <label for="debuglogs"> Show debug logs </label>
             <button type="submit">Analyze</button>
         </form>
     </div>
